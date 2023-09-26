@@ -1,0 +1,1 @@
+<template>Общая статистика</template>

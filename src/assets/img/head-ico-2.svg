@@ -1,0 +1,19 @@
+<svg width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="style-icon 3">
+<circle id="Ellipse 1" cx="41.4999" cy="41.2213" r="37.099" fill="url(#paint0_linear_1678_40315)"/>
+<path id="Ellipse 3" d="M67.7328 67.4542C72.9212 62.2659 76.4545 55.6554 77.886 48.459C79.3175 41.2625 78.5828 33.8031 75.7749 27.0241C72.9669 20.2452 68.2119 14.4511 62.111 10.3746C56.0101 6.29813 48.8374 4.12232 41.4999 4.12231L41.4999 41.2213L67.7328 67.4542Z" fill="url(#paint1_linear_1678_40315)"/>
+<path id="Rectangle 39" d="M36.2788 41C36.2788 38.2386 38.5174 36 41.2788 36C44.0402 36 46.2788 38.2386 46.2788 41C46.2788 43.7614 44.0402 46 41.2788 46C38.5174 46 36.2788 43.7614 36.2788 41Z" fill="#FA0056"/>
+<path id="Vector 399" d="M69.2788 71.5L42.2788 44.5L44.7788 42L71.7788 69V71.5H69.2788Z" fill="#FA0056"/>
+<path id="Vector 400" d="M43.7239 13.5502L43.7239 40.4996L38.6228 40.4996L38.6228 13.5502L41.1733 10.9997L43.7239 13.5502Z" fill="#FA0056"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1678_40315" x1="-4.16041" y1="-21.4969" x2="102.202" y2="-8.11944" gradientUnits="userSpaceOnUse">
+<stop offset="0.0261371" stop-color="#AD073D" stop-opacity="0.81"/>
+<stop offset="1" stop-color="#AD073D" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1678_40315" x1="50.7788" y1="50.0002" x2="50.7788" y2="4.00024" gradientUnits="userSpaceOnUse">
+<stop offset="0.0261371" stop-color="#AD073D" stop-opacity="0.81"/>
+<stop offset="1" stop-color="#AD073D" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
