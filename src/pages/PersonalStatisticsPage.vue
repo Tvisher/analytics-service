@@ -23,3 +23,5 @@
     Персональная статистика по вопросу с ID 3
   </router-link>
 </template>
+
+<script setup></script>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PersonalStatisticsPage from '@/components/pages/PersonalStatisticsPage.vue';
-import PersonalStatisticItemPage from '@/components/pages/PersonalStatisticItemPage.vue';
-import GeneralStatisticsPage from '@/components/pages/GeneralStatisticsPage.vue';
+import PersonalStatisticsPage from '@/pages/PersonalStatisticsPage.vue';
+import PersonalStatisticItemPage from '@/pages/PersonalStatisticItemPage.vue';
+import GeneralStatisticsPage from '@/pages/GeneralStatisticsPage.vue';
 
 const routes = [
     {
