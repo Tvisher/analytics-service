@@ -29,6 +29,7 @@ const router = createRouter({
     //         behavior: 'smooth',
     //     }
     // },
+    base: '/analytics-service/',
     history: createWebHistory(),
     routes,
 })
