@@ -22,15 +22,17 @@
       </button>
     </div>
 
+    <!-- <transition name="fade" mode="out-in"> -->
     <BarChart
       :chartData="chartDataTmp"
       v-if="selectedVisualType === 'barChart'"
     />
     <DoughnutChart
       :chartData="chartDataTmp"
-      v-if="selectedVisualType === 'doughnutChart'"
+      v-else-if="selectedVisualType === 'doughnutChart'"
     />
-    <InfoTable v-if="selectedVisualType === 'table'" />
+    <InfoTable v-else-if="selectedVisualType === 'table'" />
+    <!-- </transition> -->
   </div>
 </template>
 
@@ -76,4 +78,14 @@ const chartDataTmp = {
 };
 </script>
 
-<style></style>
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
