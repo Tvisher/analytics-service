@@ -71,7 +71,7 @@ const chartOptions = {
         color: "#C2CFE0",
       },
       border: {
-        dash: [10, 10],
+        dash: [8, 8],
       },
       ticks: {
         callback: function (value) {
@@ -80,6 +80,7 @@ const chartOptions = {
       },
     },
     x: {
+      display: false,
       grid: {
         display: false,
       },
