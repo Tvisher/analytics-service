@@ -1,6 +1,6 @@
 <template>
   <div class="info-char-wrapper">
-    <div class="char-container">
+    <div class="char-container doughnut-container">
       <Doughnut :data="chartDataFixed" :options="chartOptions" />
     </div>
     <div class="char-items-list">
@@ -21,8 +21,9 @@
 
 <script setup>
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Doughnut } from "vue-chartjs";
-ChartJS.register(ArcElement, Tooltip, Legend);
+ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
 const props = defineProps({
   chartData: Object,
@@ -46,13 +47,23 @@ const chartDataTextListWithColors = chartDataLabels.map((label, index) => {
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
-  cutout: "70%",
+  cutout: "65%",
 
   plugins: {
     legend: {
       display: false,
     },
-
+    datalabels: {
+      display: true,
+      align: "center",
+      color: "#fff",
+      font: {
+        size: 18,
+      },
+      formatter: (value) => {
+        return value + "%";
+      },
+    },
     tooltip: {
       padding: 12,
       backgroundColor: "rgba(255, 255, 255, 0.80)",
@@ -72,7 +83,7 @@ const chartOptions = {
       boxPadding: 10,
       callbacks: {
         label: function (context) {
-          return `${context.label} - ${context.parsed} %`;
+          return `${context.label}`;
         },
       },
     },

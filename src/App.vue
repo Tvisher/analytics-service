@@ -1,5 +1,6 @@
 <template>
   <div class="statistic-container">
+    <h1 class="statistic-title">Аналитика</h1>
     <TheStatisticHead />
     <TheStatisticBody />
   </div>

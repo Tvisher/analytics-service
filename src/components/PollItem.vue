@@ -30,13 +30,14 @@
       :chartData="chartDataTmp"
       v-if="selectedVisualType === 'doughnutChart'"
     />
-    <div v-if="selectedVisualType === 'table'">Таблицца</div>
+    <InfoTable v-if="selectedVisualType === 'table'" />
   </div>
 </template>
 
 <script setup>
 import BarChart from "@/components/infoComponents/BarChart.vue";
 import DoughnutChart from "@/components/infoComponents/DoughnutChart.vue";
+import InfoTable from "@/components/infoComponents/InfoTable.vue";
 import { ref } from "vue";
 
 const selectedVisualType = ref("doughnutChart");

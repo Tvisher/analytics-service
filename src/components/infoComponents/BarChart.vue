@@ -89,6 +89,17 @@ const chartOptions = {
     legend: {
       display: false,
     },
+    datalabels: {
+      display: true,
+      align: "center",
+      color: "#fff",
+      font: {
+        size: 18,
+      },
+      formatter: (value) => {
+        return value + "%";
+      },
+    },
 
     tooltip: {
       padding: 12,
@@ -109,7 +120,7 @@ const chartOptions = {
       boxPadding: 10,
       callbacks: {
         label: function (context) {
-          return `${context.label} - ${context.formattedValue} %`;
+          return `${context.label}`;
         },
       },
     },

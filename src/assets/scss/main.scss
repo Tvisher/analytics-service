@@ -7,8 +7,16 @@
 
 .statistic-container {
   max-width: 800px;
+  margin: auto;
 }
-
+.statistic-title {
+  margin: 30px 0;
+  color: #202020;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
 .statistic-head {
   padding: 15px 20px;
   background: #ecf4ff;
@@ -222,6 +230,9 @@
 }
 .char-container {
   height: 530px;
+  &.doughnut-container {
+    height: 360px;
+  }
 }
 .info-char-wrapper {
   margin: 30px 0;
@@ -250,5 +261,32 @@
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 25.2px */
+  }
+}
+
+.pages-pagination {
+  margin-bottom: 26px;
+  display: flex;
+  .pagination-item {
+    cursor: pointer;
+    width: 50px;
+    height: 44px;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #262b31;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+    &.active {
+      color: #fff;
+      background-color: #fa0056;
+    }
   }
 }
