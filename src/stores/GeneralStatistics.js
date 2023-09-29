@@ -2,18 +2,9 @@ import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 
 export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
-    const questions = ref([
-        1,
-        2,
-        3,
-    ]);
-
-    const addItem = (item) => {
-        questions.value.push(item)
-    }
+    const chartColors = ref(["#FA0056", "#A72179", "#8DBA21", "orange", "purple"]);
 
     return {
-        questions,
-        addItem
+        chartColors
     }
 }) 

@@ -6,6 +6,8 @@
     <div class="pagination-item">4</div>
   </div>
   <AppPollItem />
+  <AppPollItem />
+  <AppPollItem />
 </template>
 <script setup>
 import AppPollItem from "@/components/PollItem.vue";

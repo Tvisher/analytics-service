@@ -33,6 +33,7 @@
     />
     <InfoTable v-else-if="selectedVisualType === 'table'" />
     <!-- </transition> -->
+    <div class="poll-item__footer">от 10.05.2023 до 15.05.2023</div>
   </div>
 </template>
 
@@ -41,6 +42,10 @@ import BarChart from "@/components/infoComponents/BarChart.vue";
 import DoughnutChart from "@/components/infoComponents/DoughnutChart.vue";
 import InfoTable from "@/components/infoComponents/InfoTable.vue";
 import { ref } from "vue";
+
+import { useGeneralStatistics } from "@/stores/GeneralStatistics";
+const store = useGeneralStatistics();
+const { chartColors } = store;
 
 const selectedVisualType = ref("doughnutChart");
 const visualTypes = [
@@ -71,7 +76,7 @@ const chartDataTmp = {
   datasets: [
     {
       label: "%",
-      backgroundColor: ["#FA0056", "#A72179", "#8DBA21", "orange", "purple"],
+      backgroundColor: chartColors,
       data: [20, 40, 20],
     },
   ],

@@ -21,6 +21,7 @@
   padding: 15px 20px;
   background: #ecf4ff;
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 .statistic-head__top {
   display: flex;
@@ -164,11 +165,22 @@
 .statistic-body {
   padding: 20px;
   background: #ecf4ff;
+  border-radius: 8px;
 }
 
 .poll-item {
   background-color: #fff;
   padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+.poll-item__footer {
+  color: #707683;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
 }
 .poll-item__head {
   padding-bottom: 20px;
