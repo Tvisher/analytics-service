@@ -1,6 +1,6 @@
 @import "./reset";
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600;700;800&display=swap");
-
+@import "vue-select/dist/vue-select.css";
 #app {
   font-family: Montserrat;
 }
@@ -108,7 +108,7 @@
   display: block;
   border-radius: 4px;
   border: 1px solid #fa0056;
-  background: #ffe7ef;
+  background-color: #ffe7ef;
   padding: 12px 3px;
   width: 212px;
   height: 44px;
@@ -118,6 +118,10 @@
     background-repeat: no-repeat;
     background-size: 28px;
     background-position: center;
+  }
+  &.red-btn {
+    background-color: #fa0056;
+    color: #fff;
   }
 }
 
@@ -301,4 +305,167 @@
       background-color: #fa0056;
     }
   }
+}
+
+.filter-wrapper {
+  margin: 25px 0;
+}
+.add-filter-btn {
+  padding: 10px 54px 10px 24px !important;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14 10.9422V18.9422M10 14.9422H18M7 5.9422H21C22.1046 5.9422 23 6.83763 23 7.9422V21.9422C23 23.0468 22.1046 23.9422 21 23.9422H7C5.89543 23.9422 5 23.0468 5 21.9422V7.9422C5 6.83763 5.89543 5.9422 7 5.9422Z' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: center right 10px;
+  line-height: 100% !important;
+  display: flex;
+  align-items: center;
+}
+.filter-modal__close {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='1.41406' y='0.000152588' width='26' height='2' transform='rotate(45 1.41406 0.000152588)' fill='%2348474D'/%3e%3crect x='19.7988' y='1.41422' width='26' height='2' transform='rotate(135 19.7988 1.41422)' fill='%2348474D'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.filter-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.filter-modal__content {
+  border-radius: 8px;
+  position: relative;
+  padding: 30px;
+  background-color: #ebf4ff;
+  max-width: 650px;
+  width: 100%;
+}
+.filter-select {
+  margin: 20px 0px;
+}
+
+.filter-select__title {
+  font-size: 14px;
+}
+
+.filter-modal__title {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 26px */
+}
+.filter-modal__btn {
+  margin-left: auto;
+}
+
+.v-select {
+  background-color: #fff;
+}
+.vs__dropdown-toggle {
+  padding: 10px !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(0, 66, 105, 0.28) !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.vs__actions {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-right: -10px;
+  padding: 0 !important;
+}
+.vs__search,
+.vs__selected {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  margin-top: 0 !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 400;
+}
+.vs__open-indicator.toggle-arrow {
+  transform: translate(0) !important;
+  border-left: 1px solid rgba(0, 66, 105, 0.28);
+  cursor: pointer;
+  width: 48px;
+  height: 100%;
+  display: block;
+  position: relative;
+  &:before {
+    will-change: transform;
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.5 9L12 14L16.5 9H7.5Z' fill='%23002033' fill-opacity='0.35'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+  }
+}
+
+.vs__clear {
+  width: 48px;
+  height: 100%;
+  margin-right: 0 !important;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2.16453 9.15597L2.8502 9.84982L6.00027 6.69986L9.14953 9.84923L9.15033 9.85002L9.85014 9.1501L6.70018 5.99997L9.85034 2.84993L9.14323 2.14282L6.0009 5.30066L2.85107 2.15065L2.15039 2.84986L5.30272 6.00229L2.16453 9.15597Z' fill='%2300395C' fill-opacity='0.8'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
+  svg {
+    display: none;
+  }
+}
+.vs__search {
+  padding-left: 0 !important;
+  color: rgba(0, 32, 51, 0.35) !important;
+}
+.vs--open {
+  .vs__open-indicator.toggle-arrow:before {
+    transform: scale(-1);
+  }
+}
+
+.vs__dropdown-menu {
+  width: 100%;
+  .vs__dropdown-option {
+    font-family: "Montserrat" !important;
+    white-space: inherit;
+    padding: 10px;
+  }
+}
+
+.vs__no-options {
+  padding: 20px;
+}
+
+.deselect-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.v-select.drop-up.vs--open .vs__dropdown-toggle {
+  border-radius: 0 0 4px 4px;
+  border-top-color: transparent;
+  border-bottom-color: rgba(60, 60, 60, 0.26);
 }

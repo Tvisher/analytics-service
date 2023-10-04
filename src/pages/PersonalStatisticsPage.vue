@@ -1,6 +1,6 @@
 <template>
   <h1>Персональная статистика</h1>
-
+  <AppFilter />
   <router-link
     class=""
     :to="{ name: 'personalStatisticItem', params: { id: 1 } }"
@@ -24,4 +24,6 @@
   </router-link>
 </template>
 
-<script setup></script>
+<script setup>
+import AppFilter from "@/components/Filter.vue";
+</script>

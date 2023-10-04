@@ -27,6 +27,8 @@
       <button class="btn">Закрыть опрос</button>
       <button class="btn refresh-btn"></button>
     </div>
+    <AppDateRange />
+
     <div class="statistic-head__bottom">
       <div class="origin-information">
         <div class="information-block">
@@ -72,6 +74,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import AppDateRange from "@/components/DateRange.vue";
+</script>
 
 <style lang="scss"></style>
