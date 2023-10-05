@@ -1,10 +1,8 @@
 <template>
   <AppPagesPagination />
-  <AppPollItem />
-  <AppPollItem />
-  <AppPollItem />
+  <AppPollItemStatistic />
 </template>
 <script setup>
 import AppPagesPagination from "@/components/PagesPagination.vue";
-import AppPollItem from "@/components/PollItem.vue";
+import AppPollItemStatistic from "@/components/PollItemStatistic.vue";
 </script>

@@ -49,11 +49,7 @@
           </div>
           <div class="information-block__data">
             <div class="data-value">3 мин</div>
-            <div class="data-descr">
-              Среднее время<br />
-              прохождения<br />
-              опроса / викторины
-            </div>
+            <div class="data-descr">Среднее время прохождения</div>
           </div>
         </div>
         <div class="information-block">
@@ -64,8 +60,7 @@
             <div class="data-value">32</div>
             <div class="data-descr">
               Количество<br />
-              незавершенных<br />
-              сессий
+              незавершенных сессий
             </div>
           </div>
         </div>

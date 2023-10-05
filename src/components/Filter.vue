@@ -17,11 +17,13 @@
             <span class="filter-select__title">Выберите вопрос</span>
             <vSelect />
           </div>
-
+          <!-- 
           <div class="filter-select">
-            <span class="filter-select__title">Выберите ответ на вопрос</span>
+            <span class="filter-select__title"
+              >Выберите конкретный ответ для фильтрации</span
+            >
             <vSelect />
-          </div>
+          </div> -->
           <button class="btn red-btn filter-modal__btn">Добавить фильтр</button>
         </div>
       </div>
