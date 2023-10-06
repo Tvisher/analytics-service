@@ -1,6 +1,6 @@
 <template>
   <div class="rangin-table">
-    <div class="answer-item" v-for="answer in answers" :key="answer.id">
+    <div class="answer-item" v-for="(answer, i) in answers" :key="answer.id">
       <div class="answer-item__title">{{ answer.name }}</div>
       <div class="answer-item__body">
         <div class="answer-item__row head-row">
@@ -15,7 +15,7 @@
           v-model="togglesTableHiddenRows[answer.id].showFirstRow"
         >
           <div class="answer-item__row">
-            <div class="row-item">1</div>
+            <div class="row-item">{{ i + 1 }}</div>
             <div class="row-item correct"></div>
             <div class="row-item">{{ answer.name }}</div>
             <div class="row-item">1</div>
@@ -111,7 +111,6 @@ const toggleRowsShow = (id) => {
   display: flex;
   align-items: center;
   &::after {
-    transition: transform 0.3s ease-in-out;
     margin-left: 12px;
     content: "";
     display: block;
