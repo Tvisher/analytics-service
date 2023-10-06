@@ -154,6 +154,7 @@ const toggleRowsShow = (id) => {
   align-items: stretch;
   width: 100%;
   .row-item {
+    will-change: transform;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
