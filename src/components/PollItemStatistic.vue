@@ -12,7 +12,8 @@
 
     <!-- <AppChartsAndTable :statisticData="chartDataTmp" /> -->
     <!-- <AppRanginTable /> -->
-    <AppRanginSelection />
+    <!-- <AppRanginSelection /> -->
+    <AppCustomFieldsTable />
 
     <div class="poll-item__footer">от 10.05.2023 до 15.05.2023</div>
   </div>
@@ -22,6 +23,7 @@
 import AppChartsAndTable from "@/components/infoComponents/infoGroups/ChartsAndTable.vue";
 import AppRanginTable from "@/components/infoComponents/infoGroups/RanginTable.vue";
 import AppRanginSelection from "@/components/infoComponents/infoGroups/RanginSelection.vue";
+import AppCustomFieldsTable from "@/components/infoComponents/infoGroups/CustomFieldsTable.vue";
 
 import { ref } from "vue";
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
