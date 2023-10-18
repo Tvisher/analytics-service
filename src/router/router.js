@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory, createWebHashHistory } from "vue-router";
 import PersonalStatisticsPage from '@/pages/PersonalStatisticsPage.vue';
 import PersonalStatisticItemPage from '@/pages/PersonalStatisticItemPage.vue';
 import GeneralStatisticsPage from '@/pages/GeneralStatisticsPage.vue';
@@ -23,13 +23,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    // scrollBehavior(to, from, savedPosition) {
-    //     return {
-    //         top: 0,
-    //         behavior: 'smooth',
-    //     }
-    // },
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHashHistory(),
     routes,
 })
 

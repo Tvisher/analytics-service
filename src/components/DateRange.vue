@@ -3,6 +3,7 @@
     <VueDatePicker
       locale="ru"
       :clearable="false"
+      :min-date="minDate"
       :max-date="maxDate"
       :auto-apply="true"
       :enable-time-picker="false"
@@ -10,15 +11,50 @@
       v-model="date"
       :format="'dd.MM.yyyy'"
       :placeholder="''"
+      @update:model-value="handleDate"
     ></VueDatePicker>
   </div>
 </template>
 <script setup>
+import { useGeneralStatistics } from "@/stores/GeneralStatistics";
 import { ref } from "vue";
 import VueDatePicker from "@vuepic/vue-datepicker";
-const date = ref([]);
 
-const maxDate = new Date();
+const generalStatisticsStore = useGeneralStatistics();
+const changeDateFilter = generalStatisticsStore.changeDateFilter;
+let dateFilterData = generalStatisticsStore.dateFilterData;
+const minDate = dateFilterData.from;
+const maxDate = dateFilterData.to;
+const date = ref([minDate, maxDate]);
+
+const dateOptions = {
+  month: "numeric",
+  day: "numeric",
+  year: "numeric",
+};
+const customFormattedDate = (date) =>
+  date.toLocaleDateString("ru-RU", dateOptions);
+
+const handleDate = (modelData) => {
+  date.value = modelData;
+  changeDateFilter({
+    from: date.value[0],
+    to: date.value[1],
+  });
+  const dateDataObject = {
+    from: customFormattedDate(date.value[0]),
+    to: customFormattedDate(date.value[1]),
+  };
+  console.log(
+    {
+      from: date.value[0],
+      to: date.value[1],
+    },
+    dateDataObject
+  );
+
+  generalStatisticsStore.getAppData(dateDataObject);
+};
 </script>
 
 <style lang="scss">

@@ -12,8 +12,8 @@
 
     <!-- <AppChartsAndTable :statisticData="chartDataTmp" /> -->
     <!-- <AppRanginTable /> -->
-    <!-- <AppRanginSelection /> -->
-    <AppCustomFieldsTable />
+    <AppRanginSelection />
+    <!-- <AppCustomFieldsTable /> -->
 
     <div class="poll-item__footer">от 10.05.2023 до 15.05.2023</div>
   </div>
