@@ -19,23 +19,26 @@
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
 import { ref } from "vue";
 import VueDatePicker from "@vuepic/vue-datepicker";
+import { customFormattedDate } from "@/helpers/customDateFormatter";
 
 const generalStatisticsStore = useGeneralStatistics();
 const changeDateFilter = generalStatisticsStore.changeDateFilter;
 let dateFilterData = generalStatisticsStore.dateFilterData;
-const minDate = dateFilterData.from;
+
+const dateParts = generalStatisticsStore.pollCreateDate.split(".");
+let minDate = new Date(`${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`);
+minDate = minDate.toISOString().slice(0, 10);
+
 const maxDate = dateFilterData.to;
 const date = ref([minDate, maxDate]);
 
-const dateOptions = {
-  month: "numeric",
-  day: "numeric",
-  year: "numeric",
-};
-const customFormattedDate = (date) =>
-  date.toLocaleDateString("ru-RU", dateOptions);
+changeDateFilter({
+  from: new Date(minDate),
+  to: maxDate,
+});
 
 const handleDate = (modelData) => {
+  console.log(modelData);
   date.value = modelData;
   changeDateFilter({
     from: date.value[0],
@@ -45,14 +48,6 @@ const handleDate = (modelData) => {
     from: customFormattedDate(date.value[0]),
     to: customFormattedDate(date.value[1]),
   };
-  console.log(
-    {
-      from: date.value[0],
-      to: date.value[1],
-    },
-    dateDataObject
-  );
-
   generalStatisticsStore.getAppData(dateDataObject);
 };
 </script>

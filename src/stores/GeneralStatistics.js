@@ -17,19 +17,37 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         "#4F8FE6",
         "#9C52F2"];
     let pollName = ref('Название анкеты');
-    let questionsCount = ref('33');
+    let questionsCount = ref('0');
     let pagesCount = ref('0');
     let respondentsCount = ref('0');
     let unfinishCount = ref('0');
     let middleTime = ref({
         "MIN": 0,
-        "SEC": 31
+        "SEC": 0
     });
+    let pollType = ref('опрос');
+    let pollCreateDate = ref("01.01.2023");
     let dateFilterData = ref({
         from: new Date(),
         to: new Date()
     });
 
+
+    const changeDateFilter = (newDateFilter) => dateFilterData.value = newDateFilter;
+
+    const setApplicationData = (response) => {
+        const data = response.data;
+        console.log(data);
+        pollName.value = data.NAME;
+        pagesCount.value = data.PAGES;
+        questionsCount.value = data.QUESTION_COUNT;
+        respondentsCount.value = data.RESPONDENT;
+        unfinishCount.value = data.UNFINISH;
+        middleTime.value = data.MIDDLE_TIME;
+        pollCreateDate.value = data.DATE_CREAT;
+        pollType.value = data.TYPE;
+
+    };
 
     const getAppData = async (timeFilter) => {
         return new Promise((resolve, reject) => {
@@ -48,14 +66,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
                     }
                 })
                 .then(function (response) {
-                    const data = response.data;
-                    console.log(data);
-                    pollName.value = data.NAME;
-                    pagesCount.value = data.PAGES;
-                    questionsCount.value = data.QUESTION_COUNT;
-                    respondentsCount.value = data.RESPONDENT;
-                    unfinishCount.value = data.UNFINISH;
-                    middleTime.value = data.MIDDLE_TIME;
+                    setApplicationData(response);
                     resolve();
                 })
                 .catch(function (error) {
@@ -65,9 +76,10 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         })
     };
 
-    const changeDateFilter = (newDateFilter) => dateFilterData.value = newDateFilter;
 
     return {
+        pollType,
+        pollCreateDate,
         changeDateFilter,
         dateFilterData,
         pollName,
