@@ -2,6 +2,8 @@ import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 import axios from 'axios';
 
+import analiticTestJson from '@/assets/analitic.json';
+
 
 const pollId = document.querySelector('#app').dataset.id;
 export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
@@ -31,10 +33,13 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         from: new Date(),
         to: new Date()
     });
+    let pagesGeneralData = ref([]);
+    let currentPageIndex = ref(0);
 
+    const currentPagePollItemsData = computed(() => pagesGeneralData.value[currentPageIndex.value]);
 
     const changeDateFilter = (newDateFilter) => dateFilterData.value = newDateFilter;
-
+    const setCurrentPage = (index) => currentPageIndex.value = index;
     const setApplicationData = (response) => {
         const data = response.data;
         console.log(data);
@@ -46,9 +51,8 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         middleTime.value = data.MIDDLE_TIME;
         pollCreateDate.value = data.DATE_CREAT;
         pollType.value = data.TYPE;
-
+        pagesGeneralData.value = data.RESULTS.QUESTION;
     };
-
     const getAppData = async (timeFilter) => {
         return new Promise((resolve, reject) => {
             let postData = {
@@ -70,6 +74,9 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
                     resolve();
                 })
                 .catch(function (error) {
+                    if (process.env.NODE_ENV == "development") {
+                        setApplicationData(analiticTestJson);
+                    }
                     console.log("Ошибка!!!", error);
                     reject();
                 });
@@ -77,7 +84,12 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
     };
 
 
+
     return {
+        currentPagePollItemsData,
+        setCurrentPage,
+        currentPageIndex,
+        pagesGeneralData,
         pollType,
         pollCreateDate,
         changeDateFilter,

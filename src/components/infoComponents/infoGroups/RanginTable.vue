@@ -18,8 +18,8 @@
             <div class="row-item">{{ i + 1 }}</div>
             <div class="row-item correct"></div>
             <div class="row-item">{{ answer.name }}</div>
-            <div class="row-item">1</div>
-            <div class="row-item">33%</div>
+            <div class="row-item">{{ answer.count }}</div>
+            <div class="row-item">{{ answer.precent }} %</div>
           </div>
         </Vue3SlideUpDown>
         <!-- Все ответы -->
@@ -38,8 +38,8 @@
                 :class="innerAnswer.id == answer.id ? 'correct' : 'uncorrect'"
               ></div>
               <div class="row-item">{{ innerAnswer.name }}</div>
-              <div class="row-item">1</div>
-              <div class="row-item">33%</div>
+              <div class="row-item">{{ innerAnswer.count }}</div>
+              <div class="row-item">{{ innerAnswer.precent }} %</div>
             </div>
           </div>
         </Vue3SlideUpDown>
@@ -62,15 +62,19 @@
 import { ref } from "vue";
 import { Vue3SlideUpDown } from "vue3-slide-up-down";
 
-const answers = [
-  { name: "Понедельник", id: 1 },
-  { name: "Вторник", id: 2 },
-  { name: "Среда", id: 3 },
-  { name: "Четверг", id: 4 },
-  { name: "Пятница", id: 5 },
-  { name: "Суббота", id: 6 },
-  { name: "Воскресенье", id: 7 },
-];
+const props = defineProps({
+  data: Object,
+});
+const userAnswers = props.data.ANSWERS.USER_ANSWER;
+console.log(userAnswers);
+const answers = props.data.VARIANTS.map((item) => {
+  return {
+    id: item.UF_ID_VARIANT,
+    name: item.UF_VARIANT_VALUE,
+    count: userAnswers[item.UF_ID_VARIANT].COUNT_ANSWER,
+    precent: userAnswers[item.UF_ID_VARIANT].PROCENT,
+  };
+});
 
 const answerToggles = answers.reduce((acc, item) => {
   acc[item.id] = {};

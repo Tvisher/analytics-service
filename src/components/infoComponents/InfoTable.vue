@@ -1,32 +1,26 @@
 <template>
   <div class="info-char-wrapper custom-table-wrapper">
-    <div class="custom-table">
+    <div class="">
       <div class="custom-table__row head-row">
         <div class="custom-table__col">Варианты</div>
         <div class="custom-table__col">Количество ответов</div>
         <div class="custom-table__col">Проценты</div>
       </div>
 
-      <div class="custom-table__row">
-        <div class="custom-table__col">Ответ первый</div>
-        <div class="custom-table__col">2</div>
-        <div class="custom-table__col">100%</div>
-      </div>
-      <div class="custom-table__row">
-        <div class="custom-table__col">Ответ первый</div>
-        <div class="custom-table__col">2</div>
-        <div class="custom-table__col">100%</div>
-      </div>
-      <div class="custom-table__row">
-        <div class="custom-table__col">Ответ первый</div>
-        <div class="custom-table__col">2</div>
-        <div class="custom-table__col">100%</div>
+      <div class="custom-table__row" v-for="itemData in props.tableData">
+        <div class="custom-table__col">{{ itemData.TEXT }}</div>
+        <div class="custom-table__col">{{ itemData.COUNT_ANSWER }}</div>
+        <div class="custom-table__col">{{ itemData.PROCENT }} %</div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+  tableData: Array,
+});
+</script>
 
 <style lang="scss" scoped>
 .custom-table__row {
