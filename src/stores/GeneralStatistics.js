@@ -18,31 +18,34 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         "#FF8C00",
         "#4F8FE6",
         "#9C52F2"];
+    let pollStatus = ref(true);
     let pollName = ref('Название анкеты');
     let questionsCount = ref('0');
     let pagesCount = ref('0');
     let respondentsCount = ref('0');
     let unfinishCount = ref('0');
+    let pollType = ref('опрос');
+    let pollCreateDate = ref("01.01.2023");
+    let pagesGeneralData = ref([]);
+    let appHasPagesGeneralData = ref(false);
+    let currentPageIndex = ref(0);
     let middleTime = ref({
         "MIN": 0,
         "SEC": 0
     });
-    let pollType = ref('опрос');
-    let pollCreateDate = ref("01.01.2023");
     let dateFilterData = ref({
         from: new Date(),
         to: new Date()
     });
-    let pagesGeneralData = ref([]);
-    let currentPageIndex = ref(0);
+
 
     const currentPagePollItemsData = computed(() => pagesGeneralData.value[currentPageIndex.value]);
-
     const changeDateFilter = (newDateFilter) => dateFilterData.value = newDateFilter;
     const setCurrentPage = (index) => currentPageIndex.value = index;
     const setApplicationData = (response) => {
         const data = response.data;
         console.log(data);
+        pollStatus.value = data.ACTIVE;
         pollName.value = data.NAME;
         pagesCount.value = data.PAGES;
         questionsCount.value = data.QUESTION_COUNT;
@@ -52,6 +55,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         pollCreateDate.value = data.DATE_CREAT;
         pollType.value = data.TYPE;
         pagesGeneralData.value = data.RESULTS.QUESTION;
+        appHasPagesGeneralData.value = data.RESULTS.QUESTION.length > 0
     };
     const getAppData = async (timeFilter) => {
         return new Promise((resolve, reject) => {
@@ -83,9 +87,9 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         })
     };
 
-
-
     return {
+        pollStatus,
+        appHasPagesGeneralData,
         currentPagePollItemsData,
         setCurrentPage,
         currentPageIndex,

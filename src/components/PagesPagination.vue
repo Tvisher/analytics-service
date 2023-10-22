@@ -1,5 +1,5 @@
 <template>
-  <div class="pages-pagination" v-if="pagesCount > 0">
+  <div class="pages-pagination" v-if="pagesCount > 1">
     <div
       class="pagination-item"
       v-for="(page, index) in pagesCount"

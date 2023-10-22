@@ -8,9 +8,9 @@
       </div>
 
       <div class="custom-table__row" v-for="itemData in props.tableData">
-        <div class="custom-table__col">{{ itemData.TEXT }}</div>
-        <div class="custom-table__col">{{ itemData.COUNT_ANSWER }}</div>
-        <div class="custom-table__col">{{ itemData.PROCENT }} %</div>
+        <div class="custom-table__col">{{ itemData.name }}</div>
+        <div class="custom-table__col">{{ itemData.answerCount }}</div>
+        <div class="custom-table__col">{{ itemData.precent }} %</div>
       </div>
     </div>
   </div>

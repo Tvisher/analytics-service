@@ -88,11 +88,21 @@ const respondentsCount = computed(
 const unfinishCount = computed(() => generalStatisticsStore.unfinishCount);
 const middleTime = computed(() => generalStatisticsStore.middleTime);
 const pollCreateDate = computed(() => generalStatisticsStore.pollCreateDate);
+const pollStatus = computed(() => generalStatisticsStore.pollStatus);
+
 const pollTypeText = computed(() => {
-  return generalStatisticsStore.pollType.toLowerCase() == "опрос"
-    ? "Опрос открыт"
-    : "Викторина открыта";
+  let str;
+  if (generalStatisticsStore.pollType.toLowerCase() == "опрос") {
+    str = "Опрос ";
+    pollStatus.value ? (str += "открыт") : (str += "закрыт");
+  } else {
+    str = "Викторина ";
+    pollStatus.value ? (str += "открыта") : (str += "закрыта");
+  }
+  console.log(str);
+  return str;
 });
+
 const pagesCountText = computed(() =>
   chooseWord(pagesCount.value, ["страница", "страницы", "страниц"])
 );
@@ -117,15 +127,18 @@ function chooseWord(number, wordForms) {
     return wordForms[2];
   }
 }
-const refreshData = () => {
+const refreshData = (e) => {
+  const targetBtn = e.target;
+  targetBtn.classList.add("spin");
   const dateFilterData = generalStatisticsStore.dateFilterData;
-
   const dateDataObjectFixToAjax = {
     from: customFormattedDate(dateFilterData.from),
     to: customFormattedDate(dateFilterData.to),
   };
-  console.log(dateDataObjectFixToAjax);
-  // generalStatisticsStore.getAppData(dateDataObject);
+  generalStatisticsStore
+    .getAppData(dateDataObjectFixToAjax)
+    .then(() => setTimeout(() => targetBtn.classList.remove("spin"), 1000))
+    .catch(() => setTimeout(() => targetBtn.classList.remove("spin"), 1000));
 };
 
 // const formattedCurrentDate = () => {

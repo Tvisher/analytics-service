@@ -21,7 +21,7 @@
   />
 
   <InfoTable
-    :tableData="pollItemData"
+    :tableData="reduceData"
     v-else-if="selectedVisualType === 'table'"
   />
 </template>
@@ -40,20 +40,32 @@ const chartColors = generalStatisticsStore.chartColors;
 const props = defineProps({
   data: Object,
 });
+const userAnswers = props.data.ANSWERS.USER_ANSWER;
 
-const pollItemData = Object.values(props.data.ANSWERS.USER_ANSWER);
+const reduceData = props.data.VARIANTS.reduce((acc, item) => {
+  const userAnswerItem = userAnswers[item.UF_ID_VARIANT];
+  const precent = userAnswerItem ? userAnswerItem.PROCENT : 0;
+  const answerCount = userAnswerItem ? userAnswerItem.COUNT_ANSWER : 0;
+  acc.push({
+    name: item.UF_VARIANT_VALUE,
+    precent,
+    answerCount,
+  });
+  return acc;
+}, []);
+
 let chartDataTmp = {
   labels: [],
   datasets: [
     {
       label: "%",
       backgroundColor: chartColors,
-      data: [20, 40, 20],
+      data: [],
     },
   ],
 };
-chartDataTmp.labels = pollItemData.map((item) => item.TEXT);
-chartDataTmp.datasets[0].data = pollItemData.map((item) => item.PROCENT);
+chartDataTmp.labels = reduceData.map((item) => item.name);
+chartDataTmp.datasets[0].data = reduceData.map((item) => item.precent);
 
 const selectedVisualType = ref("doughnutChart");
 const visualTypes = [

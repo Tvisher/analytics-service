@@ -44,11 +44,12 @@ const props = defineProps({
   chartData: Object,
 });
 
-const chartData = props.chartData;
+const chartData = JSON.parse(JSON.stringify(props.chartData));
 const chartDataFixed = {
   datasets: chartData.datasets,
   labels: chartData.labels.map((item, i) => `Ответ № ${i + 1}`),
 };
+chartDataFixed.datasets[0].minBarLength = 25;
 const chartDataColors = chartData.datasets[0].backgroundColor;
 const chartDataLabels = chartData.labels;
 

@@ -66,7 +66,6 @@ const props = defineProps({
   data: Object,
 });
 const userAnswers = props.data.ANSWERS.USER_ANSWER;
-console.log(userAnswers);
 const answers = props.data.VARIANTS.map((item) => {
   return {
     id: item.UF_ID_VARIANT,

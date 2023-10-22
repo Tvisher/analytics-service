@@ -29,11 +29,30 @@ const props = defineProps({
   chartData: Object,
 });
 
-const chartData = props.chartData;
+const chartData = JSON.parse(JSON.stringify(props.chartData));
 const chartDataFixed = {
   datasets: chartData.datasets,
   labels: chartData.labels.map((item, i) => `Ответ № ${i + 1}`),
 };
+
+chartDataFixed.datasets[0].data = chartDataFixed.datasets[0].data.map(
+  (item) => {
+    let formatterValue;
+    let value;
+    if (item == 0) {
+      formatterValue = 0;
+      value = 5;
+    } else if (item < 5) {
+      formatterValue = item;
+      value = 5;
+    } else {
+      formatterValue = item;
+      value = item;
+    }
+    return { formatterValue, nested: { value } };
+  }
+);
+
 const chartDataColors = chartData.datasets[0].backgroundColor;
 const chartDataLabels = chartData.labels;
 
@@ -48,7 +67,9 @@ const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
   cutout: "65%",
-
+  parsing: {
+    key: "nested.value",
+  },
   plugins: {
     legend: {
       display: false,
@@ -61,7 +82,7 @@ const chartOptions = {
         size: 18,
       },
       formatter: (value) => {
-        return value + "%";
+        return value.formatterValue + "%";
       },
     },
     tooltip: {
@@ -69,7 +90,6 @@ const chartOptions = {
       backgroundColor: "rgba(255, 255, 255, 0.80)",
       borderColor: "#C2CFE0",
       borderWidth: 1,
-
       titleFont: { size: 0 },
       titleMarginBottom: 0,
       titleSpacing: 0,
