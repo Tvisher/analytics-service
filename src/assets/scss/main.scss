@@ -1,13 +1,16 @@
 @import "./reset";
 // @import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600;700;800&display=swap");
 @import "vue-select/dist/vue-select.css";
+
+$mainColor: #fa0056;
+
 #app {
   font-family: Montserrat;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .fade-enter-from,
@@ -15,7 +18,35 @@
   opacity: 0;
 }
 
+.fade-page-enter-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-page-leave-active {
+  transition: opacity 0s ease-in-out;
+}
+
+.fade-page-enter-from,
+.fade-page-leave-to {
+  opacity: 0;
+}
+
+.drop-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+.drop-enter-active {
+  transition: all 0.5s ease-in-out;
+}
+.drop-enter-from {
+  transform: translateY(-26px);
+  opacity: 0;
+}
+.drop-leave-to {
+  transform: translateY(26px);
+  opacity: 0;
+}
+
 .statistic-container {
+  will-change: opacity;
   padding: 30px 20px 100px 20px;
   max-width: 1240px;
   margin: auto;
@@ -211,6 +242,8 @@
 }
 
 .statistic-body {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   background: #ecf4ff;
   border-radius: 8px;
@@ -528,4 +561,42 @@
   &[data-btn="share"] {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='26' viewBox='0 0 20 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.59999 15.5256C5.03593 15.5256 6.2 14.3951 6.2 13.0006C6.2 11.6061 5.03593 10.4756 3.59999 10.4756C2.16405 10.4756 1 11.6061 1 13.0006C1 14.3951 2.16405 15.5256 3.59999 15.5256Z' stroke='%23FA0056' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M16.1998 6.75019C17.5943 6.75019 18.7248 5.6197 18.7248 4.22518C18.7248 2.83066 17.5943 1.7002 16.1998 1.7002C14.8053 1.7002 13.6748 2.83066 13.6748 4.22518C13.6748 5.6197 14.8053 6.75019 16.1998 6.75019Z' stroke='%23FA0056' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M16.1998 24.3C17.5943 24.3 18.7248 23.1695 18.7248 21.775C18.7248 20.3805 17.5943 19.25 16.1998 19.25C14.8053 19.25 13.6748 20.3805 13.6748 21.775C13.6748 23.1695 14.8053 24.3 16.1998 24.3Z' stroke='%23FA0056' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M6.3999 11.0498L13.3999 6.1748' stroke='%23FA0056' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M13.3999 19.8252L6.3999 14.9502' stroke='%23FA0056' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
   }
+}
+
+.dp__input_wrap .dp__input_icon {
+  display: none;
+}
+
+.dp__active_date,
+.dp__range_end,
+.dp__range_start,
+.dp__active_date,
+.dp__overlay_cell_active {
+  background-color: $mainColor !important;
+}
+.dp__range_between {
+  border-radius: 0% !important;
+}
+.dp__range_start {
+  border-radius: 50% 0% 0% 50% !important;
+}
+.dp__range_end {
+  border-radius: 0% 50% 50% 0% !important;
+}
+.dp__cell_inner {
+  border-radius: 50%;
+}
+.dp__today {
+  border-color: $mainColor !important;
+}
+.dp__menu_inner {
+  padding: 30px;
+}
+
+.dp__calendar_header_item {
+  color: rgba(0, 32, 51, 0.3);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 13px */
 }

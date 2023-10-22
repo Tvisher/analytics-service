@@ -42,7 +42,11 @@ const props = defineProps({
 });
 const userAnswers = props.data.ANSWERS.USER_ANSWER;
 
-const reduceData = props.data.VARIANTS.reduce((acc, item) => {
+const defaultVariants = Array.isArray(props.data.VARIANTS)
+  ? props.data.VARIANTS
+  : Object.values(props.data.VARIANTS);
+
+const reduceData = defaultVariants.reduce((acc, item) => {
   const userAnswerItem = userAnswers[item.UF_ID_VARIANT];
   const precent = userAnswerItem ? userAnswerItem.PROCENT : 0;
   const answerCount = userAnswerItem ? userAnswerItem.COUNT_ANSWER : 0;

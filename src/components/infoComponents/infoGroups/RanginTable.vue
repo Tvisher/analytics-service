@@ -66,7 +66,12 @@ const props = defineProps({
   data: Object,
 });
 const userAnswers = props.data.ANSWERS.USER_ANSWER;
-const answers = props.data.VARIANTS.map((item) => {
+
+const defaultVariants = Array.isArray(props.data.VARIANTS)
+  ? props.data.VARIANTS
+  : Object.values(props.data.VARIANTS);
+
+const answers = defaultVariants.map((item) => {
   return {
     id: item.UF_ID_VARIANT,
     name: item.UF_VARIANT_VALUE,

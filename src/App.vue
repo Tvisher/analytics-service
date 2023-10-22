@@ -1,9 +1,11 @@
 <template>
-  <div class="statistic-container" v-if="appLoaded">
-    <h1 class="statistic-title">Аналитика</h1>
-    <TheStatisticHead />
-    <TheStatisticBody />
-  </div>
+  <transition name="fade">
+    <div class="statistic-container" v-if="appLoaded">
+      <h1 class="statistic-title">Аналитика</h1>
+      <TheStatisticHead />
+      <TheStatisticBody />
+    </div>
+  </transition>
 </template>
 
 <script setup>
@@ -32,4 +34,4 @@ onMounted(() => {
 });
 </script>
 
-<style scoped></style>
+<style></style>

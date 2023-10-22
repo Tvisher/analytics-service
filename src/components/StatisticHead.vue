@@ -99,7 +99,6 @@ const pollTypeText = computed(() => {
     str = "Викторина ";
     pollStatus.value ? (str += "открыта") : (str += "закрыта");
   }
-  console.log(str);
   return str;
 });
 
@@ -110,9 +109,11 @@ const questionsCountText = computed(() =>
   chooseWord(questionsCount.value, ["вопрос", "вопроса", "вопросов"])
 );
 const middleTimeFixed = computed(() => {
+  let str;
   const minText = middleTime.value.MIN ? `${middleTime.value.MIN} мин. ` : "";
   const secText = middleTime.value.SEC ? `${middleTime.value.SEC} сек. ` : "";
-  return minText + secText;
+  str = minText + secText;
+  return str.length > 0 ? str : "Нет данных";
 });
 
 function chooseWord(number, wordForms) {

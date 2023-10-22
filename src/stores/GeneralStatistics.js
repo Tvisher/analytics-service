@@ -55,7 +55,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         pollCreateDate.value = data.DATE_CREAT;
         pollType.value = data.TYPE;
         pagesGeneralData.value = data.RESULTS.QUESTION;
-        appHasPagesGeneralData.value = data.RESULTS.QUESTION.length > 0
+        appHasPagesGeneralData.value = data.RESULTS.QUESTION[0].length > 0
     };
     const getAppData = async (timeFilter) => {
         return new Promise((resolve, reject) => {

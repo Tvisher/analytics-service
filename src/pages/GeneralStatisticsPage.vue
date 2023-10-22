@@ -1,12 +1,16 @@
 <template>
   <template v-if="appHasPagesGeneralData">
     <AppPagesPagination />
-    <AppPollItemStatistic
-      v-for="(pollItemData, index) in currentPagePollItemsData"
-      :data="pollItemData"
-      :indexNumber="index + 1"
-      :key="pollItemData.ID"
-    />
+    <transition name="drop" mode="out-in">
+      <div :key="currentPagePollItemsData">
+        <AppPollItemStatistic
+          v-for="(pollItemData, index) in currentPagePollItemsData"
+          :data="pollItemData"
+          :indexNumber="index + 1"
+          :key="pollItemData.ID"
+        />
+      </div>
+    </transition>
   </template>
   <h2 class="zero-data-title" v-else>За указанный период нет данных</h2>
 </template>
@@ -25,6 +29,6 @@ const { appHasPagesGeneralData } = storeToRefs(generalStatisticsStore);
 <style lang="scss">
 .zero-data-title {
   text-align: center;
-  padding-top: 20px;
+  margin: auto;
 }
 </style>

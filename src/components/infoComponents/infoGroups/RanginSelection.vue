@@ -1,5 +1,9 @@
 <template>
-  <AppRangeBlock :data="averageData" :title="'Общее среднее значение'" />
+  <AppRangeBlock
+    :data="averageData"
+    :title="'Общее среднее значение'"
+    :hasData="true"
+  />
   <div class="poll-item__visual-variants">
     <button
       class="visual-variant"
@@ -13,18 +17,29 @@
   </div>
   <div class="range-slider-blocks" v-if="selectedVisualType !== 'only-general'">
     <AppRangeBlock
+      v-if="selectedDataArrLength"
       v-for="(singleData, index) in selectedDataArr"
       :data="singleData"
       :key="index"
       :title="`Значение ${index + 1}`"
     />
+    <div v-else class="range-slider-info">
+      Для отображения детальной статистики необходимо больше данных от
+      респондентов
+    </div>
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import AppRangeBlock from "@/components/infoComponents/RangeBlock.vue";
+
+const props = defineProps({
+  data: Object,
+});
+
 const selectedVisualType = ref("only-general");
 const selectedDataArr = ref([]);
+const selectedDataArrLength = computed(() => selectedDataArr.value.length > 1);
 
 const visualTypes = [
   {
@@ -41,6 +56,38 @@ const visualTypes = [
   },
 ];
 
+const defaultMin = props.data.PARAMS.GENERAL_RANGE_START;
+const defaultMax = props.data.PARAMS.GENERAL_RANGE_END;
+const userSelectMin = props.data.ANSWERS.GEN_START_RANGE;
+const userSelectMax = props.data.ANSWERS.GEN_END_RANGE;
+const tableCount = props.data.ANSWERS.GEN_COUNT_ANSW;
+const averageData = {
+  userSelect: [userSelectMin, userSelectMax],
+  min: defaultMin,
+  max: defaultMax,
+  tablePrecent: 100,
+  tableCount,
+};
+const fiveDataArr = Object.values(props.data.ANSWERS.RANGE5).map((item) => {
+  return {
+    userSelect: [item.START, item.END],
+    min: item.START_SCALE,
+    max: item.END_SCALE,
+    tableCount: item.COUNT_ANSW,
+    tablePrecent: item.PROC,
+  };
+});
+
+const tenDataArr = Object.values(props.data.ANSWERS.RANGE10).map((item) => {
+  return {
+    userSelect: [item.START, item.END],
+    min: item.START_SCALE,
+    max: item.END_SCALE,
+    tableCount: item.COUNT_ANSW,
+    tablePrecent: item.PROC,
+  };
+});
+
 const selectVisualType = (type) => {
   selectedVisualType.value = type;
   if (type === "five-row-data") {
@@ -50,97 +97,15 @@ const selectVisualType = (type) => {
     selectedDataArr.value = tenDataArr;
   }
 };
-
-const averageData = {
-  userSelect: [100, 200],
-  min: 10,
-  max: 250,
-};
-
-const fiveDataArr = [
-  {
-    userSelect: [90, 140],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [120, 210],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [100, 200],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [120, 210],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [100, 200],
-    min: 10,
-    max: 250,
-  },
-];
-
-const tenDataArr = [
-  {
-    userSelect: [120, 210],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [100, 200],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [90, 140],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [120, 210],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [100, 200],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [120, 210],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [100, 200],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [90, 140],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [120, 210],
-    min: 10,
-    max: 250,
-  },
-  {
-    userSelect: [100, 200],
-    min: 10,
-    max: 250,
-  },
-];
 </script>
 
 <style src="@vueform/slider/themes/default.css"></style>
 <style lang="scss">
+.range-slider-info {
+  padding: 10px 0;
+  font-size: 22px;
+  text-align: center;
+}
 .range-slider-visual {
   width: 100%;
   position: relative;

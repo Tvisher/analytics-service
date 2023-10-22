@@ -21,8 +21,8 @@
         <div class="info-row__item">Проценты</div>
       </div>
       <div class="info-row">
-        <div class="info-row__item">434</div>
-        <div class="info-row__item">100%</div>
+        <div class="info-row__item">{{ data.tableCount }}</div>
+        <div class="info-row__item">{{ data.tablePrecent }} %</div>
       </div>
     </div>
   </div>

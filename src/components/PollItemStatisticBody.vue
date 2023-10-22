@@ -7,7 +7,10 @@
     v-if="props.data.UF_QUESTION_TYPE == 'ranging'"
     :data="props.data"
   />
-  <!-- <AppRanginSelection /> -->
+  <AppRanginSelection
+    v-if="props.data.UF_QUESTION_TYPE == 'range-selection'"
+    :data="props.data"
+  />
   <!-- <AppCustomFieldsTable /> -->
 </template>
 
