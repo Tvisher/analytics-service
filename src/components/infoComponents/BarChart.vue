@@ -9,10 +9,9 @@
         v-for="(charLabel, index) in chartDataTextListWithColors"
         :key="index"
       >
-        <div
-          class="color-label"
-          :style="{ backgroundColor: charLabel.color }"
-        ></div>
+        <div class="color-label" :style="{ backgroundColor: charLabel.color }">
+          {{ index + 1 }}
+        </div>
         <p class="item-text">{{ charLabel.label }}</p>
       </div>
     </div>
@@ -49,7 +48,8 @@ const chartDataFixed = {
   datasets: chartData.datasets,
   labels: chartData.labels.map((item, i) => `Ответ № ${i + 1}`),
 };
-chartDataFixed.datasets[0].minBarLength = 25;
+chartDataFixed.datasets[0].minBarLength = 20;
+chartDataFixed.datasets[0].borderRadius = 4;
 const chartDataColors = chartData.datasets[0].backgroundColor;
 const chartDataLabels = chartData.labels;
 
@@ -60,14 +60,30 @@ const chartDataTextListWithColors = chartDataLabels.map((label, index) => {
   };
 });
 
+const maxLabelValue = Math.round(Math.max(...chartData.datasets[0].data));
+// let maxCharYValue = 100;
+
+// if (maxLabelValue <= 20) {
+//   maxCharYValue = 20;
+// } else if (maxLabelValue <= 40) {
+//   maxCharYValue = 40;
+// } else if (maxLabelValue <= 60) {
+//   maxCharYValue = 60;
+// } else if (maxLabelValue <= 80) {
+//   maxCharYValue = 80;
+// } else if (maxLabelValue <= 100) {
+//   maxCharYValue = 100;
+// }
+const maxCharYValue = Math.ceil(maxLabelValue / 20) * 20;
+
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
-  minHeight: 500, // Устанавливаем минимальную высоту в 200 пикселей
+  minHeight: 500,
   scales: {
     y: {
       min: 0,
-      max: 100,
+      max: maxCharYValue,
       grid: {
         color: "#C2CFE0",
       },
@@ -96,7 +112,7 @@ const chartOptions = {
       align: "center",
       color: "#fff",
       font: {
-        size: 18,
+        size: 14,
       },
       formatter: (value) => {
         return value + "%";
@@ -108,7 +124,6 @@ const chartOptions = {
       backgroundColor: "rgba(255, 255, 255, 0.80)",
       borderColor: "#C2CFE0",
       borderWidth: 1,
-
       titleFont: { size: 0 },
       titleMarginBottom: 0,
       titleSpacing: 0,

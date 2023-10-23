@@ -2,9 +2,9 @@
   <AppShowBySelect />
   <div class="custom-table">
     <div class="custom-table__row head-row">
-      <div class="custom-table__col">Имя</div>
-      <div class="custom-table__col">Фамилия</div>
-      <div class="custom-table__col">Телефон</div>
+      <div class="custom-table__col" v-for="tableHadItem in tableHeadData">
+        {{ tableHadItem }}
+      </div>
     </div>
     <div class="custom-table__row">
       <div class="custom-table__col">Артур</div>
@@ -35,6 +35,12 @@
 </template>
 <script setup>
 import AppShowBySelect from "@/components/ShowBySelect.vue";
+
+const props = defineProps({
+  data: Object,
+});
+
+const tableHeadData = props.data.VARIANTS.map((item) => item.UF_VARIANT_VALUE);
 </script>
 
 <style lang="scss">

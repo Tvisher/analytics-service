@@ -9,10 +9,9 @@
         v-for="(charLabel, index) in chartDataTextListWithColors"
         :key="index"
       >
-        <div
-          class="color-label"
-          :style="{ backgroundColor: charLabel.color }"
-        ></div>
+        <div class="color-label" :style="{ backgroundColor: charLabel.color }">
+          {{ index + 1 }}
+        </div>
         <p class="item-text">{{ charLabel.label }}</p>
       </div>
     </div>
@@ -79,7 +78,7 @@ const chartOptions = {
       align: "center",
       color: "#fff",
       font: {
-        size: 18,
+        size: 16,
       },
       formatter: (value) => {
         return value.formatterValue + "%";

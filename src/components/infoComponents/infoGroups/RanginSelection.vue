@@ -39,7 +39,7 @@ const props = defineProps({
 
 const selectedVisualType = ref("only-general");
 const selectedDataArr = ref([]);
-const selectedDataArrLength = computed(() => selectedDataArr.value.length > 1);
+const selectedDataArrLength = computed(() => selectedDataArr.value.length > 0);
 
 const visualTypes = [
   {

@@ -11,7 +11,10 @@
     v-if="props.data.UF_QUESTION_TYPE == 'range-selection'"
     :data="props.data"
   />
-  <!-- <AppCustomFieldsTable /> -->
+  <AppCustomFieldsTable
+    v-if="props.data.UF_QUESTION_TYPE == 'custom-fields'"
+    :data="props.data"
+  />
 </template>
 
 <script setup>
@@ -19,8 +22,6 @@ import AppChartsAndTable from "@/components/infoComponents/infoGroups/ChartsAndT
 import AppRanginTable from "@/components/infoComponents/infoGroups/RanginTable.vue";
 import AppRanginSelection from "@/components/infoComponents/infoGroups/RanginSelection.vue";
 import AppCustomFieldsTable from "@/components/infoComponents/infoGroups/CustomFieldsTable.vue";
-
-import { ref, computed } from "vue";
 
 const props = defineProps({
   data: Object,

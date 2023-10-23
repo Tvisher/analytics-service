@@ -323,10 +323,10 @@ $mainColor: #fa0056;
   }
 }
 .char-container {
-  height: 530px;
-  &.doughnut-container {
-    height: 360px;
-  }
+  // height: 530px;
+  // &.doughnut-container {
+  height: 360px;
+  // }
 }
 .info-char-wrapper {
   margin: 30px 0;
@@ -342,10 +342,18 @@ $mainColor: #fa0056;
   display: flex;
   align-items: flex-start;
   .color-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
     width: 24px;
     height: 24px;
     flex-shrink: 0;
     margin-right: 10px;
+    border-radius: 4px;
   }
   .item-text {
     display: block;

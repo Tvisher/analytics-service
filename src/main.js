@@ -2,9 +2,9 @@ import { createPinia } from 'pinia'
 import { createApp, h } from 'vue'
 import router from "@/router/router";
 
-
 import "@/assets/scss/main.scss";
 import App from './App.vue'
+
 
 
 
