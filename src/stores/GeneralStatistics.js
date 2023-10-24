@@ -11,10 +11,10 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         "#FA0056",
         "#A72179",
         "#8DBA21",
-        "#FAED8F",
+        "#FF886D",
         "#FF3319",
         "#B85E00",
-        "#FFE600",
+        "#27C8B4",
         "#FF8C00",
         "#4F8FE6",
         "#9C52F2"];

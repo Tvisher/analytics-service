@@ -29,7 +29,7 @@
           <div class="answer-item__hidden-block">
             <div
               class="answer-item__row"
-              v-for="(innerAnswer, index) in answers"
+              v-for="(innerAnswer, index) in answer.dataForTable"
               :key="innerAnswer.id"
             >
               <div class="row-item">{{ index + 1 }}</div>
@@ -37,9 +37,9 @@
                 class="row-item correct"
                 :class="innerAnswer.id == answer.id ? 'correct' : 'uncorrect'"
               ></div>
-              <div class="row-item">{{ innerAnswer.name }}</div>
-              <div class="row-item">{{ innerAnswer.count }}</div>
-              <div class="row-item">{{ innerAnswer.precent }} %</div>
+              <div class="row-item">{{ innerAnswer.TEXT }}</div>
+              <div class="row-item">{{ innerAnswer.COUNT_ANSWER }}</div>
+              <div class="row-item">{{ innerAnswer.PROC }} %</div>
             </div>
           </div>
         </Vue3SlideUpDown>
@@ -65,18 +65,30 @@ import { Vue3SlideUpDown } from "vue3-slide-up-down";
 const props = defineProps({
   data: Object,
 });
-const userAnswers = props.data.ANSWERS.USER_ANSWER;
+const propsData = JSON.parse(JSON.stringify(props.data));
+const userAnswers = propsData.ANSWERS.USER_ANSWER;
 
-const defaultVariants = Array.isArray(props.data.VARIANTS)
-  ? props.data.VARIANTS
-  : Object.values(props.data.VARIANTS);
+const defaultVariants = Array.isArray(propsData.VARIANTS)
+  ? propsData.VARIANTS
+  : Object.values(propsData.VARIANTS);
 
 const answers = defaultVariants.map((item) => {
+  const incorrectData = userAnswers[item.UF_ID_VARIANT].INCORRECT;
+  const dataForTable = defaultVariants.map((variantItem) => {
+    const incorrectItemID = variantItem.UF_ID_VARIANT;
+    const res = incorrectData[incorrectItemID]
+      ? incorrectData[incorrectItemID]
+      : userAnswers[incorrectItemID];
+    res.id = incorrectItemID;
+    return res;
+  });
+
   return {
     id: item.UF_ID_VARIANT,
     name: item.UF_VARIANT_VALUE,
     count: userAnswers[item.UF_ID_VARIANT].COUNT_ANSWER,
-    precent: userAnswers[item.UF_ID_VARIANT].PROCENT,
+    precent: userAnswers[item.UF_ID_VARIANT].PROC,
+    dataForTable,
   };
 });
 

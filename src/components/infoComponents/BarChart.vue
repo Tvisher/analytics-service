@@ -61,19 +61,6 @@ const chartDataTextListWithColors = chartDataLabels.map((label, index) => {
 });
 
 const maxLabelValue = Math.round(Math.max(...chartData.datasets[0].data));
-// let maxCharYValue = 100;
-
-// if (maxLabelValue <= 20) {
-//   maxCharYValue = 20;
-// } else if (maxLabelValue <= 40) {
-//   maxCharYValue = 40;
-// } else if (maxLabelValue <= 60) {
-//   maxCharYValue = 60;
-// } else if (maxLabelValue <= 80) {
-//   maxCharYValue = 80;
-// } else if (maxLabelValue <= 100) {
-//   maxCharYValue = 100;
-// }
 const maxCharYValue = Math.ceil(maxLabelValue / 20) * 20;
 
 const chartOptions = {
