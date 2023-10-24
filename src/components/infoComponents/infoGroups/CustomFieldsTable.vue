@@ -35,7 +35,10 @@ const props = defineProps({
 });
 const dataForTable = ref([]);
 const selectedRowCount = ref(10);
-const tableHeadData = props.data.VARIANTS.map((item) => item.UF_VARIANT_VALUE);
+const defaultVariants = Array.isArray(props.data.VARIANTS)
+  ? props.data.VARIANTS
+  : Object.values(props.data.VARIANTS);
+const tableHeadData = defaultVariants.map((item) => item.UF_VARIANT_VALUE);
 
 const allUserAnswers = JSON.parse(
   JSON.stringify(currenCustomFieldsData(props.data.UF_ID_QUESTION).value)
