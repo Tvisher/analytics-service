@@ -15,6 +15,10 @@
     v-if="props.data.UF_QUESTION_TYPE == 'custom-fields'"
     :data="props.data"
   />
+  <AppDateTable
+    v-if="props.data.UF_QUESTION_TYPE == 'date'"
+    :data="props.data"
+  />
 </template>
 
 <script setup>
@@ -22,6 +26,7 @@ import AppChartsAndTable from "@/components/infoComponents/infoGroups/ChartsAndT
 import AppRanginTable from "@/components/infoComponents/infoGroups/RanginTable.vue";
 import AppRanginSelection from "@/components/infoComponents/infoGroups/RanginSelection.vue";
 import AppCustomFieldsTable from "@/components/infoComponents/infoGroups/CustomFieldsTable.vue";
+import AppDateTable from "@/components/infoComponents/infoGroups/DateTable.vue";
 
 const props = defineProps({
   data: Object,

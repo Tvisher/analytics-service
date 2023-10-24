@@ -72,22 +72,39 @@ const defaultVariants = Array.isArray(propsData.VARIANTS)
   ? propsData.VARIANTS
   : Object.values(propsData.VARIANTS);
 
+// const answers = defaultVariants.map((item) => {
+//   const incorrectData = userAnswers[item.UF_ID_VARIANT].INCORRECT;
+//   const dataForTable = defaultVariants.map((variantItem) => {
+//     const incorrectItemID = variantItem.UF_ID_VARIANT;
+//     const res = incorrectData[incorrectItemID]
+//       ? incorrectData[incorrectItemID]
+//       : userAnswers[incorrectItemID];
+//     res.id = incorrectItemID;
+//     return res;
+//   });
+
+//   return {
+//     id: item.UF_ID_VARIANT,
+//     name: item.UF_VARIANT_VALUE,
+//     count: userAnswers[item.UF_ID_VARIANT].COUNT_ANSWER,
+//     precent: userAnswers[item.UF_ID_VARIANT].PROC,
+//     dataForTable,
+//   };
+// });
 const answers = defaultVariants.map((item) => {
-  const incorrectData = userAnswers[item.UF_ID_VARIANT].INCORRECT;
+  const { UF_ID_VARIANT, UF_VARIANT_VALUE } = item;
+  const { COUNT_ANSWER, PROC, INCORRECT } = userAnswers[UF_ID_VARIANT];
   const dataForTable = defaultVariants.map((variantItem) => {
     const incorrectItemID = variantItem.UF_ID_VARIANT;
-    const res = incorrectData[incorrectItemID]
-      ? incorrectData[incorrectItemID]
-      : userAnswers[incorrectItemID];
-    res.id = incorrectItemID;
-    return res;
+    const res = INCORRECT[incorrectItemID] || userAnswers[incorrectItemID];
+    return { ...res, id: incorrectItemID };
   });
 
   return {
-    id: item.UF_ID_VARIANT,
-    name: item.UF_VARIANT_VALUE,
-    count: userAnswers[item.UF_ID_VARIANT].COUNT_ANSWER,
-    precent: userAnswers[item.UF_ID_VARIANT].PROC,
+    id: UF_ID_VARIANT,
+    name: UF_VARIANT_VALUE,
+    count: COUNT_ANSWER,
+    precent: PROC,
     dataForTable,
   };
 });

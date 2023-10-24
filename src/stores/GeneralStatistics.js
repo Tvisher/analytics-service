@@ -40,6 +40,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
 
 
     const currentPagePollItemsData = computed(() => pagesGeneralData.value[currentPageIndex.value]);
+
     const changeDateFilter = (newDateFilter) => dateFilterData.value = newDateFilter;
     const setCurrentPage = (index) => currentPageIndex.value = index;
     const setApplicationData = (response) => {
@@ -55,7 +56,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         pollCreateDate.value = data.DATE_CREAT;
         pollType.value = data.TYPE;
         pagesGeneralData.value = data.RESULTS.QUESTION;
-        appHasPagesGeneralData.value = data.RESULTS.QUESTION[0].length > 0
+        appHasPagesGeneralData.value = data.TYPE == 'опрос' ? data.RESULTS.QUESTION.length > 0 : data.RESULTS.QUESTION[0].length > 0
     };
     const getAppData = async (timeFilter) => {
         return new Promise((resolve, reject) => {

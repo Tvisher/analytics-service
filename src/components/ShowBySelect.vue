@@ -8,9 +8,21 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-const options = [{ label: 10 }, { label: 40 }, { label: 60 }, { label: 100 }];
+import { ref, watch, defineEmits } from "vue";
+const emit = defineEmits(["selectCountToShow"]);
+const options = [
+  { label: 10 },
+  { label: 20 },
+  { label: 40 },
+  { label: 60 },
+  { label: 100 },
+  { label: "Все" },
+];
 const selectedValue = ref(options[0]);
+
+watch(selectedValue, (newVal) => {
+  emit("selectCountToShow", newVal.label);
+});
 </script>
 <style lang="scss">
 .show-by-wrapper {
