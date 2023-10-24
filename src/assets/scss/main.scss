@@ -623,10 +623,6 @@ $mainColor: #fa0056;
   &:not(:last-child) {
     border-bottom: 1px solid #c2cfe0;
   }
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  padding: 10px 20px;
   color: #000;
   font-size: 18px;
   font-style: normal;
@@ -641,17 +637,26 @@ $mainColor: #fa0056;
   }
 }
 .custom-table__col {
+  padding: 10px;
   padding-right: 20px;
-  width: 200px;
-  flex-shrink: 0;
+  width: 250px;
+  word-wrap: break-word;
 }
-
 .custom-table {
-  overflow: auto;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  table-layout: fixed;
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.custom-table__wrapper {
   border: 1px solid #c2cfe0;
+  border-radius: 8px;
   padding: 20px 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: auto;
   /* полоса прокрутки (скроллбар) */
   &::-webkit-scrollbar {
     width: 10px;

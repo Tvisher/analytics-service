@@ -6,16 +6,16 @@
     "PAGES": 3,
     "QUESTION_COUNT": 11,
     "DATE_CREAT": "21.10.2023",
-    "RESPONDENT": 9,
+    "RESPONDENT": 12,
     "MIDDLE_TIME": {
       "MIN": 1,
-      "SEC": 23
+      "SEC": 50
     },
     "UNFINISH": 1,
     "ACTIVE": true,
     "RESULTS": {
       "FORMS": {
-        "UF_ID_QUESTION": [
+        "74897d3a-8593-47b4-ac86-886938362652": [
           [
             [
               {
@@ -59,19 +59,6 @@
           [
             [
               {
-                "ID": "193",
-                "UF_ID_QUESTION": "891",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Какой то текст",
-                "UF_FILED_ANSWER": "hteraqhrtwj",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          [
-            [
-              {
                 "ID": "199",
                 "UF_ID_QUESTION": "906",
                 "UF_ID_FIELD": "1",
@@ -104,19 +91,6 @@
                 "UF_ID_FIELD": "83d3da5c-7021-4cf1-84e1-7b157c0b7c23",
                 "UF_ID_TYPE_FIELD": "textarea",
                 "UF_VALUE_FIELD": "О себе",
-                "UF_FILED_ANSWER": "123",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "ID": "203",
-                "UF_ID_QUESTION": "908",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Какой то текст",
                 "UF_FILED_ANSWER": "123",
                 "UF_FIELD_FILLED": "true"
               }
@@ -165,19 +139,6 @@
           [
             [
               {
-                "ID": "208",
-                "UF_ID_QUESTION": "919",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Какой то текст",
-                "UF_FILED_ANSWER": "Ghh",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          [
-            [
-              {
                 "ID": "209",
                 "UF_ID_QUESTION": "928",
                 "UF_ID_FIELD": "1",
@@ -211,19 +172,6 @@
                 "UF_ID_TYPE_FIELD": "textarea",
                 "UF_VALUE_FIELD": "О себе",
                 "UF_FILED_ANSWER": "торпльывтпярмиовоариарявтаис",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "ID": "213",
-                "UF_ID_QUESTION": "930",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Какой то текст",
-                "UF_FILED_ANSWER": "апиапрпыпвротрыевач",
                 "UF_FIELD_FILLED": "true"
               }
             ]
@@ -271,19 +219,6 @@
           [
             [
               {
-                "ID": "218",
-                "UF_ID_QUESTION": "941",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Какой то текст",
-                "UF_FILED_ANSWER": "3212323",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          [
-            [
-              {
                 "ID": "219",
                 "UF_ID_QUESTION": "950",
                 "UF_ID_FIELD": "1",
@@ -317,19 +252,6 @@
                 "UF_ID_TYPE_FIELD": "textarea",
                 "UF_VALUE_FIELD": "О себе",
                 "UF_FILED_ANSWER": "312313132",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "ID": "223",
-                "UF_ID_QUESTION": "952",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Какой то текст",
-                "UF_FILED_ANSWER": "eeeee",
                 "UF_FIELD_FILLED": "true"
               }
             ]
@@ -377,19 +299,6 @@
           [
             [
               {
-                "ID": "228",
-                "UF_ID_QUESTION": "963",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Какой то текст",
-                "UF_FILED_ANSWER": "Хоп лалей лалей",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          [
-            [
-              {
                 "ID": "229",
                 "UF_ID_QUESTION": "972",
                 "UF_ID_FIELD": "1",
@@ -430,12 +339,264 @@
           [
             [
               {
+                "ID": "234",
+                "UF_ID_QUESTION": "983",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "Имя",
+                "UF_FILED_ANSWER": "Иван",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "235",
+                "UF_ID_QUESTION": "983",
+                "UF_ID_FIELD": "6fb8cbae-6469-4a35-b88a-1913787996ce",
+                "UF_ID_TYPE_FIELD": "phone",
+                "UF_VALUE_FIELD": "Телефон",
+                "UF_FILED_ANSWER": "+7(111)111-11-11",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "236",
+                "UF_ID_QUESTION": "983",
+                "UF_ID_FIELD": "1644355f-2818-4b3f-b333-f7b29f4b7f68",
+                "UF_ID_TYPE_FIELD": "email",
+                "UF_VALUE_FIELD": "Почта",
+                "UF_FILED_ANSWER": "textEmail@mail.ru",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "237",
+                "UF_ID_QUESTION": "983",
+                "UF_ID_FIELD": "83d3da5c-7021-4cf1-84e1-7b157c0b7c23",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "О себе",
+                "UF_FILED_ANSWER": "О себе немного текста",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "239",
+                "UF_ID_QUESTION": "994",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "Имя",
+                "UF_FILED_ANSWER": "ygvyuvutyi",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "240",
+                "UF_ID_QUESTION": "994",
+                "UF_ID_FIELD": "6fb8cbae-6469-4a35-b88a-1913787996ce",
+                "UF_ID_TYPE_FIELD": "phone",
+                "UF_VALUE_FIELD": "Телефон",
+                "UF_FILED_ANSWER": "+7(555)555-55-55",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "241",
+                "UF_ID_QUESTION": "994",
+                "UF_ID_FIELD": "1644355f-2818-4b3f-b333-f7b29f4b7f68",
+                "UF_ID_TYPE_FIELD": "email",
+                "UF_VALUE_FIELD": "Почта",
+                "UF_FILED_ANSWER": "ya@ya.ru",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "242",
+                "UF_ID_QUESTION": "994",
+                "UF_ID_FIELD": "83d3da5c-7021-4cf1-84e1-7b157c0b7c23",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "О себе",
+                "UF_FILED_ANSWER": "132424",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "244",
+                "UF_ID_QUESTION": "1005",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "Имя",
+                "UF_FILED_ANSWER": "111111111111",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "245",
+                "UF_ID_QUESTION": "1005",
+                "UF_ID_FIELD": "6fb8cbae-6469-4a35-b88a-1913787996ce",
+                "UF_ID_TYPE_FIELD": "phone",
+                "UF_VALUE_FIELD": "Телефон",
+                "UF_FILED_ANSWER": "+7(222)222-22-22",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "246",
+                "UF_ID_QUESTION": "1005",
+                "UF_ID_FIELD": "1644355f-2818-4b3f-b333-f7b29f4b7f68",
+                "UF_ID_TYPE_FIELD": "email",
+                "UF_VALUE_FIELD": "Почта",
+                "UF_FILED_ANSWER": "3333333@deddd.ru",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "247",
+                "UF_ID_QUESTION": "1005",
+                "UF_ID_FIELD": "83d3da5c-7021-4cf1-84e1-7b157c0b7c23",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "О себе",
+                "UF_FILED_ANSWER": "mtytyjkruyuyfj kkk",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ]
+        ],
+        "d95a7dff-fadc-40f6-857b-1a00b78e7bba": [
+          [
+            [
+              {
+                "ID": "193",
+                "UF_ID_QUESTION": "891",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "hteraqhrtwj",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "203",
+                "UF_ID_QUESTION": "908",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "123",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "208",
+                "UF_ID_QUESTION": "919",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "Ghh",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "213",
+                "UF_ID_QUESTION": "930",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "апиапрпыпвротрыевач",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "218",
+                "UF_ID_QUESTION": "941",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "3212323",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "223",
+                "UF_ID_QUESTION": "952",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "eeeee",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "228",
+                "UF_ID_QUESTION": "963",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "Хоп лалей лалей",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
                 "ID": "233",
                 "UF_ID_QUESTION": "974",
                 "UF_ID_FIELD": "1",
                 "UF_ID_TYPE_FIELD": "textarea",
                 "UF_VALUE_FIELD": "Какой то текст",
                 "UF_FILED_ANSWER": "Test",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "238",
+                "UF_ID_QUESTION": "985",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "Кастомные поля страница 3 текст",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "243",
+                "UF_ID_QUESTION": "996",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "gyf",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "ID": "248",
+                "UF_ID_QUESTION": "1007",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Какой то текст",
+                "UF_FILED_ANSWER": "qwert",
                 "UF_FIELD_FILLED": "true"
               }
             ]
@@ -535,37 +696,42 @@
                 "1": {
                   "TEXT": "Одиночный выбор страница 1 ответ 1",
                   "COUNT_ANSWER": 2,
-                  "PROCENT": 25
+                  "PROCENT": 18.2
                 },
                 "21d8706d-eb70-4bd7-a005-d92c8def2f1f": {
                   "TEXT": "Одиночный выбор страница 1 ответ 7",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 "59264800-5cc8-47d1-b44e-4ec305067325": {
                   "TEXT": "Одиночный выбор страница 1 ответ 3",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "COUNT_ANSWER": 2,
+                  "PROCENT": 18.2
                 },
                 "22f854bb-e5ee-419c-91a2-69b70b3dab67": {
                   "TEXT": "Одиночный выбор страница 1 ответ 4",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "COUNT_ANSWER": 2,
+                  "PROCENT": 18.2
                 },
                 "2c6a522e-4327-47f9-bacc-4aec7e295b47": {
                   "TEXT": "Одиночный выбор страница 1 ответ 9",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 "984607af-ffee-4af9-8abe-2f6cd38de7a8": {
                   "TEXT": "Одиночный выбор страница 1 ответ 5",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 "b4d7d6d4-5e1d-4d36-8706-6cca656b1a27": {
                   "TEXT": "Одиночный выбор страница 1 ответ 10",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
+                },
+                "971af4f5-4821-4cad-9ab0-7c276fba1351": {
+                  "TEXT": "Одиночный выбор страница 1 ответ 8",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
                 }
               }
             }
@@ -660,33 +826,38 @@
               "USER_ANSWER": {
                 "1": {
                   "TEXT": "Выпадающий список страница 1 ответ 1",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "COUNT_ANSWER": 2,
+                  "PROCENT": 18.2
                 },
                 "2": {
                   "TEXT": "Выпадающий список страница 1 ответ 2",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 "2eb0d4c7-7c90-415c-be14-4c17049d8d61": {
                   "TEXT": "Выпадающий список страница 1 ответ 3",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 37.5
+                  "COUNT_ANSWER": 4,
+                  "PROCENT": 36.4
                 },
                 "5c0ac6f6-7f8b-44b2-9224-1660bce33052": {
                   "TEXT": "Выпадающий список страница 1 ответ 4",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 "8af754c2-ca71-44c6-8796-47534310ea7a": {
                   "TEXT": "Выпадающий список страница 1 ответ 8",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 "545f56d9-1fff-4eed-995e-cc2f67ae1d42": {
                   "TEXT": "Выпадающий список страница 1 ответ 10",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
+                },
+                "5dd3ea4d-d646-4589-93f4-1056c78fb629": {
+                  "TEXT": "Выпадающий список страница 1 ответ 6",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
                 }
               }
             }
@@ -781,38 +952,38 @@
               "USER_ANSWER": {
                 "1": {
                   "TEXT": "Множественный вып. список страница 1 ответ 1",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 8.3
+                  "COUNT_ANSWER": 2,
+                  "PROCENT": 13.3
                 },
                 "2": {
                   "TEXT": "Множественный вып. список страница 1 ответ 2",
                   "COUNT_ANSWER": 2,
-                  "PROCENT": 16.7
+                  "PROCENT": 13.3
                 },
                 "99085a5f-0226-4bb7-9cec-76d5e9956294": {
                   "TEXT": "Множественный вып. список страница 1 ответ 3",
-                  "COUNT_ANSWER": 2,
-                  "PROCENT": 16.7
+                  "COUNT_ANSWER": 3,
+                  "PROCENT": 20
                 },
                 "f02447cf-2fe5-41a6-b8c7-0a74c27caa88": {
                   "TEXT": "Множественный вып. список страница 1 ответ 7",
-                  "COUNT_ANSWER": 2,
-                  "PROCENT": 16.7
+                  "COUNT_ANSWER": 3,
+                  "PROCENT": 20
                 },
                 "4667a593-7ad4-4a89-ae20-bc0b8a22d2fb": {
                   "TEXT": "Множественный вып. список страница 1 ответ 5",
                   "COUNT_ANSWER": 2,
-                  "PROCENT": 16.7
+                  "PROCENT": 13.3
                 },
                 "2180b689-9cd1-4d2e-9e16-c4dcf2a02962": {
                   "TEXT": "Множественный вып. список страница 1 ответ 4",
                   "COUNT_ANSWER": 2,
-                  "PROCENT": 16.7
+                  "PROCENT": 13.3
                 },
                 "9b7eb525-01b0-4959-96a7-7da7bf986000": {
                   "TEXT": "Множественный вып. список страница 1 ответ 6",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 8.3
+                  "PROCENT": 6.7
                 }
               }
             }
@@ -907,53 +1078,53 @@
               "USER_ANSWER": {
                 "1": {
                   "TEXT": "Множественный выбор страница 1 ответ 1",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 15
+                  "COUNT_ANSWER": 5,
+                  "PROCENT": 20.8
                 },
                 "2": {
                   "TEXT": "Множественный выбор страница 1 ответ  2",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 5
+                  "COUNT_ANSWER": 3,
+                  "PROCENT": 12.5
                 },
                 "9d91b622-69af-4674-a8b6-1d38aa810027": {
                   "TEXT": "Множественный выбор страница 1 ответ 3",
                   "COUNT_ANSWER": 4,
-                  "PROCENT": 20
+                  "PROCENT": 16.7
                 },
                 "a4d42dd2-5233-43f9-ae24-10d83fac0485": {
                   "TEXT": "Множественный выбор страница 1 ответ 4",
                   "COUNT_ANSWER": 3,
-                  "PROCENT": 15
+                  "PROCENT": 12.5
                 },
                 "189b376c-af6f-46cb-bfdf-8ec89f3a30c3": {
                   "TEXT": "Множественный выбор страница 1 ответ 6",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 5
+                  "PROCENT": 4.2
                 },
                 "853fba7a-13e4-4217-ad22-ac981e40a2b6": {
                   "TEXT": "Множественный выбор страница 1 ответ 7",
                   "COUNT_ANSWER": 2,
-                  "PROCENT": 10
+                  "PROCENT": 8.3
                 },
                 "79c8224d-3f87-430d-b8d3-16e80c2049a5": {
                   "TEXT": "Множественный выбор страница 1 ответ 8",
                   "COUNT_ANSWER": 2,
-                  "PROCENT": 10
+                  "PROCENT": 8.3
                 },
                 "747ec855-dff3-4366-8ff2-ac8f1dddbbfd": {
                   "TEXT": "Множественный выбор страница 1 ответ 5",
                   "COUNT_ANSWER": 2,
-                  "PROCENT": 10
+                  "PROCENT": 8.3
                 },
                 "653fc559-7e19-41f2-867e-111d8dd5fb9c": {
                   "TEXT": "Множественный выбор страница 1 ответ 10",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 5
+                  "PROCENT": 4.2
                 },
                 "ce5f3d4f-7d06-4b41-a1f2-ac1d34924273": {
                   "TEXT": "Множественный выбор страница 1 ответ 9",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 5
+                  "PROCENT": 4.2
                 }
               }
             }
@@ -1038,260 +1209,260 @@
               "USER_ANSWER": {
                 "1": {
                   "TEXT": "Понедельник",
-                  "COUNT_ANSWER": 3,
-                  "PROC": 6.5,
+                  "COUNT_ANSWER": 5,
+                  "PROC": 7.7,
                   "INCORRECT": {
                     "2": {
                       "TEXT": "Вторник",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.4
                     },
                     "b3c22bda-8e22-465f-9178-1d88e2865054": {
                       "TEXT": "Среда",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 9,
+                      "PROC": 13.8
                     },
                     "a690ec61-f220-49ef-8f47-d1f66b6f1ef7": {
                       "TEXT": "Четверг",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 11,
+                      "PROC": 16.9
                     },
                     "33a4d2d9-ce9a-4d87-8e79-bfc94c664417": {
                       "TEXT": "Пятница",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.4
                     },
                     "7bf78dbc-3052-41df-9d2b-fa19f3e40157": {
                       "TEXT": "Суббота",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 11,
+                      "PROC": 16.9
                     },
                     "38d05ad9-0559-42ef-84e6-9c252e67d51d": {
                       "TEXT": "Воскресенье",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13
+                      "COUNT_ANSWER": 9,
+                      "PROC": 13.8
                     }
                   }
                 },
                 "2": {
                   "TEXT": "Вторник",
-                  "COUNT_ANSWER": 3,
-                  "PROC": 6.5,
+                  "COUNT_ANSWER": 4,
+                  "PROC": 6.3,
                   "INCORRECT": {
                     "1": {
                       "TEXT": "Понедельник",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 9,
+                      "PROC": 14.3
                     },
                     "b3c22bda-8e22-465f-9178-1d88e2865054": {
                       "TEXT": "Среда",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.9
                     },
                     "a690ec61-f220-49ef-8f47-d1f66b6f1ef7": {
                       "TEXT": "Четверг",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.9
                     },
                     "33a4d2d9-ce9a-4d87-8e79-bfc94c664417": {
                       "TEXT": "Пятница",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 11,
+                      "PROC": 17.5
                     },
                     "7bf78dbc-3052-41df-9d2b-fa19f3e40157": {
                       "TEXT": "Суббота",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.9
                     },
                     "38d05ad9-0559-42ef-84e6-9c252e67d51d": {
                       "TEXT": "Воскресенье",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13
+                      "COUNT_ANSWER": 9,
+                      "PROC": 14.3
                     }
                   }
                 },
                 "b3c22bda-8e22-465f-9178-1d88e2865054": {
                   "TEXT": "Среда",
-                  "COUNT_ANSWER": 2,
-                  "PROC": 4.5,
+                  "COUNT_ANSWER": 3,
+                  "PROC": 4.9,
                   "INCORRECT": {
                     "1": {
                       "TEXT": "Понедельник",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.9
+                      "COUNT_ANSWER": 10,
+                      "PROC": 16.4
                     },
                     "2": {
                       "TEXT": "Вторник",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13.6
+                      "COUNT_ANSWER": 9,
+                      "PROC": 14.8
                     },
                     "a690ec61-f220-49ef-8f47-d1f66b6f1ef7": {
                       "TEXT": "Четверг",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.9
+                      "COUNT_ANSWER": 8,
+                      "PROC": 13.1
                     },
                     "33a4d2d9-ce9a-4d87-8e79-bfc94c664417": {
                       "TEXT": "Пятница",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.9
+                      "COUNT_ANSWER": 10,
+                      "PROC": 16.4
                     },
                     "7bf78dbc-3052-41df-9d2b-fa19f3e40157": {
                       "TEXT": "Суббота",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.9
+                      "COUNT_ANSWER": 10,
+                      "PROC": 16.4
                     },
                     "38d05ad9-0559-42ef-84e6-9c252e67d51d": {
                       "TEXT": "Воскресенье",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 18.2
+                      "COUNT_ANSWER": 11,
+                      "PROC": 18
                     }
                   }
                 },
                 "a690ec61-f220-49ef-8f47-d1f66b6f1ef7": {
                   "TEXT": "Четверг",
-                  "COUNT_ANSWER": 2,
-                  "PROC": 4.5,
+                  "COUNT_ANSWER": 3,
+                  "PROC": 4.9,
                   "INCORRECT": {
                     "1": {
                       "TEXT": "Понедельник",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13.6
+                      "COUNT_ANSWER": 9,
+                      "PROC": 14.8
                     },
                     "2": {
                       "TEXT": "Вторник",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 18.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 16.4
                     },
                     "b3c22bda-8e22-465f-9178-1d88e2865054": {
                       "TEXT": "Среда",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.9
+                      "COUNT_ANSWER": 10,
+                      "PROC": 16.4
                     },
                     "33a4d2d9-ce9a-4d87-8e79-bfc94c664417": {
                       "TEXT": "Пятница",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 18.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 16.4
                     },
                     "7bf78dbc-3052-41df-9d2b-fa19f3e40157": {
                       "TEXT": "Суббота",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13.6
+                      "COUNT_ANSWER": 9,
+                      "PROC": 14.8
                     },
                     "38d05ad9-0559-42ef-84e6-9c252e67d51d": {
                       "TEXT": "Воскресенье",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.9
+                      "COUNT_ANSWER": 10,
+                      "PROC": 16.4
                     }
                   }
                 },
                 "33a4d2d9-ce9a-4d87-8e79-bfc94c664417": {
                   "TEXT": "Пятница",
-                  "COUNT_ANSWER": 3,
-                  "PROC": 6.5,
+                  "COUNT_ANSWER": 4,
+                  "PROC": 6.3,
                   "INCORRECT": {
                     "1": {
                       "TEXT": "Понедельник",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.9
                     },
                     "2": {
                       "TEXT": "Вторник",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.9
                     },
                     "b3c22bda-8e22-465f-9178-1d88e2865054": {
                       "TEXT": "Среда",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13
+                      "COUNT_ANSWER": 9,
+                      "PROC": 14.3
                     },
                     "a690ec61-f220-49ef-8f47-d1f66b6f1ef7": {
                       "TEXT": "Четверг",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13
+                      "COUNT_ANSWER": 9,
+                      "PROC": 14.3
                     },
                     "7bf78dbc-3052-41df-9d2b-fa19f3e40157": {
                       "TEXT": "Суббота",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.9
                     },
                     "38d05ad9-0559-42ef-84e6-9c252e67d51d": {
                       "TEXT": "Воскресенье",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 11,
+                      "PROC": 17.5
                     }
                   }
                 },
                 "7bf78dbc-3052-41df-9d2b-fa19f3e40157": {
                   "TEXT": "Суббота",
-                  "COUNT_ANSWER": 4,
-                  "PROC": 8.3,
+                  "COUNT_ANSWER": 5,
+                  "PROC": 7.7,
                   "INCORRECT": {
                     "1": {
                       "TEXT": "Понедельник",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 16.7
+                      "COUNT_ANSWER": 11,
+                      "PROC": 16.9
                     },
                     "2": {
                       "TEXT": "Вторник",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 12.5
+                      "COUNT_ANSWER": 9,
+                      "PROC": 13.8
                     },
                     "b3c22bda-8e22-465f-9178-1d88e2865054": {
                       "TEXT": "Среда",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 16.7
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.4
                     },
                     "a690ec61-f220-49ef-8f47-d1f66b6f1ef7": {
                       "TEXT": "Четверг",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 16.7
+                      "COUNT_ANSWER": 11,
+                      "PROC": 16.9
                     },
                     "33a4d2d9-ce9a-4d87-8e79-bfc94c664417": {
                       "TEXT": "Пятница",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 12.5
+                      "COUNT_ANSWER": 9,
+                      "PROC": 13.8
                     },
                     "38d05ad9-0559-42ef-84e6-9c252e67d51d": {
                       "TEXT": "Воскресенье",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 16.7
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.4
                     }
                   }
                 },
                 "38d05ad9-0559-42ef-84e6-9c252e67d51d": {
                   "TEXT": "Воскресенье",
-                  "COUNT_ANSWER": 3,
-                  "PROC": 6.5,
+                  "COUNT_ANSWER": 5,
+                  "PROC": 7.7,
                   "INCORRECT": {
                     "1": {
                       "TEXT": "Понедельник",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 11,
+                      "PROC": 16.9
                     },
                     "2": {
                       "TEXT": "Вторник",
-                      "COUNT_ANSWER": 8,
-                      "PROC": 17.4
+                      "COUNT_ANSWER": 11,
+                      "PROC": 16.9
                     },
                     "b3c22bda-8e22-465f-9178-1d88e2865054": {
                       "TEXT": "Среда",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.4
                     },
                     "a690ec61-f220-49ef-8f47-d1f66b6f1ef7": {
                       "TEXT": "Четверг",
-                      "COUNT_ANSWER": 6,
-                      "PROC": 13
+                      "COUNT_ANSWER": 9,
+                      "PROC": 13.8
                     },
                     "33a4d2d9-ce9a-4d87-8e79-bfc94c664417": {
                       "TEXT": "Пятница",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 9,
+                      "PROC": 13.8
                     },
                     "7bf78dbc-3052-41df-9d2b-fa19f3e40157": {
                       "TEXT": "Суббота",
-                      "COUNT_ANSWER": 7,
-                      "PROC": 15.2
+                      "COUNT_ANSWER": 10,
+                      "PROC": 15.4
                     }
                   }
                 }
@@ -1326,12 +1497,53 @@
             },
             "VARIANTS": null,
             "ANSWERS": {
-              "START": ["119", "149", "130", "130", "142", "101", "158", "112"],
-              "END": ["191", "170", "148", "140", "170", "116", "200", "135"],
-              "GEN_START_RANGE": 130,
-              "GEN_END_RANGE": 159,
-              "GEN_COUNT_ANSW": 8,
-              "RANGE5": false,
+              "START": [
+                "119",
+                "149",
+                "130",
+                "130",
+                "142",
+                "101",
+                "158",
+                "112",
+                "144",
+                "149",
+                "139"
+              ],
+              "END": [
+                "191",
+                "170",
+                "148",
+                "140",
+                "170",
+                "116",
+                "200",
+                "135",
+                "200",
+                "184",
+                "158"
+              ],
+              "GEN_START_RANGE": 134,
+              "GEN_END_RANGE": 165,
+              "GEN_COUNT_ANSW": 11,
+              "RANGE5": {
+                "RANGE5_3": {
+                  "START_SCALE": 80,
+                  "END_SCALE": 120,
+                  "START": 111,
+                  "END": 116,
+                  "COUNT_ANSW": 2,
+                  "PROC": 18
+                },
+                "RANGE5_4": {
+                  "START_SCALE": 120,
+                  "END_SCALE": 160,
+                  "START": 143,
+                  "END": 145,
+                  "COUNT_ANSW": 6,
+                  "PROC": 55
+                }
+              },
               "RANGE10": false
             }
           },
@@ -1368,42 +1580,57 @@
                 {
                   "TEXT": "2023-10-09T13:14:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "2023-10-27T14:02:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "2023-10-19T14:02:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "2023-10-28T14:04:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "2023-10-27T14:06:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "2024-01-12T14:12:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "2023-10-04T14:12:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "2023-10-23T14:13:00.000Z",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
+                },
+                {
+                  "TEXT": "2024-05-04T08:38:00.000Z",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
+                },
+                {
+                  "TEXT": "2023-10-25T10:46:00.000Z",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
+                },
+                {
+                  "TEXT": "2023-10-10T11:02:00.000Z",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
                 }
               ]
             }
@@ -1441,42 +1668,57 @@
                 {
                   "TEXT": "Wed Oct 11 2023 16:14:00 GMT+0300 (Москва, стандартное время)-Fri Oct 20 2023 16:14:00 GMT+0300 (Москва, стандартное время)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "Wed Oct 11 2023 17:02:00 GMT+0300 (Москва, стандартное время)-Wed Oct 11 2023 17:02:00 GMT+0300 (Москва, стандартное время)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "Thu Oct 19 2023 17:02:00 GMT+0300 (Москва, стандартное время)-Sat Oct 21 2023 17:02:00 GMT+0300 (Москва, стандартное время)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "Mon Oct 23 2023 17:04:00 GMT+0300 (Москва, стандартное время)-Sat Oct 28 2023 17:04:00 GMT+0300 (Москва, стандартное время)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "Wed Oct 25 2023 17:07:00 GMT+0300 (Москва, стандартное время)-Fri Oct 27 2023 17:07:00 GMT+0300 (Москва, стандартное время)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "Wed Feb 14 2024 17:12:00 GMT+0300 (Москва, стандартное время)-Fri Feb 16 2024 17:12:00 GMT+0300 (Москва, стандартное время)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "Wed Oct 04 2023 20:12:00 GMT+0600 (Восточный Казахстан)-Wed Oct 11 2023 20:12:00 GMT+0600 (Восточный Казахстан)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 },
                 {
                   "TEXT": "Mon Oct 23 2023 17:13:00 GMT+0300 (Moscow Standard Time)-Sun Oct 29 2023 17:13:00 GMT+0300 (Moscow Standard Time)",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
+                },
+                {
+                  "TEXT": "Fri Mar 01 2024 14:38:00 GMT+0600 (Восточный Казахстан)-Sat Mar 02 2024 14:38:00 GMT+0600 (Восточный Казахстан)",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
+                },
+                {
+                  "TEXT": "Wed Oct 25 2023 13:45:00 GMT+0300 (Москва, стандартное время)-Sat Oct 28 2023 13:45:00 GMT+0300 (Москва, стандартное время)",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
+                },
+                {
+                  "TEXT": "Wed Oct 11 2023 14:02:00 GMT+0300 (Москва, стандартное время)-Sun Oct 15 2023 14:02:00 GMT+0300 (Москва, стандартное время)",
+                  "COUNT_ANSWER": 1,
+                  "PROCENT": 9.1
                 }
               ]
             }
@@ -1624,18 +1866,18 @@
               "USER_ANSWER": {
                 "1": {
                   "TEXT": "Одиночный выбор страница 2 ответ 1",
-                  "COUNT_ANSWER": 5,
-                  "PROCENT": 62.5
+                  "COUNT_ANSWER": 7,
+                  "PROCENT": 63.6
                 },
                 "2": {
                   "TEXT": "Одиночный выбор страница 2 ответ 2",
-                  "COUNT_ANSWER": 2,
-                  "PROCENT": 25
+                  "COUNT_ANSWER": 3,
+                  "PROCENT": 27.3
                 },
                 "fd7bb837-0013-4477-a1e0-95cc21c001ff": {
                   "TEXT": "Одиночный выбор страница 2 ответ 3",
                   "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "PROCENT": 9.1
                 }
               }
             }

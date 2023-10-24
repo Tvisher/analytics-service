@@ -1,18 +1,20 @@
 <template>
   <AppShowBySelect @selectCountToShow="selectCountToShow" />
-  <div class="custom-table">
-    <div class="custom-table__row head-row">
-      <div class="custom-table__col">{{ dateType }}</div>
-    </div>
-    <div
-      class="custom-table__row"
-      v-for="(dateItem, index) in displayedItems"
-      :key="index"
-    >
-      <div class="custom-table__col custom-table__col_wide">
-        {{ dateItem.data }}
-      </div>
-    </div>
+  <div class="custom-table__wrapper">
+    <table class="custom-table">
+      <tr class="custom-table__row head-row">
+        <td class="custom-table__col">{{ dateType }}</td>
+      </tr>
+      <tr
+        class="custom-table__row"
+        v-for="(dateItem, index) in displayedItems"
+        :key="index"
+      >
+        <td class="custom-table__col">
+          {{ dateItem.data }}
+        </td>
+      </tr>
+    </table>
   </div>
 </template>
 <script setup>
@@ -45,7 +47,7 @@ dataForTable.value = propsData.ANSWERS.USER_ANSWER.reverse().map((item) => {
       type: "pair-date",
       data: pairDate
         .map((item) => customFormattedDate(new Date(item)))
-        .join(" - "),
+        .join(" – "),
     };
   }
 });
@@ -62,13 +64,12 @@ const displayedItems = computed(() => {
 
 const dateType =
   dataForTable.value[0].type === "sigle-date" ? "Дата" : "Диапазон дат";
-
 const selectCountToShow = (count) => (selectedRowCount.value = count);
 </script>
 
 <style lang="scss">
 .custom-table__col_wide {
   padding: 0;
-  width: 100%;
+  width: 100% !important;
 }
 </style>

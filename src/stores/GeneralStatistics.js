@@ -27,6 +27,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
     let pollType = ref('опрос');
     let pollCreateDate = ref("01.01.2023");
     let pagesGeneralData = ref([]);
+    let pagesCustomFieldsData = ref(null)
     let appHasPagesGeneralData = ref(false);
     let currentPageIndex = ref(0);
     let middleTime = ref({
@@ -40,6 +41,8 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
 
 
     const currentPagePollItemsData = computed(() => pagesGeneralData.value[currentPageIndex.value]);
+
+    const currenCustomFieldsData = (id) => computed(() => pagesCustomFieldsData.value[id]);
 
     const changeDateFilter = (newDateFilter) => dateFilterData.value = newDateFilter;
     const setCurrentPage = (index) => currentPageIndex.value = index;
@@ -56,6 +59,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         pollCreateDate.value = data.DATE_CREAT;
         pollType.value = data.TYPE;
         pagesGeneralData.value = data.RESULTS.QUESTION;
+        pagesCustomFieldsData.value = data.RESULTS.FORMS;
         appHasPagesGeneralData.value = data.TYPE == 'опрос' ? data.RESULTS.QUESTION.length > 0 : data.RESULTS.QUESTION[0].length > 0
     };
     const getAppData = async (timeFilter) => {
@@ -94,6 +98,8 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         currentPagePollItemsData,
         setCurrentPage,
         currentPageIndex,
+        // pagesCustomFieldsData,
+        currenCustomFieldsData,
         pagesGeneralData,
         pollType,
         pollCreateDate,
