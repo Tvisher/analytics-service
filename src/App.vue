@@ -28,7 +28,7 @@ onMounted(() => {
         appLoaded.value = true;
       } else {
         console.log("Ошибка!!!", error);
-        appLoaded.value = false;
+        appLoaded.value = true;
       }
     });
 });
