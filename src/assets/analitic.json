@@ -1,17 +1,17 @@
 {
   "data": {
     "ID": "300",
-    "NAME": "Викторина для формирования статистики",
+    "NAME": "Конференция InterComm",
     "PAGES": 1,
-    "TYPE": "викторина",
-    "QUESTION_COUNT": 6,
-    "DATE_CREAT": "24.10.2023",
-    "RESPONDENT": 15,
+    "TYPE": "опрос",
+    "QUESTION_COUNT": 9,
+    "DATE_CREAT": "25.10.2023",
+    "RESPONDENT": 113,
     "MIDDLE_TIME": {
       "MIN": 1,
       "SEC": 51
     },
-    "UNFINISH": 7,
+    "UNFINISH": 13,
     "ACTIVE": true,
     "RESULTS": {
       "FORMS": {
@@ -422,7 +422,7 @@
             "PARAMS": {
               "NAME": [
                 {
-                  "insert": "Викторина. Одиночный выбор\n"
+                  "insert": "Что изображено на картинке? Мы просто хотим убедиться, что вы не бот (:\n"
                 }
               ],
               "TYPENAME": "Одиночный выбор",
@@ -434,55 +434,38 @@
                 "ID": "2887",
                 "UF_ID_QUESTION": "806",
                 "UF_ID_VARIANT": "1",
-                "UF_VARIANT_VALUE": "Викторина. Одиночный выбор ответ1"
+                "UF_VARIANT_VALUE": "Тир"
               },
               "2888": {
                 "ID": "2888",
                 "UF_ID_QUESTION": "806",
                 "UF_ID_VARIANT": "2",
-                "UF_VARIANT_VALUE": "Викторина. Одиночный выбор ответ2"
+                "UF_VARIANT_VALUE": "Зал, где сегодня проходит конференция InterComm"
               },
               "2889": {
                 "ID": "2889",
                 "UF_ID_QUESTION": "806",
                 "UF_ID_VARIANT": "37634010-f035-4143-ba05-744f41590813",
-                "UF_VARIANT_VALUE": "Викторина. Одиночный выбор ответ3"
-              },
-              "2890": {
-                "ID": "2890",
-                "UF_ID_QUESTION": "806",
-                "UF_ID_VARIANT": "ee8b90bb-8151-4edc-bd7b-08b8ce6808c5",
-                "UF_VARIANT_VALUE": "Викторина. Одиночный выбор ответ4"
-              },
-              "2891": {
-                "ID": "2891",
-                "UF_ID_QUESTION": "806",
-                "UF_ID_VARIANT": "946e0d3b-e89c-4154-b72d-afa076b7e361",
-                "UF_VARIANT_VALUE": "Викторина. Одиночный выбор ответ5"
+                "UF_VARIANT_VALUE": "Космический корабль"
               }
             },
             "ANSWERS": {
               "CORRECT_ANSWER": [""],
               "USER_ANSWER": {
                 "1": {
-                  "TEXT": "Викторина. Одиночный выбор ответ1",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 37.5
+                  "TEXT": "Тир",
+                  "COUNT_ANSWER": 0,
+                  "PROCENT": 0
                 },
                 "2": {
-                  "TEXT": "Викторина. Одиночный выбор ответ2",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 37.5
+                  "TEXT": "Зал, где сегодня проходит конференция InterComm",
+                  "COUNT_ANSWER": 97,
+                  "PROCENT": 97
                 },
                 "37634010-f035-4143-ba05-744f41590813": {
-                  "TEXT": "Викторина. Одиночный выбор ответ3",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
-                },
-                "946e0d3b-e89c-4154-b72d-afa076b7e361": {
-                  "TEXT": "Викторина. Одиночный выбор ответ5",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "TEXT": "Космический корабль",
+                  "COUNT_ANSWER": 3,
+                  "PROCENT": 3
                 }
               }
             }
@@ -497,7 +480,7 @@
             "PARAMS": {
               "NAME": [
                 {
-                  "insert": "Викторина. Выпадающий список\n"
+                  "insert": "Вы проводите опросы среди сотрудников своей компании?\n"
                 }
               ],
               "TYPENAME": "Выпадающий список",
@@ -509,144 +492,32 @@
                 "ID": "2892",
                 "UF_ID_QUESTION": "807",
                 "UF_ID_VARIANT": "1",
-                "UF_VARIANT_VALUE": "Викторина. Выпадающий список ответ1"
+                "UF_VARIANT_VALUE": "Да"
               },
               "2893": {
                 "ID": "2893",
                 "UF_ID_QUESTION": "807",
                 "UF_ID_VARIANT": "2",
-                "UF_VARIANT_VALUE": "Викторина. Выпадающий список ответ2"
-              },
-              "2894": {
-                "ID": "2894",
-                "UF_ID_QUESTION": "807",
-                "UF_ID_VARIANT": "4bc187ab-b9e8-47d0-ac01-355cc56cf1db",
-                "UF_VARIANT_VALUE": "Викторина. Выпадающий список ответ3"
-              },
-              "2895": {
-                "ID": "2895",
-                "UF_ID_QUESTION": "807",
-                "UF_ID_VARIANT": "22b4b4bb-8bae-44e0-9347-5a35cdb5f77b",
-                "UF_VARIANT_VALUE": "Викторина. Выпадающий список ответ4"
-              },
-              "2896": {
-                "ID": "2896",
-                "UF_ID_QUESTION": "807",
-                "UF_ID_VARIANT": "fb7012ab-fc89-4194-9476-b37f2668f313",
-                "UF_VARIANT_VALUE": "Викторина. Выпадающий список ответ5"
-              },
-              "2897": {
-                "ID": "2897",
-                "UF_ID_QUESTION": "807",
-                "UF_ID_VARIANT": "bb5f7f55-14df-4874-ae90-3f47b1c3c6b9",
-                "UF_VARIANT_VALUE": "Викторина. Выпадающий список ответ6"
+                "UF_VARIANT_VALUE": "Нет"
               }
             },
             "ANSWERS": {
               "CORRECT_ANSWER": [""],
               "USER_ANSWER": {
                 "1": {
-                  "TEXT": "Викторина. Выпадающий список ответ1",
-                  "COUNT_ANSWER": 2,
-                  "PROCENT": 25
+                  "TEXT": "Да",
+                  "COUNT_ANSWER": 65,
+                  "PROCENT": 65
                 },
                 "2": {
-                  "TEXT": "Викторина. Выпадающий список ответ2",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
-                },
-                "fb7012ab-fc89-4194-9476-b37f2668f313": {
-                  "TEXT": "Викторина. Выпадающий список ответ5",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
-                },
-                "4bc187ab-b9e8-47d0-ac01-355cc56cf1db": {
-                  "TEXT": "Викторина. Выпадающий список ответ3",
-                  "COUNT_ANSWER": 2,
-                  "PROCENT": 25
-                },
-                "22b4b4bb-8bae-44e0-9347-5a35cdb5f77b": {
-                  "TEXT": "Викторина. Выпадающий список ответ4",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
-                },
-                "bb5f7f55-14df-4874-ae90-3f47b1c3c6b9": {
-                  "TEXT": "Викторина. Выпадающий список ответ6",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 12.5
+                  "TEXT": "Нет",
+                  "COUNT_ANSWER": 35,
+                  "PROCENT": 35
                 }
               }
             }
           },
-          {
-            "ID": "808",
-            "UF_ID_RESULT": "362",
-            "UF_ID_QUESTION": "eec33eaf-3e49-4d11-bda1-c6ca692e45e6",
-            "UF_QUESTION_TYPE": "multiple-drop-down-list",
-            "UF_VARIANT_TYPE": "",
-            "UF_ID_PAGE": "",
-            "PARAMS": {
-              "NAME": [
-                {
-                  "insert": "Викторина. Множественный вып. список\n"
-                }
-              ],
-              "TYPENAME": "Множественный вып. список",
-              "GENERAL_RANGE_START": null,
-              "GENERAL_RANGE_END": null
-            },
-            "VARIANTS": {
-              "2898": {
-                "ID": "2898",
-                "UF_ID_QUESTION": "808",
-                "UF_ID_VARIANT": "1",
-                "UF_VARIANT_VALUE": "Викторина. Множественный вып. список ответ 1"
-              },
-              "2899": {
-                "ID": "2899",
-                "UF_ID_QUESTION": "808",
-                "UF_ID_VARIANT": "2",
-                "UF_VARIANT_VALUE": "Викторина. Множественный вып. список ответ2"
-              },
-              "2900": {
-                "ID": "2900",
-                "UF_ID_QUESTION": "808",
-                "UF_ID_VARIANT": "52133561-e3b9-45cb-9584-b152ac7706de",
-                "UF_VARIANT_VALUE": "Викторина. Множественный вып. список ответ3"
-              },
-              "2901": {
-                "ID": "2901",
-                "UF_ID_QUESTION": "808",
-                "UF_ID_VARIANT": "32139320-5d45-4139-9297-767b6d51316d",
-                "UF_VARIANT_VALUE": "Викторина. Множественный вып. список ответ4"
-              }
-            },
-            "ANSWERS": {
-              "CORRECT_ANSWER": [""],
-              "USER_ANSWER": {
-                "1": {
-                  "TEXT": "Викторина. Множественный вып. список ответ 1",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 33.3
-                },
-                "2": {
-                  "TEXT": "Викторина. Множественный вып. список ответ2",
-                  "COUNT_ANSWER": 2,
-                  "PROCENT": 22.2
-                },
-                "32139320-5d45-4139-9297-767b6d51316d": {
-                  "TEXT": "Викторина. Множественный вып. список ответ4",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 33.3
-                },
-                "52133561-e3b9-45cb-9584-b152ac7706de": {
-                  "TEXT": "Викторина. Множественный вып. список ответ3",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 11.1
-                }
-              }
-            }
-          },
+
           {
             "ID": "809",
             "UF_ID_RESULT": "362",
@@ -657,7 +528,7 @@
             "PARAMS": {
               "NAME": [
                 {
-                  "insert": "Викторина. Множественный выбор\n"
+                  "insert": "Какие аудитории вы опрашиваете? Возможны несколько вариантов ответов:\n"
                 }
               ],
               "TYPENAME": "Множественный выбор",
@@ -669,93 +540,71 @@
                 "ID": "2902",
                 "UF_ID_QUESTION": "809",
                 "UF_ID_VARIANT": "1",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор ответ 1"
+                "UF_VARIANT_VALUE": "Соискатели"
               },
               "2903": {
                 "ID": "2903",
                 "UF_ID_QUESTION": "809",
                 "UF_ID_VARIANT": "2",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор ответ2"
+                "UF_VARIANT_VALUE": "Новички, недавно принятые в компанию"
               },
               "2904": {
                 "ID": "2904",
                 "UF_ID_QUESTION": "809",
                 "UF_ID_VARIANT": "551ee17c-29f7-45b0-9496-f3dbc362fb34",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор ответ3"
+                "UF_VARIANT_VALUE": "Сотрудники, работающие от 6 месяцев"
               },
               "2905": {
                 "ID": "2905",
                 "UF_ID_QUESTION": "809",
                 "UF_ID_VARIANT": "105f3e9a-d6f6-4c2f-a81f-45549a9166d6",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор ответ4"
+                "UF_VARIANT_VALUE": "Увольняющиеся"
               },
               "2906": {
                 "ID": "2906",
                 "UF_ID_QUESTION": "809",
                 "UF_ID_VARIANT": "e747c771-5faa-4768-91cd-a0a321320dc3",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор ответ5"
+                "UF_VARIANT_VALUE": "Потенциальные сотрудники (выпускники вузов и другие ЦА)"
               },
               "2907": {
                 "ID": "2907",
                 "UF_ID_QUESTION": "809",
                 "UF_ID_VARIANT": "cff8ccfd-0f6b-491c-96c1-5df3028b35ca",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор отве6"
-              },
-              "2908": {
-                "ID": "2908",
-                "UF_ID_QUESTION": "809",
-                "UF_ID_VARIANT": "07ca1afa-c715-4586-a3ab-dbc7fdd05e35",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор ответ7"
-              },
-              "2909": {
-                "ID": "2909",
-                "UF_ID_QUESTION": "809",
-                "UF_ID_VARIANT": "2d40e07d-ffe1-4db1-9334-20a1ed2e87ba",
-                "UF_VARIANT_VALUE": "Викторина. Множественный выбор ответ8"
+                "UF_VARIANT_VALUE": "Внешние аудитории"
               }
             },
             "ANSWERS": {
               "CORRECT_ANSWER": [""],
               "USER_ANSWER": {
                 "1": {
-                  "TEXT": "Викторина. Множественный выбор ответ 1",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 5.3
+                  "TEXT": "Соискатели",
+                  "COUNT_ANSWER": 12,
+                  "PROCENT": 12
                 },
                 "2": {
-                  "TEXT": "Викторина. Множественный выбор ответ2",
-                  "COUNT_ANSWER": 4,
-                  "PROCENT": 21.1
+                  "TEXT": "Новички, недавно принятые в компанию",
+                  "COUNT_ANSWER": 18,
+                  "PROCENT": 18
                 },
                 "cff8ccfd-0f6b-491c-96c1-5df3028b35ca": {
-                  "TEXT": "Викторина. Множественный выбор отве6",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 15.8
+                  "TEXT": "Сотрудники, работающие от 6 месяцев",
+                  "COUNT_ANSWER": 10,
+                  "PROCENT": 10
                 },
                 "2d40e07d-ffe1-4db1-9334-20a1ed2e87ba": {
-                  "TEXT": "Викторина. Множественный выбор ответ8",
-                  "COUNT_ANSWER": 3,
-                  "PROCENT": 15.8
+                  "TEXT": "Увольняющиеся",
+                  "COUNT_ANSWER": 5,
+                  "PROCENT": 5
                 },
                 "105f3e9a-d6f6-4c2f-a81f-45549a9166d6": {
-                  "TEXT": "Викторина. Множественный выбор ответ4",
-                  "COUNT_ANSWER": 4,
-                  "PROCENT": 21.1
+                  "TEXT": "Потенциальные сотрудники (выпускники вузов и другие ЦА)",
+                  "COUNT_ANSWER": 20,
+                  "PROCENT": 20
                 },
                 "07ca1afa-c715-4586-a3ab-dbc7fdd05e35": {
-                  "TEXT": "Викторина. Множественный выбор ответ7",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 5.3
-                },
-                "e747c771-5faa-4768-91cd-a0a321320dc3": {
-                  "TEXT": "Викторина. Множественный выбор ответ5",
-                  "COUNT_ANSWER": 2,
-                  "PROCENT": 10.5
-                },
-                "551ee17c-29f7-45b0-9496-f3dbc362fb34": {
-                  "TEXT": "Викторина. Множественный выбор ответ3",
-                  "COUNT_ANSWER": 1,
-                  "PROCENT": 5.3
+                  "TEXT": "Внешние аудитории",
+                  "COUNT_ANSWER": 25,
+                  "PROCENT": 25
                 }
               }
             }
