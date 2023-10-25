@@ -7,6 +7,8 @@ import analiticTestJson from '@/assets/analitic.json';
 
 const pollId = document.querySelector('#app').dataset.id;
 export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
+    // state refs
+
     const chartColors = [
         "#FA0056",
         "#A72179",
@@ -39,11 +41,12 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         to: new Date()
     });
 
-
+    // getters
     const currentPagePollItemsData = computed(() => pagesGeneralData.value[currentPageIndex.value]);
-
     const currenCustomFieldsData = (id) => computed(() => pagesCustomFieldsData.value[id]);
 
+
+    // Actions
     const changeDateFilter = (newDateFilter) => dateFilterData.value = newDateFilter;
     const setCurrentPage = (index) => currentPageIndex.value = index;
     const setApplicationData = (response) => {
@@ -83,9 +86,9 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
                     resolve();
                 })
                 .catch(function (error) {
-                    if (process.env.NODE_ENV == "development") {
-                        setApplicationData(analiticTestJson);
-                    }
+                    // if (process.env.NODE_ENV == "development") {
+                    setApplicationData(analiticTestJson);
+                    // }
                     console.log("Ошибка!!!", error);
                     reject();
                 });
