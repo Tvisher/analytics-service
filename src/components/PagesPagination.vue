@@ -12,12 +12,10 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
 import { storeToRefs } from "pinia";
 
 const generalStatisticsStore = useGeneralStatistics();
-
 const { currentPageIndex } = storeToRefs(generalStatisticsStore);
 const pagesCount = generalStatisticsStore.pagesCount;
 

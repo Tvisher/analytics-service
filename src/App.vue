@@ -18,6 +18,7 @@ const generalStatisticsStore = useGeneralStatistics();
 const getAppData = generalStatisticsStore.getAppData;
 
 const appLoaded = ref(false);
+
 onMounted(() => {
   getAppData()
     .then(function (response) {

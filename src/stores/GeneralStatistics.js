@@ -65,6 +65,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         pagesCustomFieldsData.value = data.RESULTS.FORMS;
         appHasPagesGeneralData.value = data.TYPE == 'опрос' ? data.RESULTS.QUESTION.length > 0 : data.RESULTS.QUESTION[0].length > 0
     };
+
     const getAppData = async (timeFilter) => {
         return new Promise((resolve, reject) => {
             let postData = {
@@ -81,15 +82,15 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
                         'Content-Type': 'application/x-www-form-urlencoded'
                     }
                 })
-                .then(function (response) {
+                .then((response) => {
                     setApplicationData(response);
                     resolve();
                 })
-                .catch(function (error) {
-                    // if (process.env.NODE_ENV == "development") {
-                    setApplicationData(analiticTestJson);
-                    // }
+                .catch((error) => {
                     console.log("Ошибка!!!", error);
+                    // if (process.env.NODE_ENV == "development") {
+                    setApplicationData({ data: analiticTestJson });
+                    // }
                     reject();
                 });
         })
