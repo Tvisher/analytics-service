@@ -39,24 +39,29 @@
             <span class="level-descr">Укажите желаемый порядок</span>
             <RanginVisual
               :optionsData="dataForSecondLevelFilter"
-              @setSecondLevelData="
-                (data) => (secondLevelFilterSelectedData = data)
-              "
+              @setSecondLevelData="secondLevelSelect"
             />
           </div>
           <div
             class="filter-select"
             v-if="firstLevelFilterSelected.questionType == 'range-selection'"
           >
-            Выбор диапазона
-
-            {{ firstLevelFilterSelected }}
+            <span class="level-descr">Укажите интересующий вас диапазон</span>
+            <RangeSelection
+              :data="dataForSecondLevelFilter"
+              @setSecondLevelData="secondLevelSelect"
+            />
           </div>
           <div
             class="filter-select"
             v-if="firstLevelFilterSelected.questionType == 'date'"
           >
             Дата
+            <DateSelection
+              :isRange="!dataForSecondLevelFilter"
+              :key="dataForSecondLevelFilter"
+              @setSecondLevelData="secondLevelSelect"
+            />
           </div>
           <div
             class="filter-select"
@@ -74,7 +79,8 @@
 </template>
 <script setup>
 import RanginVisual from "@/components/filterComponents/RanginVisual.vue";
-
+import RangeSelection from "@/components/filterComponents/RangeSelection.vue";
+import DateSelection from "@/components/filterComponents/DateSelection.vue";
 import { ref, computed } from "vue";
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
 import { QuillDeltaToHtmlConverter } from "quill-delta-to-html";
@@ -93,21 +99,32 @@ const isSelectTypes = [
 ];
 
 const dataForFirtsLevelFilter = store.pagesGeneralData[0].map((item) => {
+  const params = item.PARAMS;
   const questionId = item.UF_ID_QUESTION;
   const questionType = item.UF_QUESTION_TYPE;
   const questionOptions = item.VARIANTS;
   let label = new QuillDeltaToHtmlConverter(item.PARAMS.NAME).convert();
   label = label.replace(/<\/?p>/g, "");
-  return {
+  const filterItem = {
     questionId,
     questionType,
     questionOptions,
     label,
+    params,
   };
+
+  // Определения типа даты (одиночная или диапазон)
+  if (item.UF_QUESTION_TYPE === "date") {
+    const isSigleDate = Date.parse(item.ANSWERS.USER_ANSWER[0].TEXT);
+    if (isSigleDate) {
+      filterItem.isSigleDateItem = true;
+    }
+  }
+  return filterItem;
 });
 
 const firstLevelSelect = (data) => {
-  console.log("first-level-select");
+  console.log("first-level-select", data.isSigleDateItem);
   firstLevelFilterSelected.value = data;
   dataForSecondLevelFilter.value = null;
   secondLevelFilterSelectedData.value = null;
@@ -123,9 +140,17 @@ const firstLevelSelect = (data) => {
   if (data.questionType === "ranging") {
     dataForSecondLevelFilter.value = data.questionOptions;
   }
+  if (data.questionType === "range-selection") {
+    dataForSecondLevelFilter.value = data.params;
+  }
+
+  if (data.questionType === "date") {
+    dataForSecondLevelFilter.value = data.isSigleDateItem;
+  }
 };
 const secondLevelSelect = (data) => {
   console.log(data);
+  secondLevelFilterSelectedData.value = data;
 };
 
 const secondLevelIsSelect = computed(() => {
@@ -156,8 +181,12 @@ const closeModal = (e) => {
 };
 
 const addFilter = () => {
+  const filterItemData = {
+    questionId: firstLevelFilterSelected.value.questionId,
+    questionType: firstLevelFilterSelected.value.questionType,
+    answerIdes: [],
+  };
   console.log(firstLevelFilterSelected.value);
-  console.log(dataForSecondLevelFilter.value);
   console.log(secondLevelFilterSelectedData.value);
 };
 </script>

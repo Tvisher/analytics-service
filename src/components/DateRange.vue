@@ -1,5 +1,5 @@
 <template>
-  <div class="app-datae-range">
+  <div class="app-date-range">
     <VueDatePicker
       locale="ru"
       :clearable="false"
@@ -55,7 +55,7 @@ const handleDate = (modelData) => {
 <style lang="scss">
 @import "@vuepic/vue-datepicker/dist/main.css";
 
-.app-datae-range {
+.app-date-range {
   max-width: 230px;
   margin: 20px 0;
 }

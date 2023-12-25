@@ -16,6 +16,14 @@
           v-for="(variant, index) in optionsList"
           :key="variant.id"
         >
+          <div class="cb-wrapper">
+            <input
+              type="checkbox"
+              :checked="variant.trackedIndex"
+              @input="addedItemForFilter($event, variant)"
+            />
+            <span class="cb-visual"></span>
+          </div>
           <div class="rangin-visual__content">
             <div class="rangin-visual__dragg">
               <svg
@@ -116,7 +124,7 @@ export default {
     return {
       optionsList: [],
       isDraggingOption: false,
-      daraggableHandler: "",
+      daraggableHandler: ".rangin-visual__dragg",
     };
   },
   computed: {
@@ -133,6 +141,16 @@ export default {
     },
   },
   methods: {
+    addedItemForFilter(e, variant) {
+      const addFilterItem = e.target.checked;
+      const currenItem = this.optionsList.find(
+        (item) => item.id === variant.id
+      );
+      const trackedIndexValue = addFilterItem ? true : false;
+      currenItem.trackedIndex = trackedIndexValue;
+      this.updateDataForSecondLevelFilter();
+    },
+
     rangeVariant(index, type) {
       let nextIndex;
       if (type == "bottom") {
@@ -158,16 +176,21 @@ export default {
       const newOptionList = [...this.optionsList];
       this.optionsList = newOptionList;
     },
+    updateDataForSecondLevelFilter() {
+      const data = [...this.optionsList]
+        .map((item, index) => {
+          return {
+            ...item,
+            index,
+          };
+        })
+        .filter((item) => item.trackedIndex);
+      this.$emit("setSecondLevelData", data);
+    },
   },
   watch: {
     optionsList() {
-      const data = [...this.optionsList].map((item) => {
-        return {
-          id: item.id,
-          value: item.value,
-        };
-      });
-      this.$emit("setSecondLevelData", data);
+      this.updateDataForSecondLevelFilter();
     },
   },
 
@@ -177,6 +200,7 @@ export default {
       return {
         id: variant.UF_ID_VARIANT,
         value: variant.UF_VARIANT_VALUE,
+        trackedIndex: true,
       };
     });
   },
@@ -191,6 +215,7 @@ export default {
 }
 
 .rangin-visual__dragg {
+  cursor: grab;
   flex-shrink: 0;
   width: 44px;
   height: 100%;
@@ -253,12 +278,13 @@ export default {
   }
 }
 .rangin-visual__content {
-  cursor: grab;
+  // cursor: grab;
   position: relative;
   z-index: 2;
   width: 100%;
   padding: 10px 20px;
   padding-right: 25px;
+  padding-left: 10px;
   display: flex;
   align-items: center;
   &::after {
@@ -316,6 +342,24 @@ export default {
   }
   svg rect {
     stroke: #fff;
+  }
+}
+
+.cb-wrapper {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  position: relative;
+  input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    accent-color: #fa0056;
   }
 }
 </style>

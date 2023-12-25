@@ -431,7 +431,7 @@ $mainColor: #fa0056;
 
 .filter-modal {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
@@ -440,6 +440,7 @@ $mainColor: #fa0056;
   width: 100%;
   height: 100%;
   padding: 20px;
+  overflow: auto;
 }
 .filter-modal__content {
   border-radius: 8px;
@@ -448,6 +449,7 @@ $mainColor: #fa0056;
   background-color: #ebf4ff;
   max-width: 650px;
   width: 100%;
+  margin: auto;
 }
 .filter-select {
   margin: 20px 0px;
