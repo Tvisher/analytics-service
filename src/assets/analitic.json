@@ -3,12 +3,12 @@
   "NAME": "опрос для создания фильтра",
   "TYPE": "опрос",
   "PAGES": 1,
-  "QUESTION_COUNT": 9,
-  "DATE_CREAT": "20.12.2023",
+  "QUESTION_COUNT": 10,
+  "DATE_CREAT": "28.12.2023",
   "RESPONDENT": 1,
   "MIDDLE_TIME": {
     "MIN": 0,
-    "SEC": 18
+    "SEC": 30
   },
   "UNFINISH": 0,
   "ACTIVE": true,
@@ -18,17 +18,17 @@
         [
           [
             {
-              "ID": "389",
-              "UF_ID_QUESTION": "1388",
+              "ID": "409",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
               "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "123123",
+              "UF_FILED_ANSWER": "12312",
               "UF_FIELD_FILLED": "true"
             },
             {
-              "ID": "390",
-              "UF_ID_QUESTION": "1388",
+              "ID": "410",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
               "UF_ID_TYPE_FIELD": "phone",
               "UF_VALUE_FIELD": "Телефон",
@@ -36,21 +36,63 @@
               "UF_FIELD_FILLED": "true"
             },
             {
-              "ID": "391",
-              "UF_ID_QUESTION": "1388",
+              "ID": "411",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
               "UF_ID_TYPE_FIELD": "email",
               "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "123123@mail.ru",
+              "UF_FILED_ANSWER": "asdsad@mail.ru",
               "UF_FIELD_FILLED": "true"
             },
             {
-              "ID": "392",
-              "UF_ID_QUESTION": "1388",
+              "ID": "412",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
               "UF_ID_TYPE_FIELD": "textarea",
               "UF_VALUE_FIELD": "Область текста",
               "UF_FILED_ANSWER": "123123",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ]
+      ],
+      "0be8c1c0-7e08-46bc-929c-1d4f382ec74c": [
+        [
+          [
+            {
+              "ID": "413",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "Текст 2",
+              "UF_FILED_ANSWER": "asdasd1",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "414",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_ID_TYPE_FIELD": "phone",
+              "UF_VALUE_FIELD": "Телефон 2",
+              "UF_FILED_ANSWER": "+7(123)123-12-31",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "415",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Email 2",
+              "UF_FILED_ANSWER": "sadsa@mail.ru",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "416",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_ID_TYPE_FIELD": "textarea",
+              "UF_VALUE_FIELD": "Область текста 2",
+              "UF_FILED_ANSWER": "123123123",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -60,12 +102,12 @@
     "QUESTION": [
       [
         {
-          "ID": "1380",
-          "UF_ID_RESULT": "455",
+          "ID": "1437",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
           "UF_QUESTION_TYPE": "single-choice",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -78,20 +120,20 @@
           },
           "VARIANTS": [
             {
-              "ID": "5029",
-              "UF_ID_QUESTION": "1380",
+              "ID": "5190",
+              "UF_ID_QUESTION": "1437",
               "UF_ID_VARIANT": "1",
               "UF_VARIANT_VALUE": "Одиночный выбор 1"
             },
             {
-              "ID": "5030",
-              "UF_ID_QUESTION": "1380",
+              "ID": "5191",
+              "UF_ID_QUESTION": "1437",
               "UF_ID_VARIANT": "2",
               "UF_VARIANT_VALUE": "Одиночный выбор 2"
             },
             {
-              "ID": "5031",
-              "UF_ID_QUESTION": "1380",
+              "ID": "5192",
+              "UF_ID_QUESTION": "1437",
               "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
               "UF_VARIANT_VALUE": "Одиночный выбор 3"
             }
@@ -108,12 +150,12 @@
           }
         },
         {
-          "ID": "1381",
-          "UF_ID_RESULT": "455",
+          "ID": "1438",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
           "UF_QUESTION_TYPE": "drop-down-list",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -126,20 +168,20 @@
           },
           "VARIANTS": [
             {
-              "ID": "5032",
-              "UF_ID_QUESTION": "1381",
+              "ID": "5193",
+              "UF_ID_QUESTION": "1438",
               "UF_ID_VARIANT": "1",
               "UF_VARIANT_VALUE": "Выпадающий список 1"
             },
             {
-              "ID": "5033",
-              "UF_ID_QUESTION": "1381",
+              "ID": "5194",
+              "UF_ID_QUESTION": "1438",
               "UF_ID_VARIANT": "2",
               "UF_VARIANT_VALUE": "Выпадающий список 2"
             },
             {
-              "ID": "5034",
-              "UF_ID_QUESTION": "1381",
+              "ID": "5195",
+              "UF_ID_QUESTION": "1438",
               "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
               "UF_VARIANT_VALUE": "Выпадающий список 3"
             }
@@ -147,8 +189,8 @@
           "ANSWERS": {
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": {
-              "2": {
-                "TEXT": "Выпадающий список 2",
+              "4a21b98b-dd7c-4124-b106-24b612fcb673": {
+                "TEXT": "Выпадающий список 3",
                 "COUNT_ANSWER": 1,
                 "PROCENT": 100
               }
@@ -156,12 +198,12 @@
           }
         },
         {
-          "ID": "1382",
-          "UF_ID_RESULT": "455",
+          "ID": "1439",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
           "UF_QUESTION_TYPE": "multiple-drop-down-list",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -174,20 +216,20 @@
           },
           "VARIANTS": [
             {
-              "ID": "5035",
-              "UF_ID_QUESTION": "1382",
+              "ID": "5196",
+              "UF_ID_QUESTION": "1439",
               "UF_ID_VARIANT": "1",
               "UF_VARIANT_VALUE": "Множественный вып. список 1"
             },
             {
-              "ID": "5036",
-              "UF_ID_QUESTION": "1382",
+              "ID": "5197",
+              "UF_ID_QUESTION": "1439",
               "UF_ID_VARIANT": "2",
               "UF_VARIANT_VALUE": "Множественный вып. список 2"
             },
             {
-              "ID": "5037",
-              "UF_ID_QUESTION": "1382",
+              "ID": "5198",
+              "UF_ID_QUESTION": "1439",
               "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
               "UF_VARIANT_VALUE": "Множественный вып. список 3"
             }
@@ -195,8 +237,8 @@
           "ANSWERS": {
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": {
-              "0b69d1f3-37d2-4455-924b-958d27865c85": {
-                "TEXT": "Множественный вып. список 3",
+              "1": {
+                "TEXT": "Множественный вып. список 1",
                 "COUNT_ANSWER": 1,
                 "PROCENT": 100
               }
@@ -204,12 +246,12 @@
           }
         },
         {
-          "ID": "1383",
-          "UF_ID_RESULT": "455",
+          "ID": "1440",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
           "UF_QUESTION_TYPE": "multiple-choice",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -222,26 +264,26 @@
           },
           "VARIANTS": [
             {
-              "ID": "5038",
-              "UF_ID_QUESTION": "1383",
+              "ID": "5199",
+              "UF_ID_QUESTION": "1440",
               "UF_ID_VARIANT": "1",
               "UF_VARIANT_VALUE": "Множественный выбор 1"
             },
             {
-              "ID": "5039",
-              "UF_ID_QUESTION": "1383",
+              "ID": "5200",
+              "UF_ID_QUESTION": "1440",
               "UF_ID_VARIANT": "2",
               "UF_VARIANT_VALUE": "Множественный выбор 2"
             },
             {
-              "ID": "5040",
-              "UF_ID_QUESTION": "1383",
+              "ID": "5201",
+              "UF_ID_QUESTION": "1440",
               "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
               "UF_VARIANT_VALUE": "Множественный выбор 3"
             },
             {
-              "ID": "5041",
-              "UF_ID_QUESTION": "1383",
+              "ID": "5202",
+              "UF_ID_QUESTION": "1440",
               "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
               "UF_VARIANT_VALUE": "Множественный выбор 4"
             }
@@ -249,26 +291,21 @@
           "ANSWERS": {
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": {
-              "1": {
-                "TEXT": "Множественный выбор 1",
+              "2": {
+                "TEXT": "Множественный выбор 2",
                 "COUNT_ANSWER": 1,
-                "PROCENT": 50
-              },
-              "d5e56cd8-5657-426b-8297-3d2c20a4cc29": {
-                "TEXT": "Множественный выбор 3",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 50
+                "PROCENT": 100
               }
             }
           }
         },
         {
-          "ID": "1384",
-          "UF_ID_RESULT": "455",
+          "ID": "1441",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
           "UF_QUESTION_TYPE": "ranging",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -281,56 +318,56 @@
           },
           "VARIANTS": [
             {
-              "ID": "5042",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5203",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "1",
               "UF_VARIANT_VALUE": "Ранжирование 1"
             },
             {
-              "ID": "5043",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5204",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "2",
               "UF_VARIANT_VALUE": "Ранжирование 2"
             },
             {
-              "ID": "5044",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5205",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
               "UF_VARIANT_VALUE": "Ранжирование 3"
             },
             {
-              "ID": "5045",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5206",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
               "UF_VARIANT_VALUE": "Ранжирование 4"
             },
             {
-              "ID": "5046",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5207",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
               "UF_VARIANT_VALUE": "Ранжирование 5"
             },
             {
-              "ID": "5047",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5208",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
               "UF_VARIANT_VALUE": "Ранжирование 6"
             },
             {
-              "ID": "5048",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5209",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
               "UF_VARIANT_VALUE": "Ранжирование 7"
             },
             {
-              "ID": "5049",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5210",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
               "UF_VARIANT_VALUE": "Ранжирование 8"
             },
             {
-              "ID": "5050",
-              "UF_ID_QUESTION": "1384",
+              "ID": "5211",
+              "UF_ID_QUESTION": "1441",
               "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
               "UF_VARIANT_VALUE": "Ранжирование 9"
             }
@@ -347,18 +384,8 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
                   "a1bc2f76-5043-4574-a81b-e40b6e577307": {
                     "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
@@ -374,6 +401,16 @@
                   },
                   "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
                     "TEXT": "Ранжирование 9",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
+                    "TEXT": "Ранжирование 5",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
+                    "TEXT": "Ранжирование 6",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   }
@@ -389,18 +426,8 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
+                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
+                    "TEXT": "Ранжирование 4",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
@@ -416,6 +443,16 @@
                   },
                   "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
                     "TEXT": "Ранжирование 9",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
+                    "TEXT": "Ранжирование 5",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
+                    "TEXT": "Ранжирование 6",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   }
@@ -436,13 +473,18 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
+                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
+                    "TEXT": "Ранжирование 4",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
+                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
+                    "TEXT": "Ранжирование 7",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
+                    "TEXT": "Ранжирование 9",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
@@ -451,13 +493,8 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
+                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
+                    "TEXT": "Ранжирование 6",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   }
@@ -468,18 +505,28 @@
                 "COUNT_ANSWER": null,
                 "PROC": 0,
                 "INCORRECT": {
+                  "1": {
+                    "TEXT": "Ранжирование 1",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
                   "2": {
                     "TEXT": "Ранжирование 2",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
+                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
+                    "TEXT": "Ранжирование 7",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
+                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
+                    "TEXT": "Ранжирование 8",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
+                    "TEXT": "Ранжирование 9",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
@@ -488,18 +535,8 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
+                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
+                    "TEXT": "Ранжирование 6",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   }
@@ -507,48 +544,43 @@
               },
               "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
                 "TEXT": "Ранжирование 5",
-                "COUNT_ANSWER": 1,
-                "PROC": 11.1,
+                "COUNT_ANSWER": null,
+                "PROC": 0,
                 "INCORRECT": {
                   "1": {
                     "TEXT": "Ранжирование 1",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 11.1
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
                     "TEXT": "Ранжирование 4",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "a1bc2f76-5043-4574-a81b-e40b6e577307": {
                     "TEXT": "Ранжирование 7",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
                     "TEXT": "Ранжирование 8",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
                     "TEXT": "Ранжирование 3",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
                     "TEXT": "Ранжирование 9",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
+                  },
+                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
+                    "TEXT": "Ранжирование 6",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
                   }
                 }
               },
@@ -562,6 +594,11 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
+                  "2": {
+                    "TEXT": "Ранжирование 2",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
                   "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
                     "TEXT": "Ранжирование 4",
                     "COUNT_ANSWER": 1,
@@ -572,8 +609,35 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
+                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
+                    "TEXT": "Ранжирование 8",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
+                    "TEXT": "Ранжирование 3",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
                   "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
                     "TEXT": "Ранжирование 5",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  }
+                }
+              },
+              "a1bc2f76-5043-4574-a81b-e40b6e577307": {
+                "TEXT": "Ранжирование 7",
+                "COUNT_ANSWER": null,
+                "PROC": 0,
+                "INCORRECT": {
+                  "2": {
+                    "TEXT": "Ранжирование 2",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
+                  },
+                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
+                    "TEXT": "Ранжирование 4",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
@@ -591,46 +655,14 @@
                     "TEXT": "Ранжирование 9",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
-                  }
-                }
-              },
-              "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                "TEXT": "Ранжирование 7",
-                "COUNT_ANSWER": null,
-                "PROC": 0,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
                   },
                   "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
                     "TEXT": "Ранжирование 5",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
+                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
+                    "TEXT": "Ранжирование 6",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   }
@@ -651,11 +683,6 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 14.3
-                  },
                   "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
                     "TEXT": "Ранжирование 4",
                     "COUNT_ANSWER": 1,
@@ -666,8 +693,8 @@
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
+                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
+                    "TEXT": "Ранжирование 3",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
                   },
@@ -675,53 +702,53 @@
                     "TEXT": "Ранжирование 9",
                     "COUNT_ANSWER": 1,
                     "PROC": 14.3
+                  },
+                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
+                    "TEXT": "Ранжирование 6",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
                   }
                 }
               },
               "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
                 "TEXT": "Ранжирование 9",
-                "COUNT_ANSWER": 1,
-                "PROC": 11.1,
+                "COUNT_ANSWER": null,
+                "PROC": 0,
                 "INCORRECT": {
                   "1": {
                     "TEXT": "Ранжирование 1",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "2": {
                     "TEXT": "Ранжирование 2",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
                     "TEXT": "Ранжирование 4",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "a1bc2f76-5043-4574-a81b-e40b6e577307": {
                     "TEXT": "Ранжирование 7",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
                     "TEXT": "Ранжирование 8",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
                   },
                   "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
                     "TEXT": "Ранжирование 3",
                     "COUNT_ANSWER": 1,
-                    "PROC": 11.1
+                    "PROC": 14.3
+                  },
+                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
+                    "TEXT": "Ранжирование 5",
+                    "COUNT_ANSWER": 1,
+                    "PROC": 14.3
                   }
                 }
               }
@@ -729,12 +756,12 @@
           }
         },
         {
-          "ID": "1385",
-          "UF_ID_RESULT": "455",
+          "ID": "1442",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
           "UF_QUESTION_TYPE": "range-selection",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -757,12 +784,12 @@
           }
         },
         {
-          "ID": "1386",
-          "UF_ID_RESULT": "455",
+          "ID": "1443",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
           "UF_QUESTION_TYPE": "date",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -778,7 +805,7 @@
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": [
               {
-                "TEXT": "2023-12-06T09:58:00.000Z",
+                "TEXT": "2023-12-27T09:09:00.000Z",
                 "COUNT_ANSWER": 1,
                 "PROCENT": 100
               }
@@ -786,12 +813,12 @@
           }
         },
         {
-          "ID": "1387",
-          "UF_ID_RESULT": "455",
+          "ID": "1444",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
           "UF_QUESTION_TYPE": "date",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -807,7 +834,7 @@
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": [
               {
-                "TEXT": "Wed Dec 13 2023 15:58:00 GMT+0600 (Восточный Казахстан)-Fri Dec 15 2023 15:58:00 GMT+0600 (Восточный Казахстан)",
+                "TEXT": "Fri Dec 01 2023 15:09:00 GMT+0600 (Восточный Казахстан)-Fri Dec 15 2023 15:09:00 GMT+0600 (Восточный Казахстан)",
                 "COUNT_ANSWER": 1,
                 "PROCENT": 100
               }
@@ -815,12 +842,12 @@
           }
         },
         {
-          "ID": "1388",
-          "UF_ID_RESULT": "455",
+          "ID": "1445",
+          "UF_ID_RESULT": "465",
           "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
           "UF_QUESTION_TYPE": "custom-fields",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "255",
+          "UF_ID_PAGE": "259",
           "PARAMS": {
             "NAME": [
               {
@@ -833,26 +860,26 @@
           },
           "VARIANTS": [
             {
-              "ID": "5051",
-              "UF_ID_QUESTION": "1388",
+              "ID": "5212",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_VARIANT": "1",
               "UF_VARIANT_VALUE": "текст"
             },
             {
-              "ID": "5052",
-              "UF_ID_QUESTION": "1388",
+              "ID": "5213",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
               "UF_VARIANT_VALUE": "Телефон"
             },
             {
-              "ID": "5053",
-              "UF_ID_QUESTION": "1388",
+              "ID": "5214",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
               "UF_VARIANT_VALUE": "email"
             },
             {
-              "ID": "5054",
-              "UF_ID_QUESTION": "1388",
+              "ID": "5215",
+              "UF_ID_QUESTION": "1445",
               "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
               "UF_VARIANT_VALUE": "Область текста"
             }
@@ -860,17 +887,17 @@
           "FORMS": [
             [
               {
-                "ID": "389",
-                "UF_ID_QUESTION": "1388",
+                "ID": "409",
+                "UF_ID_QUESTION": "1445",
                 "UF_ID_FIELD": "1",
                 "UF_ID_TYPE_FIELD": "text",
                 "UF_VALUE_FIELD": "текст",
-                "UF_FILED_ANSWER": "123123",
+                "UF_FILED_ANSWER": "12312",
                 "UF_FIELD_FILLED": "true"
               },
               {
-                "ID": "390",
-                "UF_ID_QUESTION": "1388",
+                "ID": "410",
+                "UF_ID_QUESTION": "1445",
                 "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
                 "UF_ID_TYPE_FIELD": "phone",
                 "UF_VALUE_FIELD": "Телефон",
@@ -878,21 +905,108 @@
                 "UF_FIELD_FILLED": "true"
               },
               {
-                "ID": "391",
-                "UF_ID_QUESTION": "1388",
+                "ID": "411",
+                "UF_ID_QUESTION": "1445",
                 "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
                 "UF_ID_TYPE_FIELD": "email",
                 "UF_VALUE_FIELD": "email",
-                "UF_FILED_ANSWER": "123123@mail.ru",
+                "UF_FILED_ANSWER": "asdsad@mail.ru",
                 "UF_FIELD_FILLED": "true"
               },
               {
-                "ID": "392",
-                "UF_ID_QUESTION": "1388",
+                "ID": "412",
+                "UF_ID_QUESTION": "1445",
                 "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
                 "UF_ID_TYPE_FIELD": "textarea",
                 "UF_VALUE_FIELD": "Область текста",
                 "UF_FILED_ANSWER": "123123",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          "ANSWERS": {
+            "USER_ANSWER": []
+          }
+        },
+        {
+          "ID": "1446",
+          "UF_ID_RESULT": "465",
+          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "259",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "фывф фыв ф\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5216",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Текст 2"
+            },
+            {
+              "ID": "5217",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_VARIANT_VALUE": "Телефон 2"
+            },
+            {
+              "ID": "5218",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_VARIANT_VALUE": "Email 2"
+            },
+            {
+              "ID": "5219",
+              "UF_ID_QUESTION": "1446",
+              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_VARIANT_VALUE": "Область текста 2"
+            }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "413",
+                "UF_ID_QUESTION": "1446",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "Текст 2",
+                "UF_FILED_ANSWER": "asdasd1",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "414",
+                "UF_ID_QUESTION": "1446",
+                "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+                "UF_ID_TYPE_FIELD": "phone",
+                "UF_VALUE_FIELD": "Телефон 2",
+                "UF_FILED_ANSWER": "+7(123)123-12-31",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "415",
+                "UF_ID_QUESTION": "1446",
+                "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+                "UF_ID_TYPE_FIELD": "email",
+                "UF_VALUE_FIELD": "Email 2",
+                "UF_FILED_ANSWER": "sadsa@mail.ru",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "416",
+                "UF_ID_QUESTION": "1446",
+                "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+                "UF_ID_TYPE_FIELD": "textarea",
+                "UF_VALUE_FIELD": "Область текста 2",
+                "UF_FILED_ANSWER": "123123123",
                 "UF_FIELD_FILLED": "true"
               }
             ]

@@ -98,6 +98,20 @@ const isSelectTypes = [
   "multiple-choice",
 ];
 
+const secondLevelIsSelect = computed(() => {
+  return firstLevelFilterSelected.value
+    ? isSelectTypes.includes(firstLevelFilterSelected.value.questionType)
+    : false;
+});
+
+const isMultipleSelect = computed(() => {
+  if (secondLevelIsSelect.value) {
+    return ["multiple-drop-down-list", "multiple-choice"].includes(
+      firstLevelFilterSelected.value.questionType
+    );
+  }
+});
+
 const dataForFirtsLevelFilter = store.pagesGeneralData[0].map((item) => {
   const params = item.PARAMS;
   const questionId = item.UF_ID_QUESTION;
@@ -124,7 +138,7 @@ const dataForFirtsLevelFilter = store.pagesGeneralData[0].map((item) => {
 });
 
 const firstLevelSelect = (data) => {
-  console.log("first-level-select", data.isSigleDateItem);
+  console.log("first-level-select", data);
   firstLevelFilterSelected.value = data;
   dataForSecondLevelFilter.value = null;
   secondLevelFilterSelectedData.value = null;
@@ -147,25 +161,33 @@ const firstLevelSelect = (data) => {
   if (data.questionType === "date") {
     dataForSecondLevelFilter.value = data.isSigleDateItem;
   }
+
+  if (data.questionType === "custom-fields") {
+    const customFiledsData = Object.values(store.pagesCustomFieldsData);
+    const allCustomFields = [];
+    customFiledsData.forEach((item) => {
+      item[0][0].forEach((i) => allCustomFields.push(i));
+    });
+
+    dataForSecondLevelFilter.value = allCustomFields.reduce((acc, item) => {
+      if (item.UF_ID_QUESTION == data.questionOptions[0].UF_ID_QUESTION) {
+        acc.push({
+          id: item.UF_ID_FIELD,
+          type: item.UF_ID_TYPE_FIELD,
+          label: item.UF_VALUE_FIELD,
+        });
+      }
+      return acc;
+    }, []);
+
+    console.log(dataForSecondLevelFilter);
+  }
 };
 const secondLevelSelect = (data) => {
   console.log(data);
   secondLevelFilterSelectedData.value = data;
 };
 
-const secondLevelIsSelect = computed(() => {
-  return firstLevelFilterSelected.value
-    ? isSelectTypes.includes(firstLevelFilterSelected.value.questionType)
-    : false;
-});
-
-const isMultipleSelect = computed(() => {
-  if (secondLevelIsSelect.value) {
-    return ["multiple-drop-down-list", "multiple-choice"].includes(
-      firstLevelFilterSelected.value.questionType
-    );
-  }
-});
 const closeModal = (e) => {
   const target = e.target;
   if (

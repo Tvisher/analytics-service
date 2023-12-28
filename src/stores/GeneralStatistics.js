@@ -102,7 +102,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         currentPagePollItemsData,
         setCurrentPage,
         currentPageIndex,
-        // pagesCustomFieldsData,
+        pagesCustomFieldsData,
         currenCustomFieldsData,
         pagesGeneralData,
         pollType,
