@@ -67,7 +67,15 @@
             class="filter-select"
             v-if="firstLevelFilterSelected.questionType == 'custom-fields'"
           >
-            Кастомные поля
+            Поле ответа
+            <vSelect
+              :options="dataForSecondLevelFilter"
+              v-model="secondLevelFilterSelectedData"
+              :searchable="false"
+              placeholder="Выберите опцию"
+              @option:selected="secondLevelSelect"
+              :multiple="isMultipleSelect"
+            ></vSelect>
           </div>
         </div>
         <button class="btn red-btn filter-modal__btn" @click="addFilter">
@@ -90,6 +98,9 @@ const showFilterModal = ref(false);
 const firstLevelFilterSelected = ref(null);
 const dataForSecondLevelFilter = ref(null);
 const secondLevelFilterSelectedData = ref(null);
+
+const thirdLevelFilterSelectedData = ref(null);
+const thirdLeveltype = ref(null);
 
 const isSelectTypes = [
   "single-choice",
@@ -184,8 +195,11 @@ const firstLevelSelect = (data) => {
   }
 };
 const secondLevelSelect = (data) => {
-  console.log(data);
   secondLevelFilterSelectedData.value = data;
+  if (firstLevelFilterSelected.value.questionType === "custom-fields") {
+    thirdLeveltype.value = data.type;
+  }
+  console.log(thirdLeveltype.value);
 };
 
 const closeModal = (e) => {
