@@ -8,12 +8,12 @@
       <div
         class="filter-list__item"
         v-for="(filterItem, index) in filterItemsList"
-        :key="filterItem.filterItemId"
+        :key="filterItem.id"
       >
         <span>Фильтр {{ index + 1 }}</span>
         <button
           class="remove-filter-item"
-          @click="removeFilterItem(filterItem.filterItemId)"
+          @click="removeFilterItem(filterItem.id)"
         ></button>
       </div>
     </div>
@@ -35,24 +35,25 @@ import AppFilter from "@/components/Filter.vue";
 import AppInDevPoster from "@/components/InDevPoster.vue";
 import { v4 as uuidv4 } from "uuid";
 
-import { ref, computed } from "vue";
+import { ref } from "vue";
 const pageInDev = false;
-
 const filterItemsList = ref([]);
 
 const addFilterItem = (filterItem) => {
   const isHasCurentFilter = filterItemsList.value.find((item) => {
-    return JSON.stringify(item) === JSON.stringify(filterItem);
+    return JSON.stringify(item.params) === JSON.stringify(filterItem);
   });
-  filterItem.filterItemId = uuidv4();
   if (!isHasCurentFilter) {
-    filterItemsList.value.push(filterItem);
+    filterItemsList.value.push({
+      id: uuidv4(),
+      params: filterItem,
+    });
   }
 };
 
 const removeFilterItem = (itemId) => {
   filterItemsList.value = filterItemsList.value.filter(
-    (item) => item.filterItemId !== itemId
+    (item) => item.id !== itemId
   );
 };
 </script>

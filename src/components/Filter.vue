@@ -299,7 +299,7 @@ const addFilter = () => {
       border: none;
       display: flex;
       align-items: center;
-      font-size: 16px !important;
+      font-size: 14px !important;
       margin-right: 4px;
       width: fit-content;
       white-space: wrap;
@@ -310,6 +310,7 @@ const addFilter = () => {
     }
 
     .vs__deselect {
+      flex-shrink: 0;
       margin-left: 6px !important;
       width: 16px;
       height: 16px;
