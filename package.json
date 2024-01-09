@@ -16,9 +16,11 @@
     "chartjs-plugin-datalabels": "^2.2.0",
     "pinia": "^2.1.6",
     "quill-delta-to-html": "^0.12.1",
+    "uuid": "^9.0.1",
     "vue": "^3.3.4",
     "vue-chartjs": "^5.2.0",
     "vue-draggable-next": "^2.2.1",
+    "vue-imask": "^7.3.0",
     "vue-router": "^4.2.5",
     "vue-select": "^4.0.0-beta.6",
     "vue3-slide-up-down": "^2.0.1"

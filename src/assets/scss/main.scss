@@ -452,7 +452,7 @@ $mainColor: #fa0056;
   margin: auto;
 }
 .filter-select {
-  margin: 20px 0px;
+  padding: 10px 0px;
 }
 
 .filter-select__title {
@@ -468,6 +468,7 @@ $mainColor: #fa0056;
   line-height: 130%; /* 26px */
 }
 .filter-modal__btn {
+  margin-top: 10px;
   margin-left: auto;
 }
 

@@ -1,14 +1,11 @@
 <template>
   <div class="filter-block">
     <div class="filter-wrapper">
-      <button
-        class="btn red-btn add-filter-btn"
-        @click="showFilterModal = true"
-      >
+      <button class="btn red-btn add-filter-btn" @click="openFilterModal">
         Добавить фильтр
       </button>
     </div>
-    <div class="filter-modal" v-if="showFilterModal" @click="closeModal">
+    <div class="filter-modal" v-if="showFilterModal" @click="closeFilterModal">
       <div class="filter-modal__content">
         <div class="filter-modal__close"></div>
         <h2 class="filter-modal__title">Добавить фильтр</h2>
@@ -21,63 +18,79 @@
             @option:selected="firstLevelSelect"
           ></vSelect>
         </div>
-        <div class="filter-items" v-if="firstLevelFilterSelected">
-          <div class="filter-select" v-if="secondLevelIsSelect">
-            <vSelect
-              :options="dataForSecondLevelFilter"
-              v-model="secondLevelFilterSelectedData"
-              :searchable="false"
-              placeholder="Выберите опцию"
-              @option:selected="secondLevelSelect"
-              :multiple="isMultipleSelect"
-            ></vSelect>
+        <Vue3SlideUpDown v-model="openSecondLevel" :duration="300">
+          <div class="filter-items">
+            <div class="filter-select" v-if="secondLevelIsSelect">
+              <vSelect
+                :options="dataForSecondLevelFilter"
+                v-model="secondLevelFilterSelectedValue"
+                :searchable="false"
+                placeholder="Выберите опцию"
+                @option:selected="secondLevelSelect"
+                :multiple="isMultipleSelect"
+              ></vSelect>
+            </div>
+            <div
+              class="filter-select"
+              v-if="firstLevelFilterSelected.questionType == 'ranging'"
+            >
+              <div class="flex-wrapper">
+                <span class="level-descr">Учитывать пункты</span>
+                <span class="level-descr">Укажите желаемый порядок</span>
+              </div>
+              <RanginVisual
+                :optionsData="dataForSecondLevelFilter"
+                @setSecondLevelData="secondLevelSelect"
+              />
+            </div>
+            <div
+              class="filter-select"
+              v-if="firstLevelFilterSelected.questionType == 'range-selection'"
+            >
+              <span class="level-descr">Укажите интересующий вас диапазон</span>
+              <RangeSelection
+                :data="dataForSecondLevelFilter"
+                @setSecondLevelData="secondLevelSelect"
+              />
+            </div>
+            <div
+              class="filter-select"
+              v-if="firstLevelFilterSelected.questionType == 'date'"
+            >
+              <DateSelection
+                :isRange="!dataForSecondLevelFilter"
+                :key="dataForSecondLevelFilter"
+                @setSecondLevelData="secondLevelSelect"
+              />
+            </div>
+            <div
+              class="filter-select"
+              v-if="firstLevelFilterSelected.questionType == 'custom-fields'"
+            >
+              <vSelect
+                :options="dataForSecondLevelFilter"
+                v-model="secondLevelFilterSelectedValue"
+                :searchable="false"
+                placeholder="Наименование поля"
+                @option:selected="secondLevelSelect"
+                :multiple="isMultipleSelect"
+              ></vSelect>
+              <Vue3SlideUpDown v-model="openThirdLevel" :duration="300">
+                <div
+                  class="third-level-field"
+                  v-if="secondLevelFilterSelectedValue"
+                >
+                  <span>Oтвет пользователя</span>
+                  <input
+                    class="mofal-filter-input"
+                    type="text"
+                    v-model="thirdLevelFilterSelectedValue"
+                  />
+                </div>
+              </Vue3SlideUpDown>
+            </div>
           </div>
-          <div
-            class="filter-select"
-            v-if="firstLevelFilterSelected.questionType == 'ranging'"
-          >
-            <span class="level-descr">Укажите желаемый порядок</span>
-            <RanginVisual
-              :optionsData="dataForSecondLevelFilter"
-              @setSecondLevelData="secondLevelSelect"
-            />
-          </div>
-          <div
-            class="filter-select"
-            v-if="firstLevelFilterSelected.questionType == 'range-selection'"
-          >
-            <span class="level-descr">Укажите интересующий вас диапазон</span>
-            <RangeSelection
-              :data="dataForSecondLevelFilter"
-              @setSecondLevelData="secondLevelSelect"
-            />
-          </div>
-          <div
-            class="filter-select"
-            v-if="firstLevelFilterSelected.questionType == 'date'"
-          >
-            Дата
-            <DateSelection
-              :isRange="!dataForSecondLevelFilter"
-              :key="dataForSecondLevelFilter"
-              @setSecondLevelData="secondLevelSelect"
-            />
-          </div>
-          <div
-            class="filter-select"
-            v-if="firstLevelFilterSelected.questionType == 'custom-fields'"
-          >
-            Поле ответа
-            <vSelect
-              :options="dataForSecondLevelFilter"
-              v-model="secondLevelFilterSelectedData"
-              :searchable="false"
-              placeholder="Выберите опцию"
-              @option:selected="secondLevelSelect"
-              :multiple="isMultipleSelect"
-            ></vSelect>
-          </div>
-        </div>
+        </Vue3SlideUpDown>
         <button class="btn red-btn filter-modal__btn" @click="addFilter">
           Добавить фильтр
         </button>
@@ -85,6 +98,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import RanginVisual from "@/components/filterComponents/RanginVisual.vue";
 import RangeSelection from "@/components/filterComponents/RangeSelection.vue";
@@ -92,14 +106,19 @@ import DateSelection from "@/components/filterComponents/DateSelection.vue";
 import { ref, computed } from "vue";
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
 import { QuillDeltaToHtmlConverter } from "quill-delta-to-html";
+import { Vue3SlideUpDown } from "vue3-slide-up-down";
 
+const emit = defineEmits(["addFilterItem"]);
 const store = useGeneralStatistics();
-const showFilterModal = ref(false);
-const firstLevelFilterSelected = ref(null);
-const dataForSecondLevelFilter = ref(null);
-const secondLevelFilterSelectedData = ref(null);
 
-const thirdLevelFilterSelectedData = ref(null);
+const showFilterModal = ref(false);
+
+const firstLevelFilterSelected = ref(null);
+const openSecondLevel = ref(false);
+const dataForSecondLevelFilter = ref(null);
+const secondLevelFilterSelectedValue = ref(null);
+const openThirdLevel = ref(false);
+const thirdLevelFilterSelectedValue = ref(null);
 const thirdLeveltype = ref(null);
 
 const isSelectTypes = [
@@ -149,10 +168,10 @@ const dataForFirtsLevelFilter = store.pagesGeneralData[0].map((item) => {
 });
 
 const firstLevelSelect = (data) => {
-  console.log("first-level-select", data);
+  openSecondLevel.value = false;
   firstLevelFilterSelected.value = data;
   dataForSecondLevelFilter.value = null;
-  secondLevelFilterSelectedData.value = null;
+  secondLevelFilterSelectedValue.value = null;
   if (secondLevelIsSelect.value) {
     const options = Object.values(data.questionOptions).map((item) => {
       return {
@@ -190,44 +209,87 @@ const firstLevelSelect = (data) => {
       }
       return acc;
     }, []);
-
-    console.log(dataForSecondLevelFilter);
   }
+
+  setTimeout(() => {
+    openSecondLevel.value = true;
+  }, 300);
 };
 const secondLevelSelect = (data) => {
-  secondLevelFilterSelectedData.value = data;
+  openThirdLevel.value = false;
+  thirdLevelFilterSelectedValue.value = null;
+  secondLevelFilterSelectedValue.value = data;
   if (firstLevelFilterSelected.value.questionType === "custom-fields") {
     thirdLeveltype.value = data.type;
+    setTimeout(() => {
+      openThirdLevel.value = true;
+    }, 300);
   }
-  console.log(thirdLeveltype.value);
 };
-
-const closeModal = (e) => {
+const openFilterModal = () => {
+  document.body.style.overflow = "hidden";
+  showFilterModal.value = true;
+};
+const closeFilterModal = (e) => {
   const target = e.target;
   if (
     (target.closest(".filter-modal") &&
       !target.closest(".filter-modal__content")) ||
     target.closest(".filter-modal__close")
   ) {
-    showFilterModal.value = false;
-    firstLevelFilterSelected.value = null;
-    secondLevelFilterSelectedData.value = null;
-    dataForSecondLevelFilter.value = null;
+    resetFilterAdnCloseModal();
   }
 };
 
+const resetFilterAdnCloseModal = () => {
+  document.body.style.overflow = "";
+  showFilterModal.value = false;
+  firstLevelFilterSelected.value = null;
+  secondLevelFilterSelectedValue.value = null;
+  dataForSecondLevelFilter.value = null;
+  thirdLevelFilterSelectedValue.value = null;
+  openSecondLevel.value = false;
+  openThirdLevel.value = false;
+};
+
 const addFilter = () => {
+  const thirdLevelValue = thirdLevelFilterSelectedValue.value
+    ? thirdLevelFilterSelectedValue.value.trim()
+    : null;
+
   const filterItemData = {
     questionId: firstLevelFilterSelected.value.questionId,
     questionType: firstLevelFilterSelected.value.questionType,
-    answerIdes: [],
+    secondLevelFilterSelectedValue: secondLevelFilterSelectedValue.value,
+    thirdLevelValue,
   };
-  console.log(firstLevelFilterSelected.value);
-  console.log(secondLevelFilterSelectedData.value);
+  emit("addFilterItem", filterItemData);
+  resetFilterAdnCloseModal();
 };
 </script>
 
 <style lang="scss">
+.third-level-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mofal-filter-input {
+  outline: none;
+  padding: 10px !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(0, 66, 105, 0.28) !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
 .filter-modal {
   .vs--multiple {
     .vs__selected {
@@ -287,6 +349,17 @@ const addFilter = () => {
 
   .vs__dropdown-option--highlight {
     background: #fa0056;
+  }
+
+  .dp__input_wrap::before {
+    right: 47px;
+  }
+
+  .dp__input_wrap::after {
+    right: 17px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
   }
 }
 
