@@ -70,6 +70,7 @@ const setFiltersOnServer = () => {
     id: usePersonalStatisticStore.pollId,
     filtersList: [...filterItemsList.value],
   };
+  console.log(payloadData);
   axios
     .post("/someUrl.php", payloadData, {
       headers: {
