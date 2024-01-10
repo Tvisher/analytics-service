@@ -13,15 +13,23 @@ import TheStatisticHead from "@/components/StatisticHead.vue";
 import TheStatisticBody from "@/components/StatisticBody.vue";
 import { ref, onMounted } from "vue";
 import { useGeneralStatistics } from "./stores/GeneralStatistics";
+import { usePersonalStatistic } from "./stores/PersonalStatistic";
 
 const generalStatisticsStore = useGeneralStatistics();
+const usePersonalStatisticStore = usePersonalStatistic();
+
 const getAppData = generalStatisticsStore.getAppData;
+const getPersonalStatisticData =
+  usePersonalStatisticStore.getPersonalStatisticData;
 
 const appLoaded = ref(false);
 
 onMounted(() => {
   getAppData()
-    .then(function (response) {
+    .then((response) => {
+      getPersonalStatisticData().then((res) => {
+        console.log(res);
+      });
       appLoaded.value = true;
     })
     .catch(function (error) {
@@ -29,7 +37,7 @@ onMounted(() => {
         appLoaded.value = true;
       } else {
         console.log("Ошибка!!!", error);
-        appLoaded.value = true;
+        appLoaded.value = false;
       }
     });
 });

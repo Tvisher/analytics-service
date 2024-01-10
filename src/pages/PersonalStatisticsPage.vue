@@ -1,10 +1,9 @@
 <template>
   <AppInDevPoster v-if="pageInDev" />
   <div v-else>
-    <h1>Персональная статистика</h1>
-    <AppFilter @addFilterItem="addFilterItem" />
-
+    <!-- <h1>Персональная статистика</h1> -->
     <div class="filter-list">
+      <AppFilter @addFilterItem="addFilterItem" />
       <div
         class="filter-list__item"
         v-for="(filterItem, index) in filterItemsList"
@@ -20,6 +19,7 @@
     <pre>
       {{ filterItemsList }}
     </pre>
+    <AppPersonalStatisticTable />
     <!-- <router-link
       class=""
       :to="{ name: 'personalStatisticItem', params: { id: 3 } }"
@@ -33,7 +33,13 @@
 <script setup>
 import AppFilter from "@/components/Filter.vue";
 import AppInDevPoster from "@/components/InDevPoster.vue";
+import AppPersonalStatisticTable from "@/components/PersonalStatisticTable.vue";
+
+import { usePersonalStatistic } from "@/stores/PersonalStatistic";
+const usePersonalStatisticStore = usePersonalStatistic();
+
 import { v4 as uuidv4 } from "uuid";
+import axios from "axios";
 
 import { ref } from "vue";
 const pageInDev = false;
@@ -48,6 +54,7 @@ const addFilterItem = (filterItem) => {
       id: uuidv4(),
       params: filterItem,
     });
+    setFiltersOnServer();
   }
 };
 
@@ -55,11 +62,33 @@ const removeFilterItem = (itemId) => {
   filterItemsList.value = filterItemsList.value.filter(
     (item) => item.id !== itemId
   );
+  setFiltersOnServer();
+};
+
+const setFiltersOnServer = () => {
+  const payloadData = {
+    id: usePersonalStatisticStore.pollId,
+    filtersList: [...filterItemsList.value],
+  };
+  axios
+    .post("/someUrl.php", payloadData, {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    })
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 };
 </script>
 
 <style lang="scss">
 .filter-list {
+  margin: 20px 0;
+  flex-wrap: wrap;
   display: flex;
   gap: 22px;
 }

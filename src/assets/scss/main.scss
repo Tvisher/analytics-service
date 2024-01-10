@@ -5,6 +5,8 @@
 $mainColor: #fa0056;
 
 #app {
+  position: relative;
+  z-index: 20;
   font-family: Montserrat;
 }
 
@@ -42,6 +44,15 @@ $mainColor: #fa0056;
 }
 .drop-leave-to {
   transform: translateY(26px);
+  opacity: 0;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+.modal-fade-enter-from,
+.modal-fade-leave-to {
   opacity: 0;
 }
 
@@ -404,9 +415,11 @@ $mainColor: #fa0056;
 }
 
 .filter-wrapper {
-  margin: 25px 0;
+  // margin: 25px 0;
 }
 .add-filter-btn {
+  background-color: $mainColor;
+  color: #fff;
   padding: 10px 54px 10px 24px !important;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14 10.9422V18.9422M10 14.9422H18M7 5.9422H21C22.1046 5.9422 23 6.83763 23 7.9422V21.9422C23 23.0468 22.1046 23.9422 21 23.9422H7C5.89543 23.9422 5 23.0468 5 21.9422V7.9422C5 6.83763 5.89543 5.9422 7 5.9422Z' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
   background-repeat: no-repeat;
@@ -431,7 +444,7 @@ $mainColor: #fa0056;
 
 .filter-modal {
   display: flex;
-  // align-items: center;
+  z-index: 100;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
@@ -470,6 +483,8 @@ $mainColor: #fa0056;
 .filter-modal__btn {
   margin-top: 10px;
   margin-left: auto;
+  background-color: $mainColor;
+  color: #fff;
 }
 
 .v-select {
