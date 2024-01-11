@@ -7,7 +7,10 @@ $mainColor: #fa0056;
 #app {
   position: relative;
   z-index: 20;
-  font-family: Montserrat;
+  font-family: Montserrat !important;
+  * {
+    font-family: Montserrat !important;
+  }
 }
 
 .fade-enter-active,

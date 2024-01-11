@@ -195,8 +195,11 @@ export default {
   },
 
   beforeMount() {
-    console.log(this.optionsData);
-    this.optionsList = [...this.optionsData].map((variant) => {
+    const optionVariants = Array.isArray(this.optionsData)
+      ? [...this.optionsData]
+      : Object.values(this.optionsData);
+
+    this.optionsList = optionVariants.map((variant) => {
       return {
         id: variant.UF_ID_VARIANT,
         value: variant.UF_VARIANT_VALUE,

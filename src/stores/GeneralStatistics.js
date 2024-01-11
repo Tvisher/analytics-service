@@ -87,9 +87,7 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
                 })
                 .catch((error) => {
                     console.log("Ошибка!!!", error);
-                    // if (process.env.NODE_ENV == "development") {
                     setApplicationData({ data: analiticTestJson });
-                    // }
                     reject();
                 });
         })

@@ -90,7 +90,15 @@
                     v-if="secondLevelFilterSelectedValue"
                   >
                     <span>Oтвет пользователя</span>
+
                     <input
+                      v-if="thirdLeveltype === 'phone'"
+                      class="mofal-filter-input"
+                      type="text"
+                      ref="el"
+                    />
+                    <input
+                      v-else
                       class="mofal-filter-input"
                       type="text"
                       v-model="thirdLevelFilterSelectedValue"
@@ -117,6 +125,13 @@ import { ref, computed } from "vue";
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
 import { QuillDeltaToHtmlConverter } from "quill-delta-to-html";
 import { Vue3SlideUpDown } from "vue3-slide-up-down";
+
+import { useIMask } from "vue-imask";
+
+const { el, masked } = useIMask({
+  mask: "+{7}(000)000-00-00",
+  lazy: false,
+});
 
 const emit = defineEmits(["addFilterItem"]);
 const store = useGeneralStatistics();
@@ -152,30 +167,37 @@ const isMultipleSelect = computed(() => {
   }
 });
 
-const dataForFirtsLevelFilter = store.pagesGeneralData[0].map((item) => {
-  const params = item.PARAMS;
-  const questionId = item.UF_ID_QUESTION;
-  const questionType = item.UF_QUESTION_TYPE;
-  const questionOptions = item.VARIANTS;
-  let label = new QuillDeltaToHtmlConverter(item.PARAMS.NAME).convert();
-  label = label.replace(/<\/?p>/g, "");
-  const filterItem = {
-    questionId,
-    questionType,
-    questionOptions,
-    label,
-    params,
-  };
+const dataForFirtsLevelFilter = store.pagesGeneralData
+  .reduce((acc, page) => {
+    page.forEach((question) => acc.push(question));
+    return acc;
+  }, [])
+  .map((question) => {
+    const params = question.PARAMS;
+    const questionId = question.UF_ID_QUESTION;
+    const questionType = question.UF_QUESTION_TYPE;
+    const questionOptions = question.VARIANTS;
+    let label = new QuillDeltaToHtmlConverter(question.PARAMS.NAME)
+      .convert()
+      .replace(/<\/?p>/g, "");
 
-  // Определения типа даты (одиночная или диапазон)
-  if (item.UF_QUESTION_TYPE === "date") {
-    const isSigleDate = Date.parse(item.ANSWERS.USER_ANSWER[0].TEXT);
-    if (isSigleDate) {
-      filterItem.isSigleDateItem = true;
+    const filterItem = {
+      questionId,
+      questionType,
+      questionOptions,
+      label,
+      params,
+    };
+
+    // Определения типа даты (одиночная или диапазон)
+    if (question.UF_QUESTION_TYPE === "date") {
+      const isSigleDate = Date.parse(question.ANSWERS.USER_ANSWER[0].TEXT);
+      if (isSigleDate) {
+        filterItem.isSigleDateItem = true;
+      }
     }
-  }
-  return filterItem;
-});
+    return filterItem;
+  });
 
 const firstLevelSelect = (data) => {
   openSecondLevel.value = false;
@@ -209,16 +231,27 @@ const firstLevelSelect = (data) => {
       item[0][0].forEach((i) => allCustomFields.push(i));
     });
 
-    dataForSecondLevelFilter.value = allCustomFields.reduce((acc, item) => {
-      if (item.UF_ID_QUESTION == data.questionOptions[0].UF_ID_QUESTION) {
-        acc.push({
-          id: item.UF_ID_FIELD,
-          type: item.UF_ID_TYPE_FIELD,
-          label: item.UF_VALUE_FIELD,
-        });
-      }
-      return acc;
-    }, []);
+    const questionOptions = Array.isArray(data.questionOptions)
+      ? data.questionOptions
+      : Object.values(data.questionOptions);
+
+    dataForSecondLevelFilter.value = allCustomFields.reduce(
+      (acc, customField) => {
+        const questionItem = questionOptions.find(
+          (questionOption) =>
+            questionOption.UF_ID_QUESTION == customField.UF_ID_QUESTION
+        );
+        if (questionItem) {
+          acc.push({
+            id: customField.UF_ID_FIELD,
+            type: customField.UF_ID_TYPE_FIELD,
+            label: customField.UF_VALUE_FIELD,
+          });
+        }
+        return acc;
+      },
+      []
+    );
   }
 
   setTimeout(() => {
@@ -272,9 +305,24 @@ const addFilter = () => {
   ) {
     return;
   }
-  const thirdLevelValue = thirdLevelFilterSelectedValue.value
-    ? thirdLevelFilterSelectedValue.value.trim()
-    : null;
+
+  let thirdLevelValue;
+  if (thirdLeveltype.value === "phone") {
+    thirdLevelValue = masked.value;
+  } else {
+    thirdLevelValue = thirdLevelFilterSelectedValue.value
+      ? thirdLevelFilterSelectedValue.value.trim()
+      : null;
+  }
+
+  if (
+    firstLevelFilterSelected.value.questionType === "custom-fields" &&
+    (!thirdLevelValue ||
+      (thirdLeveltype.value === "phone" &&
+        thirdLevelValue.trim().replace(/[^+\d]/g, "").length < 12))
+  ) {
+    return;
+  }
 
   const filterItemData = {
     questionId: firstLevelFilterSelected.value.questionId,
