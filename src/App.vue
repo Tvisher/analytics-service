@@ -29,8 +29,8 @@ onMounted(() => {
     .then((response) => {
       getPersonalStatisticData().then((res) => {
         console.log(res);
+        appLoaded.value = true;
       });
-      appLoaded.value = true;
     })
     .catch(function (error) {
       if (process.env.NODE_ENV === "development") {
