@@ -71,9 +71,14 @@ watch(selectedValue, (newVal) => {
   .vs__dropdown-option--highlight {
     background-color: #fa0056;
   }
-  .vs__clear,
-  .vs__search {
+  .vs__clear {
     display: none;
+  }
+  .vs__search {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
   .vs--single.vs--open .vs__selected,
   .vs--single.vs--loading .vs__selected {

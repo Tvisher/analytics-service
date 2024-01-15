@@ -2,5 +2,21 @@
   <router-link class="" :to="{ name: 'personalStatistics' }">
     &#8592;К списку
   </router-link>
-  <h1>Персональная статистика по опросу с ID{{ $route.params.id }}</h1>
+
+  <pre>
+    {{ currentPageData }}
+  </pre>
 </template>
+
+<script setup>
+import { useRouter, useRoute } from "vue-router";
+import { usePersonalStatistic } from "@/stores/PersonalStatistic";
+
+const usePersonalStatisticStore = usePersonalStatistic();
+const route = useRoute();
+
+const currentPageData = usePersonalStatisticStore.currentUserResult(
+  route.params.id
+);
+console.log(currentPageData);
+</script>

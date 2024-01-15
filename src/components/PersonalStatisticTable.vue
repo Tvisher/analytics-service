@@ -53,7 +53,6 @@ const tableBodyData = computed(() => {
 const selectCountToShow = (count) => (selectedRowCount.value = count);
 
 const openResult = (id) => {
-  console.log(id);
   router.push({ name: "personalStatisticItem", params: { id } });
 };
 </script>

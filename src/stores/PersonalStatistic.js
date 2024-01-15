@@ -8,7 +8,8 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
 
     const personalStatisticData = ref(null);
     const pollId = document.querySelector('#app').dataset.id;
-
+    // Getters
+    const currentUserResult = (id) => computed(() => personalStatisticData.value.find(res => res.resultId === id));
     // Actions
     const setPersonalStatisticData = (data) => {
         console.log(data);
@@ -37,7 +38,6 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
         }, []);
         personalStatisticData.value = resultsData;
     };
-
     const getPersonalStatisticData = async (timeFilter) => {
         return new Promise((resolve, reject) => {
             let postData = {
@@ -70,6 +70,7 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
     return {
         pollId,
         getPersonalStatisticData,
-        personalStatisticData
+        personalStatisticData,
+        currentUserResult
     }
 }) 
