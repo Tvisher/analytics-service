@@ -1,0 +1,4408 @@
+{
+  "ID": "317",
+  "NAME": "опрос для создания фильтра",
+  "RESPONDENT_NAME": {
+    "479": "Илья Бечейкин",
+    "480": "Илья Бечейкин",
+    "481": "Илья Бечейкин",
+    "482": "Илья Бечейкин",
+    "483": "Илья Бечейкин",
+    "484": "Илья Бечейкин"
+  },
+  "TIME": {
+    "479": {
+      "MIN": 0,
+      "SEC": 29
+    },
+    "480": {
+      "MIN": 0,
+      "SEC": 36
+    },
+    "481": {
+      "MIN": 0,
+      "SEC": 34
+    },
+    "482": {
+      "MIN": 1,
+      "SEC": 18
+    },
+    "483": {
+      "MIN": 0,
+      "SEC": 32
+    },
+    "484": {
+      "MIN": 0,
+      "SEC": 47
+    }
+  },
+  "DATES_START": {
+    "479": "11.01.2024"
+  },
+  "TYPE": "опрос",
+  "PAGES": 2,
+  "QUESTION_COUNT": 12,
+  "DATE_CREAT": "28.12.2023",
+  "RESPONDENT": 6,
+  "MIDDLE_TIME": {
+    "MIN": 0,
+    "SEC": 43
+  },
+  "UNFINISH": 0,
+  "ACTIVE": true,
+  "TABLE_ORIGIN": {
+    "479": {
+      "ID": "479",
+      "UF_DATE_FINISH": "12.01.2024",
+      "UF_USER": "1",
+      "UF_START_ID": "578",
+      "TABLE_QUESTIONS": {
+        "1523": [
+          {
+            "ID": "449",
+            "UF_ID_QUESTION": "1523",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "12312",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "450",
+            "UF_ID_QUESTION": "1523",
+            "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "451",
+            "UF_ID_QUESTION": "1523",
+            "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "email",
+            "UF_FILED_ANSWER": "фывфы@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "452",
+            "UF_ID_QUESTION": "1523",
+            "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста",
+            "UF_FILED_ANSWER": "фывфы@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1524": [
+          {
+            "ID": "453",
+            "UF_ID_QUESTION": "1524",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "Текст 2",
+            "UF_FILED_ANSWER": "фывфы@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "454",
+            "UF_ID_QUESTION": "1524",
+            "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон 2",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "455",
+            "UF_ID_QUESTION": "1524",
+            "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "Email 2",
+            "UF_FILED_ANSWER": "фывфы@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "456",
+            "UF_ID_QUESTION": "1524",
+            "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста 2",
+            "UF_FILED_ANSWER": "123123123",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1525": [
+          {
+            "ID": "457",
+            "UF_ID_QUESTION": "1525",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "фывфы@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "458",
+            "UF_ID_QUESTION": "1525",
+            "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          }
+        ]
+      }
+    },
+    "480": {
+      "ID": "480",
+      "UF_DATE_FINISH": "12.01.2024",
+      "UF_USER": "1",
+      "UF_START_ID": "",
+      "TABLE_QUESTIONS": {
+        "1535": [
+          {
+            "ID": "459",
+            "UF_ID_QUESTION": "1535",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "460",
+            "UF_ID_QUESTION": "1535",
+            "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "461",
+            "UF_ID_QUESTION": "1535",
+            "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "email",
+            "UF_FILED_ANSWER": "asdasd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "462",
+            "UF_ID_QUESTION": "1535",
+            "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1536": [
+          {
+            "ID": "463",
+            "UF_ID_QUESTION": "1536",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "Текст 2",
+            "UF_FILED_ANSWER": "asdasd",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "464",
+            "UF_ID_QUESTION": "1536",
+            "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон 2",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "465",
+            "UF_ID_QUESTION": "1536",
+            "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "Email 2",
+            "UF_FILED_ANSWER": "asdsa@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "466",
+            "UF_ID_QUESTION": "1536",
+            "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста 2",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1537": [
+          {
+            "ID": "467",
+            "UF_ID_QUESTION": "1537",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "fhjkfghjk",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "468",
+            "UF_ID_QUESTION": "1537",
+            "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(342)342-34-23",
+            "UF_FIELD_FILLED": "true"
+          }
+        ]
+      }
+    },
+    "481": {
+      "ID": "481",
+      "UF_DATE_FINISH": "12.01.2024",
+      "UF_USER": "1",
+      "UF_START_ID": "",
+      "TABLE_QUESTIONS": {
+        "1547": [
+          {
+            "ID": "469",
+            "UF_ID_QUESTION": "1547",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "12312312",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "470",
+            "UF_ID_QUESTION": "1547",
+            "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)121-23-12",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "471",
+            "UF_ID_QUESTION": "1547",
+            "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "email",
+            "UF_FILED_ANSWER": "asds@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "472",
+            "UF_ID_QUESTION": "1547",
+            "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1548": [
+          {
+            "ID": "473",
+            "UF_ID_QUESTION": "1548",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "Текст 2",
+            "UF_FILED_ANSWER": "asdasd",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "474",
+            "UF_ID_QUESTION": "1548",
+            "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон 2",
+            "UF_FILED_ANSWER": "+7(123)123-13-12",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "475",
+            "UF_ID_QUESTION": "1548",
+            "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "Email 2",
+            "UF_FILED_ANSWER": "asdasd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "476",
+            "UF_ID_QUESTION": "1548",
+            "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста 2",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1549": [
+          {
+            "ID": "477",
+            "UF_ID_QUESTION": "1549",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "asdasd",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "478",
+            "UF_ID_QUESTION": "1549",
+            "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          }
+        ]
+      }
+    },
+    "482": {
+      "ID": "482",
+      "UF_DATE_FINISH": "12.01.2024",
+      "UF_USER": "1",
+      "UF_START_ID": "",
+      "TABLE_QUESTIONS": {
+        "1559": [
+          {
+            "ID": "479",
+            "UF_ID_QUESTION": "1559",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "Поле имя",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "480",
+            "UF_ID_QUESTION": "1559",
+            "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(111)111-11-11",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "481",
+            "UF_ID_QUESTION": "1559",
+            "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "email",
+            "UF_FILED_ANSWER": "email@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "482",
+            "UF_ID_QUESTION": "1559",
+            "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста",
+            "UF_FILED_ANSWER": "Какой то текст",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1560": [
+          {
+            "ID": "483",
+            "UF_ID_QUESTION": "1560",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "Текст 2",
+            "UF_FILED_ANSWER": "Поле имя 2",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "484",
+            "UF_ID_QUESTION": "1560",
+            "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон 2",
+            "UF_FILED_ANSWER": "+7(222)222-22-22",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "485",
+            "UF_ID_QUESTION": "1560",
+            "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "Email 2",
+            "UF_FILED_ANSWER": "email@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "486",
+            "UF_ID_QUESTION": "1560",
+            "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста 2",
+            "UF_FILED_ANSWER": "Какой то текст 2",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1561": [
+          {
+            "ID": "487",
+            "UF_ID_QUESTION": "1561",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "Имя 3",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "488",
+            "UF_ID_QUESTION": "1561",
+            "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(333)333-33-33",
+            "UF_FIELD_FILLED": "true"
+          }
+        ]
+      }
+    },
+    "483": {
+      "ID": "483",
+      "UF_DATE_FINISH": "12.01.2024",
+      "UF_USER": "1",
+      "UF_START_ID": "",
+      "TABLE_QUESTIONS": {
+        "1571": [
+          {
+            "ID": "489",
+            "UF_ID_QUESTION": "1571",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "490",
+            "UF_ID_QUESTION": "1571",
+            "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "491",
+            "UF_ID_QUESTION": "1571",
+            "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "email",
+            "UF_FILED_ANSWER": "asdsa@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "492",
+            "UF_ID_QUESTION": "1571",
+            "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1572": [
+          {
+            "ID": "493",
+            "UF_ID_QUESTION": "1572",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "Текст 2",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "494",
+            "UF_ID_QUESTION": "1572",
+            "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон 2",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "495",
+            "UF_ID_QUESTION": "1572",
+            "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "Email 2",
+            "UF_FILED_ANSWER": "asdas@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "496",
+            "UF_ID_QUESTION": "1572",
+            "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста 2",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1573": [
+          {
+            "ID": "497",
+            "UF_ID_QUESTION": "1573",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "123123",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "498",
+            "UF_ID_QUESTION": "1573",
+            "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          }
+        ]
+      }
+    },
+    "484": {
+      "ID": "484",
+      "UF_DATE_FINISH": "12.01.2024",
+      "UF_USER": "1",
+      "UF_START_ID": "",
+      "TABLE_QUESTIONS": {
+        "1583": [
+          {
+            "ID": "499",
+            "UF_ID_QUESTION": "1583",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "dfvasdf",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "500",
+            "UF_ID_QUESTION": "1583",
+            "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)121-23-12",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "501",
+            "UF_ID_QUESTION": "1583",
+            "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "email",
+            "UF_FILED_ANSWER": "asd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "502",
+            "UF_ID_QUESTION": "1583",
+            "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста",
+            "UF_FILED_ANSWER": "asd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1584": [
+          {
+            "ID": "503",
+            "UF_ID_QUESTION": "1584",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "Текст 2",
+            "UF_FILED_ANSWER": "asd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "504",
+            "UF_ID_QUESTION": "1584",
+            "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон 2",
+            "UF_FILED_ANSWER": "+7(123)123-31-23",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "505",
+            "UF_ID_QUESTION": "1584",
+            "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+            "UF_ID_TYPE_FIELD": "email",
+            "UF_VALUE_FIELD": "Email 2",
+            "UF_FILED_ANSWER": "asd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "506",
+            "UF_ID_QUESTION": "1584",
+            "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
+            "UF_ID_TYPE_FIELD": "textarea",
+            "UF_VALUE_FIELD": "Область текста 2",
+            "UF_FILED_ANSWER": "asd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          }
+        ],
+        "1585": [
+          {
+            "ID": "507",
+            "UF_ID_QUESTION": "1585",
+            "UF_ID_FIELD": "1",
+            "UF_ID_TYPE_FIELD": "text",
+            "UF_VALUE_FIELD": "текст",
+            "UF_FILED_ANSWER": "asd@mail.ru",
+            "UF_FIELD_FILLED": "true"
+          },
+          {
+            "ID": "508",
+            "UF_ID_QUESTION": "1585",
+            "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+            "UF_ID_TYPE_FIELD": "phone",
+            "UF_VALUE_FIELD": "Телефон",
+            "UF_FILED_ANSWER": "+7(123)123-12-31",
+            "UF_FIELD_FILLED": "true"
+          }
+        ]
+      }
+    }
+  },
+  "LIST_RESULTS": {
+    "479": {
+      "PAGE": {
+        "ID": "265",
+        "UF_NUMBER_PAGE": "page-c70c3587-4eb5-4e6c-9692-d0d818e29737",
+        "UF_ID_RESULT": "479"
+      },
+      "QUESTIONS": {
+        "1515": {
+          "ID": "1515",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный выбор\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5414",
+              "UF_ID_QUESTION": "1515",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный выбор 1"
+            },
+            {
+              "ID": "5415",
+              "UF_ID_QUESTION": "1515",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный выбор 2"
+            },
+            {
+              "ID": "5416",
+              "UF_ID_QUESTION": "1515",
+              "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_VARIANT_VALUE": "Одиночный выбор 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2338",
+              "UF_ID_QUESTION": "1515",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1516": {
+          "ID": "1516",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
+          "UF_QUESTION_TYPE": "drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выпадающий список\n"
+              }
+            ],
+            "TYPENAME": "Выпадающий список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5417",
+              "UF_ID_QUESTION": "1516",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Выпадающий список 1"
+            },
+            {
+              "ID": "5418",
+              "UF_ID_QUESTION": "1516",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Выпадающий список 2"
+            },
+            {
+              "ID": "5419",
+              "UF_ID_QUESTION": "1516",
+              "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_VARIANT_VALUE": "Выпадающий список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2339",
+              "UF_ID_QUESTION": "1516",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1517": {
+          "ID": "1517",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный вып. список\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5420",
+              "UF_ID_QUESTION": "1517",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный вып. список 1"
+            },
+            {
+              "ID": "5421",
+              "UF_ID_QUESTION": "1517",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный вып. список 2"
+            },
+            {
+              "ID": "5422",
+              "UF_ID_QUESTION": "1517",
+              "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_VARIANT_VALUE": "Множественный вып. список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2340",
+              "UF_ID_QUESTION": "1517",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1518": {
+          "ID": "1518",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
+          "UF_QUESTION_TYPE": "multiple-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный выбор\n"
+              }
+            ],
+            "TYPENAME": "Множественный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5423",
+              "UF_ID_QUESTION": "1518",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный выбор 1"
+            },
+            {
+              "ID": "5424",
+              "UF_ID_QUESTION": "1518",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный выбор 2"
+            },
+            {
+              "ID": "5425",
+              "UF_ID_QUESTION": "1518",
+              "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_VARIANT_VALUE": "Множественный выбор 3"
+            },
+            {
+              "ID": "5426",
+              "UF_ID_QUESTION": "1518",
+              "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_VARIANT_VALUE": "Множественный выбор 4"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2341",
+              "UF_ID_QUESTION": "1518",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1519": {
+          "ID": "1519",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
+          "UF_QUESTION_TYPE": "ranging",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Ранжирование\n"
+              }
+            ],
+            "TYPENAME": "Ранжирование",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5427",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Ранжирование 1"
+            },
+            {
+              "ID": "5428",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Ранжирование 2"
+            },
+            {
+              "ID": "5429",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_VARIANT_VALUE": "Ранжирование 3"
+            },
+            {
+              "ID": "5430",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_VARIANT_VALUE": "Ранжирование 4"
+            },
+            {
+              "ID": "5431",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_VARIANT_VALUE": "Ранжирование 5"
+            },
+            {
+              "ID": "5432",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_VARIANT_VALUE": "Ранжирование 6"
+            },
+            {
+              "ID": "5433",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_VARIANT_VALUE": "Ранжирование 7"
+            },
+            {
+              "ID": "5434",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_VARIANT_VALUE": "Ранжирование 8"
+            },
+            {
+              "ID": "5435",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_VARIANT_VALUE": "Ранжирование 9"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2342",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "1",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2343",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "2",
+              "UF_ID_USER_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2344",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2345",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_ID_USER_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2346",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_ID_USER_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2347",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_ID_USER_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2348",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_ID_USER_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2349",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_ID_USER_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2350",
+              "UF_ID_QUESTION": "1519",
+              "UF_ID_CORRECT_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_ID_USER_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1520": {
+          "ID": "1520",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
+          "UF_QUESTION_TYPE": "range-selection",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выбор диапазона\n"
+              }
+            ],
+            "TYPENAME": "Выбор диапазона",
+            "GENERAL_RANGE_START": 100,
+            "GENERAL_RANGE_END": 1000
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2351",
+              "UF_ID_QUESTION": "1520",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "start",
+              "UF_RANGE_VALUE": "262"
+            },
+            {
+              "ID": "2352",
+              "UF_ID_QUESTION": "1520",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "end",
+              "UF_RANGE_VALUE": "1000"
+            }
+          ]
+        },
+        "1521": {
+          "ID": "1521",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2353",
+              "UF_ID_QUESTION": "1521",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2024-01-17T08:57:00.000Z",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1522": {
+          "ID": "1522",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата диапазон дат\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2354",
+              "UF_ID_QUESTION": "1522",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "Wed Jan 03 2024 14:57:00 GMT+0600 (Восточный Казахстан)-Wed Jan 17 2024 14:57:00 GMT+0600 (Восточный Казахстан)",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1523": {
+          "ID": "1523",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5436",
+              "UF_ID_QUESTION": "1523",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5437",
+              "UF_ID_QUESTION": "1523",
+              "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
+              "UF_VARIANT_VALUE": "Телефон"
+            },
+            {
+              "ID": "5438",
+              "UF_ID_QUESTION": "1523",
+              "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
+              "UF_VARIANT_VALUE": "email"
+            },
+            {
+              "ID": "5439",
+              "UF_ID_QUESTION": "1523",
+              "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+              "UF_VARIANT_VALUE": "Область текста"
+            }
+          ]
+        },
+        "1524": {
+          "ID": "1524",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "264",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5440",
+              "UF_ID_QUESTION": "1524",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Текст 2"
+            },
+            {
+              "ID": "5441",
+              "UF_ID_QUESTION": "1524",
+              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_VARIANT_VALUE": "Телефон 2"
+            },
+            {
+              "ID": "5442",
+              "UF_ID_QUESTION": "1524",
+              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_VARIANT_VALUE": "Email 2"
+            },
+            {
+              "ID": "5443",
+              "UF_ID_QUESTION": "1524",
+              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_VARIANT_VALUE": "Область текста 2"
+            }
+          ]
+        },
+        "1525": {
+          "ID": "1525",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "65989748-d47a-45b9-b32c-b4ae4aaee04e",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "265",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля страница 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5444",
+              "UF_ID_QUESTION": "1525",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5445",
+              "UF_ID_QUESTION": "1525",
+              "UF_ID_VARIANT": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+              "UF_VARIANT_VALUE": "Телефон"
+            }
+          ]
+        },
+        "1526": {
+          "ID": "1526",
+          "UF_ID_RESULT": "479",
+          "UF_ID_QUESTION": "25d910eb-a8f4-44f8-8faf-7d4e5e49eedd",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "265",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный 2\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5446",
+              "UF_ID_QUESTION": "1526",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный 2 1"
+            },
+            {
+              "ID": "5447",
+              "UF_ID_QUESTION": "1526",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный 2 2"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2355",
+              "UF_ID_QUESTION": "1526",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        }
+      }
+    },
+    "480": {
+      "PAGE": {
+        "ID": "267",
+        "UF_NUMBER_PAGE": "page-c70c3587-4eb5-4e6c-9692-d0d818e29737",
+        "UF_ID_RESULT": "480"
+      },
+      "QUESTIONS": {
+        "1527": {
+          "ID": "1527",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный выбор\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5448",
+              "UF_ID_QUESTION": "1527",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный выбор 1"
+            },
+            {
+              "ID": "5449",
+              "UF_ID_QUESTION": "1527",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный выбор 2"
+            },
+            {
+              "ID": "5450",
+              "UF_ID_QUESTION": "1527",
+              "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_VARIANT_VALUE": "Одиночный выбор 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2356",
+              "UF_ID_QUESTION": "1527",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1528": {
+          "ID": "1528",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
+          "UF_QUESTION_TYPE": "drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выпадающий список\n"
+              }
+            ],
+            "TYPENAME": "Выпадающий список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5451",
+              "UF_ID_QUESTION": "1528",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Выпадающий список 1"
+            },
+            {
+              "ID": "5452",
+              "UF_ID_QUESTION": "1528",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Выпадающий список 2"
+            },
+            {
+              "ID": "5453",
+              "UF_ID_QUESTION": "1528",
+              "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_VARIANT_VALUE": "Выпадающий список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2357",
+              "UF_ID_QUESTION": "1528",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1529": {
+          "ID": "1529",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный вып. список\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5454",
+              "UF_ID_QUESTION": "1529",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный вып. список 1"
+            },
+            {
+              "ID": "5455",
+              "UF_ID_QUESTION": "1529",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный вып. список 2"
+            },
+            {
+              "ID": "5456",
+              "UF_ID_QUESTION": "1529",
+              "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_VARIANT_VALUE": "Множественный вып. список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2358",
+              "UF_ID_QUESTION": "1529",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1530": {
+          "ID": "1530",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
+          "UF_QUESTION_TYPE": "multiple-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный выбор\n"
+              }
+            ],
+            "TYPENAME": "Множественный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5457",
+              "UF_ID_QUESTION": "1530",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный выбор 1"
+            },
+            {
+              "ID": "5458",
+              "UF_ID_QUESTION": "1530",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный выбор 2"
+            },
+            {
+              "ID": "5459",
+              "UF_ID_QUESTION": "1530",
+              "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_VARIANT_VALUE": "Множественный выбор 3"
+            },
+            {
+              "ID": "5460",
+              "UF_ID_QUESTION": "1530",
+              "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_VARIANT_VALUE": "Множественный выбор 4"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2359",
+              "UF_ID_QUESTION": "1530",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2360",
+              "UF_ID_QUESTION": "1530",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1531": {
+          "ID": "1531",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
+          "UF_QUESTION_TYPE": "ranging",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Ранжирование\n"
+              }
+            ],
+            "TYPENAME": "Ранжирование",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5461",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Ранжирование 1"
+            },
+            {
+              "ID": "5462",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Ранжирование 2"
+            },
+            {
+              "ID": "5463",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_VARIANT_VALUE": "Ранжирование 3"
+            },
+            {
+              "ID": "5464",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_VARIANT_VALUE": "Ранжирование 4"
+            },
+            {
+              "ID": "5465",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_VARIANT_VALUE": "Ранжирование 5"
+            },
+            {
+              "ID": "5466",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_VARIANT_VALUE": "Ранжирование 6"
+            },
+            {
+              "ID": "5467",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_VARIANT_VALUE": "Ранжирование 7"
+            },
+            {
+              "ID": "5468",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_VARIANT_VALUE": "Ранжирование 8"
+            },
+            {
+              "ID": "5469",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_VARIANT_VALUE": "Ранжирование 9"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2361",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "1",
+              "UF_ID_USER_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2362",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "2",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2363",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2364",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_ID_USER_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2365",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_ID_USER_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2366",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_ID_USER_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2367",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_ID_USER_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2368",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_ID_USER_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2369",
+              "UF_ID_QUESTION": "1531",
+              "UF_ID_CORRECT_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_ID_USER_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1532": {
+          "ID": "1532",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
+          "UF_QUESTION_TYPE": "range-selection",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выбор диапазона\n"
+              }
+            ],
+            "TYPENAME": "Выбор диапазона",
+            "GENERAL_RANGE_START": 100,
+            "GENERAL_RANGE_END": 1000
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2370",
+              "UF_ID_QUESTION": "1532",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "start",
+              "UF_RANGE_VALUE": "350"
+            },
+            {
+              "ID": "2371",
+              "UF_ID_QUESTION": "1532",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "end",
+              "UF_RANGE_VALUE": "802"
+            }
+          ]
+        },
+        "1533": {
+          "ID": "1533",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2372",
+              "UF_ID_QUESTION": "1533",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2024-01-09T05:36:00.000Z",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1534": {
+          "ID": "1534",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата диапазон дат\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2373",
+              "UF_ID_QUESTION": "1534",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "Wed Jan 03 2024 11:36:00 GMT+0600 (Восточный Казахстан)-Wed Jan 24 2024 11:36:00 GMT+0600 (Восточный Казахстан)",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1535": {
+          "ID": "1535",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5470",
+              "UF_ID_QUESTION": "1535",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5471",
+              "UF_ID_QUESTION": "1535",
+              "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
+              "UF_VARIANT_VALUE": "Телефон"
+            },
+            {
+              "ID": "5472",
+              "UF_ID_QUESTION": "1535",
+              "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
+              "UF_VARIANT_VALUE": "email"
+            },
+            {
+              "ID": "5473",
+              "UF_ID_QUESTION": "1535",
+              "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+              "UF_VARIANT_VALUE": "Область текста"
+            }
+          ]
+        },
+        "1536": {
+          "ID": "1536",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "266",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5474",
+              "UF_ID_QUESTION": "1536",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Текст 2"
+            },
+            {
+              "ID": "5475",
+              "UF_ID_QUESTION": "1536",
+              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_VARIANT_VALUE": "Телефон 2"
+            },
+            {
+              "ID": "5476",
+              "UF_ID_QUESTION": "1536",
+              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_VARIANT_VALUE": "Email 2"
+            },
+            {
+              "ID": "5477",
+              "UF_ID_QUESTION": "1536",
+              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_VARIANT_VALUE": "Область текста 2"
+            }
+          ]
+        },
+        "1537": {
+          "ID": "1537",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "65989748-d47a-45b9-b32c-b4ae4aaee04e",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "267",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля страница 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5478",
+              "UF_ID_QUESTION": "1537",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5479",
+              "UF_ID_QUESTION": "1537",
+              "UF_ID_VARIANT": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+              "UF_VARIANT_VALUE": "Телефон"
+            }
+          ]
+        },
+        "1538": {
+          "ID": "1538",
+          "UF_ID_RESULT": "480",
+          "UF_ID_QUESTION": "25d910eb-a8f4-44f8-8faf-7d4e5e49eedd",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "267",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный 2\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5480",
+              "UF_ID_QUESTION": "1538",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный 2 1"
+            },
+            {
+              "ID": "5481",
+              "UF_ID_QUESTION": "1538",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный 2 2"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2374",
+              "UF_ID_QUESTION": "1538",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        }
+      }
+    },
+    "481": {
+      "PAGE": {
+        "ID": "269",
+        "UF_NUMBER_PAGE": "page-c70c3587-4eb5-4e6c-9692-d0d818e29737",
+        "UF_ID_RESULT": "481"
+      },
+      "QUESTIONS": {
+        "1539": {
+          "ID": "1539",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный выбор\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5482",
+              "UF_ID_QUESTION": "1539",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный выбор 1"
+            },
+            {
+              "ID": "5483",
+              "UF_ID_QUESTION": "1539",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный выбор 2"
+            },
+            {
+              "ID": "5484",
+              "UF_ID_QUESTION": "1539",
+              "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_VARIANT_VALUE": "Одиночный выбор 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2375",
+              "UF_ID_QUESTION": "1539",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1540": {
+          "ID": "1540",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
+          "UF_QUESTION_TYPE": "drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выпадающий список\n"
+              }
+            ],
+            "TYPENAME": "Выпадающий список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5485",
+              "UF_ID_QUESTION": "1540",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Выпадающий список 1"
+            },
+            {
+              "ID": "5486",
+              "UF_ID_QUESTION": "1540",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Выпадающий список 2"
+            },
+            {
+              "ID": "5487",
+              "UF_ID_QUESTION": "1540",
+              "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_VARIANT_VALUE": "Выпадающий список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2376",
+              "UF_ID_QUESTION": "1540",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1541": {
+          "ID": "1541",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный вып. список\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5488",
+              "UF_ID_QUESTION": "1541",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный вып. список 1"
+            },
+            {
+              "ID": "5489",
+              "UF_ID_QUESTION": "1541",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный вып. список 2"
+            },
+            {
+              "ID": "5490",
+              "UF_ID_QUESTION": "1541",
+              "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_VARIANT_VALUE": "Множественный вып. список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2377",
+              "UF_ID_QUESTION": "1541",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1542": {
+          "ID": "1542",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
+          "UF_QUESTION_TYPE": "multiple-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный выбор\n"
+              }
+            ],
+            "TYPENAME": "Множественный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5491",
+              "UF_ID_QUESTION": "1542",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный выбор 1"
+            },
+            {
+              "ID": "5492",
+              "UF_ID_QUESTION": "1542",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный выбор 2"
+            },
+            {
+              "ID": "5493",
+              "UF_ID_QUESTION": "1542",
+              "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_VARIANT_VALUE": "Множественный выбор 3"
+            },
+            {
+              "ID": "5494",
+              "UF_ID_QUESTION": "1542",
+              "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_VARIANT_VALUE": "Множественный выбор 4"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2378",
+              "UF_ID_QUESTION": "1542",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1543": {
+          "ID": "1543",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
+          "UF_QUESTION_TYPE": "ranging",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Ранжирование\n"
+              }
+            ],
+            "TYPENAME": "Ранжирование",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5495",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Ранжирование 1"
+            },
+            {
+              "ID": "5496",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Ранжирование 2"
+            },
+            {
+              "ID": "5497",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_VARIANT_VALUE": "Ранжирование 3"
+            },
+            {
+              "ID": "5498",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_VARIANT_VALUE": "Ранжирование 4"
+            },
+            {
+              "ID": "5499",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_VARIANT_VALUE": "Ранжирование 5"
+            },
+            {
+              "ID": "5500",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_VARIANT_VALUE": "Ранжирование 6"
+            },
+            {
+              "ID": "5501",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_VARIANT_VALUE": "Ранжирование 7"
+            },
+            {
+              "ID": "5502",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_VARIANT_VALUE": "Ранжирование 8"
+            },
+            {
+              "ID": "5503",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_VARIANT_VALUE": "Ранжирование 9"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2379",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "1",
+              "UF_ID_USER_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2380",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "2",
+              "UF_ID_USER_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2381",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_ID_USER_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2382",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_ID_USER_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2383",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2384",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_ID_USER_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2385",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_ID_USER_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2386",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2387",
+              "UF_ID_QUESTION": "1543",
+              "UF_ID_CORRECT_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_ID_USER_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1544": {
+          "ID": "1544",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
+          "UF_QUESTION_TYPE": "range-selection",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выбор диапазона\n"
+              }
+            ],
+            "TYPENAME": "Выбор диапазона",
+            "GENERAL_RANGE_START": 100,
+            "GENERAL_RANGE_END": 1000
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2388",
+              "UF_ID_QUESTION": "1544",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "start",
+              "UF_RANGE_VALUE": "329"
+            },
+            {
+              "ID": "2389",
+              "UF_ID_QUESTION": "1544",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "end",
+              "UF_RANGE_VALUE": "745"
+            }
+          ]
+        },
+        "1545": {
+          "ID": "1545",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2390",
+              "UF_ID_QUESTION": "1545",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2024-01-03T05:38:00.000Z",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1546": {
+          "ID": "1546",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата диапазон дат\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2391",
+              "UF_ID_QUESTION": "1546",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "Wed Jan 03 2024 11:38:00 GMT+0600 (Восточный Казахстан)-Wed Jan 17 2024 11:38:00 GMT+0600 (Восточный Казахстан)",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1547": {
+          "ID": "1547",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5504",
+              "UF_ID_QUESTION": "1547",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5505",
+              "UF_ID_QUESTION": "1547",
+              "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
+              "UF_VARIANT_VALUE": "Телефон"
+            },
+            {
+              "ID": "5506",
+              "UF_ID_QUESTION": "1547",
+              "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
+              "UF_VARIANT_VALUE": "email"
+            },
+            {
+              "ID": "5507",
+              "UF_ID_QUESTION": "1547",
+              "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+              "UF_VARIANT_VALUE": "Область текста"
+            }
+          ]
+        },
+        "1548": {
+          "ID": "1548",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "268",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5508",
+              "UF_ID_QUESTION": "1548",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Текст 2"
+            },
+            {
+              "ID": "5509",
+              "UF_ID_QUESTION": "1548",
+              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_VARIANT_VALUE": "Телефон 2"
+            },
+            {
+              "ID": "5510",
+              "UF_ID_QUESTION": "1548",
+              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_VARIANT_VALUE": "Email 2"
+            },
+            {
+              "ID": "5511",
+              "UF_ID_QUESTION": "1548",
+              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_VARIANT_VALUE": "Область текста 2"
+            }
+          ]
+        },
+        "1549": {
+          "ID": "1549",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "65989748-d47a-45b9-b32c-b4ae4aaee04e",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "269",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля страница 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5512",
+              "UF_ID_QUESTION": "1549",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5513",
+              "UF_ID_QUESTION": "1549",
+              "UF_ID_VARIANT": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+              "UF_VARIANT_VALUE": "Телефон"
+            }
+          ]
+        },
+        "1550": {
+          "ID": "1550",
+          "UF_ID_RESULT": "481",
+          "UF_ID_QUESTION": "25d910eb-a8f4-44f8-8faf-7d4e5e49eedd",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "269",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный 2\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5514",
+              "UF_ID_QUESTION": "1550",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный 2 1"
+            },
+            {
+              "ID": "5515",
+              "UF_ID_QUESTION": "1550",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный 2 2"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2392",
+              "UF_ID_QUESTION": "1550",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        }
+      }
+    },
+    "482": {
+      "PAGE": {
+        "ID": "271",
+        "UF_NUMBER_PAGE": "page-c70c3587-4eb5-4e6c-9692-d0d818e29737",
+        "UF_ID_RESULT": "482"
+      },
+      "QUESTIONS": {
+        "1551": {
+          "ID": "1551",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный выбор\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5516",
+              "UF_ID_QUESTION": "1551",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный выбор 1"
+            },
+            {
+              "ID": "5517",
+              "UF_ID_QUESTION": "1551",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный выбор 2"
+            },
+            {
+              "ID": "5518",
+              "UF_ID_QUESTION": "1551",
+              "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_VARIANT_VALUE": "Одиночный выбор 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2393",
+              "UF_ID_QUESTION": "1551",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1552": {
+          "ID": "1552",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
+          "UF_QUESTION_TYPE": "drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выпадающий список\n"
+              }
+            ],
+            "TYPENAME": "Выпадающий список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5519",
+              "UF_ID_QUESTION": "1552",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Выпадающий список 1"
+            },
+            {
+              "ID": "5520",
+              "UF_ID_QUESTION": "1552",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Выпадающий список 2"
+            },
+            {
+              "ID": "5521",
+              "UF_ID_QUESTION": "1552",
+              "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_VARIANT_VALUE": "Выпадающий список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2394",
+              "UF_ID_QUESTION": "1552",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1553": {
+          "ID": "1553",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный вып. список\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5522",
+              "UF_ID_QUESTION": "1553",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный вып. список 1"
+            },
+            {
+              "ID": "5523",
+              "UF_ID_QUESTION": "1553",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный вып. список 2"
+            },
+            {
+              "ID": "5524",
+              "UF_ID_QUESTION": "1553",
+              "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_VARIANT_VALUE": "Множественный вып. список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2395",
+              "UF_ID_QUESTION": "1553",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2396",
+              "UF_ID_QUESTION": "1553",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1554": {
+          "ID": "1554",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
+          "UF_QUESTION_TYPE": "multiple-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный выбор\n"
+              }
+            ],
+            "TYPENAME": "Множественный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5525",
+              "UF_ID_QUESTION": "1554",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный выбор 1"
+            },
+            {
+              "ID": "5526",
+              "UF_ID_QUESTION": "1554",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный выбор 2"
+            },
+            {
+              "ID": "5527",
+              "UF_ID_QUESTION": "1554",
+              "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_VARIANT_VALUE": "Множественный выбор 3"
+            },
+            {
+              "ID": "5528",
+              "UF_ID_QUESTION": "1554",
+              "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_VARIANT_VALUE": "Множественный выбор 4"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2397",
+              "UF_ID_QUESTION": "1554",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2398",
+              "UF_ID_QUESTION": "1554",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1555": {
+          "ID": "1555",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
+          "UF_QUESTION_TYPE": "ranging",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Ранжирование\n"
+              }
+            ],
+            "TYPENAME": "Ранжирование",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5529",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Ранжирование 1"
+            },
+            {
+              "ID": "5530",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Ранжирование 2"
+            },
+            {
+              "ID": "5531",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_VARIANT_VALUE": "Ранжирование 3"
+            },
+            {
+              "ID": "5532",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_VARIANT_VALUE": "Ранжирование 4"
+            },
+            {
+              "ID": "5533",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_VARIANT_VALUE": "Ранжирование 5"
+            },
+            {
+              "ID": "5534",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_VARIANT_VALUE": "Ранжирование 6"
+            },
+            {
+              "ID": "5535",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_VARIANT_VALUE": "Ранжирование 7"
+            },
+            {
+              "ID": "5536",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_VARIANT_VALUE": "Ранжирование 8"
+            },
+            {
+              "ID": "5537",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_VARIANT_VALUE": "Ранжирование 9"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2399",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "1",
+              "UF_ID_USER_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2400",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "2",
+              "UF_ID_USER_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2401",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_ID_USER_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2402",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2403",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_ID_USER_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2404",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_ID_USER_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2405",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2406",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_ID_USER_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2407",
+              "UF_ID_QUESTION": "1555",
+              "UF_ID_CORRECT_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_ID_USER_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1556": {
+          "ID": "1556",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
+          "UF_QUESTION_TYPE": "range-selection",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выбор диапазона\n"
+              }
+            ],
+            "TYPENAME": "Выбор диапазона",
+            "GENERAL_RANGE_START": 100,
+            "GENERAL_RANGE_END": 1000
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2408",
+              "UF_ID_QUESTION": "1556",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "start",
+              "UF_RANGE_VALUE": "363"
+            },
+            {
+              "ID": "2409",
+              "UF_ID_QUESTION": "1556",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "end",
+              "UF_RANGE_VALUE": "799"
+            }
+          ]
+        },
+        "1557": {
+          "ID": "1557",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2410",
+              "UF_ID_QUESTION": "1557",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2024-01-19T05:58:00.000Z",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1558": {
+          "ID": "1558",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата диапазон дат\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2411",
+              "UF_ID_QUESTION": "1558",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "Wed Jan 10 2024 11:58:00 GMT+0600 (Восточный Казахстан)-Wed Jan 24 2024 11:58:00 GMT+0600 (Восточный Казахстан)",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1559": {
+          "ID": "1559",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5538",
+              "UF_ID_QUESTION": "1559",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5539",
+              "UF_ID_QUESTION": "1559",
+              "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
+              "UF_VARIANT_VALUE": "Телефон"
+            },
+            {
+              "ID": "5540",
+              "UF_ID_QUESTION": "1559",
+              "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
+              "UF_VARIANT_VALUE": "email"
+            },
+            {
+              "ID": "5541",
+              "UF_ID_QUESTION": "1559",
+              "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+              "UF_VARIANT_VALUE": "Область текста"
+            }
+          ]
+        },
+        "1560": {
+          "ID": "1560",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "270",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5542",
+              "UF_ID_QUESTION": "1560",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Текст 2"
+            },
+            {
+              "ID": "5543",
+              "UF_ID_QUESTION": "1560",
+              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_VARIANT_VALUE": "Телефон 2"
+            },
+            {
+              "ID": "5544",
+              "UF_ID_QUESTION": "1560",
+              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_VARIANT_VALUE": "Email 2"
+            },
+            {
+              "ID": "5545",
+              "UF_ID_QUESTION": "1560",
+              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_VARIANT_VALUE": "Область текста 2"
+            }
+          ]
+        },
+        "1561": {
+          "ID": "1561",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "65989748-d47a-45b9-b32c-b4ae4aaee04e",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "271",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля страница 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5546",
+              "UF_ID_QUESTION": "1561",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5547",
+              "UF_ID_QUESTION": "1561",
+              "UF_ID_VARIANT": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+              "UF_VARIANT_VALUE": "Телефон"
+            }
+          ]
+        },
+        "1562": {
+          "ID": "1562",
+          "UF_ID_RESULT": "482",
+          "UF_ID_QUESTION": "25d910eb-a8f4-44f8-8faf-7d4e5e49eedd",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "271",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный 2\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5548",
+              "UF_ID_QUESTION": "1562",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный 2 1"
+            },
+            {
+              "ID": "5549",
+              "UF_ID_QUESTION": "1562",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный 2 2"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2412",
+              "UF_ID_QUESTION": "1562",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        }
+      }
+    },
+    "483": {
+      "PAGE": {
+        "ID": "273",
+        "UF_NUMBER_PAGE": "page-c70c3587-4eb5-4e6c-9692-d0d818e29737",
+        "UF_ID_RESULT": "483"
+      },
+      "QUESTIONS": {
+        "1563": {
+          "ID": "1563",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный выбор\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5550",
+              "UF_ID_QUESTION": "1563",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный выбор 1"
+            },
+            {
+              "ID": "5551",
+              "UF_ID_QUESTION": "1563",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный выбор 2"
+            },
+            {
+              "ID": "5552",
+              "UF_ID_QUESTION": "1563",
+              "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_VARIANT_VALUE": "Одиночный выбор 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2413",
+              "UF_ID_QUESTION": "1563",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1564": {
+          "ID": "1564",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
+          "UF_QUESTION_TYPE": "drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выпадающий список\n"
+              }
+            ],
+            "TYPENAME": "Выпадающий список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5553",
+              "UF_ID_QUESTION": "1564",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Выпадающий список 1"
+            },
+            {
+              "ID": "5554",
+              "UF_ID_QUESTION": "1564",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Выпадающий список 2"
+            },
+            {
+              "ID": "5555",
+              "UF_ID_QUESTION": "1564",
+              "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_VARIANT_VALUE": "Выпадающий список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2414",
+              "UF_ID_QUESTION": "1564",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1565": {
+          "ID": "1565",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный вып. список\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5556",
+              "UF_ID_QUESTION": "1565",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный вып. список 1"
+            },
+            {
+              "ID": "5557",
+              "UF_ID_QUESTION": "1565",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный вып. список 2"
+            },
+            {
+              "ID": "5558",
+              "UF_ID_QUESTION": "1565",
+              "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_VARIANT_VALUE": "Множественный вып. список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2415",
+              "UF_ID_QUESTION": "1565",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2416",
+              "UF_ID_QUESTION": "1565",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1566": {
+          "ID": "1566",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
+          "UF_QUESTION_TYPE": "multiple-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный выбор\n"
+              }
+            ],
+            "TYPENAME": "Множественный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5559",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный выбор 1"
+            },
+            {
+              "ID": "5560",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный выбор 2"
+            },
+            {
+              "ID": "5561",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_VARIANT_VALUE": "Множественный выбор 3"
+            },
+            {
+              "ID": "5562",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_VARIANT_VALUE": "Множественный выбор 4"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2417",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2418",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2419",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2420",
+              "UF_ID_QUESTION": "1566",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1567": {
+          "ID": "1567",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
+          "UF_QUESTION_TYPE": "ranging",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Ранжирование\n"
+              }
+            ],
+            "TYPENAME": "Ранжирование",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5563",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Ранжирование 1"
+            },
+            {
+              "ID": "5564",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Ранжирование 2"
+            },
+            {
+              "ID": "5565",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_VARIANT_VALUE": "Ранжирование 3"
+            },
+            {
+              "ID": "5566",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_VARIANT_VALUE": "Ранжирование 4"
+            },
+            {
+              "ID": "5567",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_VARIANT_VALUE": "Ранжирование 5"
+            },
+            {
+              "ID": "5568",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_VARIANT_VALUE": "Ранжирование 6"
+            },
+            {
+              "ID": "5569",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_VARIANT_VALUE": "Ранжирование 7"
+            },
+            {
+              "ID": "5570",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_VARIANT_VALUE": "Ранжирование 8"
+            },
+            {
+              "ID": "5571",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_VARIANT_VALUE": "Ранжирование 9"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2421",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "1",
+              "UF_ID_USER_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2422",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "2",
+              "UF_ID_USER_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2423",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_ID_USER_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2424",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_ID_USER_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2425",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_ID_USER_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2426",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_ID_USER_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2427",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_ID_USER_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2428",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2429",
+              "UF_ID_QUESTION": "1567",
+              "UF_ID_CORRECT_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1568": {
+          "ID": "1568",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
+          "UF_QUESTION_TYPE": "range-selection",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выбор диапазона\n"
+              }
+            ],
+            "TYPENAME": "Выбор диапазона",
+            "GENERAL_RANGE_START": 100,
+            "GENERAL_RANGE_END": 1000
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2430",
+              "UF_ID_QUESTION": "1568",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "start",
+              "UF_RANGE_VALUE": "274"
+            },
+            {
+              "ID": "2431",
+              "UF_ID_QUESTION": "1568",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "end",
+              "UF_RANGE_VALUE": "753"
+            }
+          ]
+        },
+        "1569": {
+          "ID": "1569",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2432",
+              "UF_ID_QUESTION": "1569",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2024-01-17T08:36:00.000Z",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1570": {
+          "ID": "1570",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата диапазон дат\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2433",
+              "UF_ID_QUESTION": "1570",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "Tue Jan 02 2024 14:36:00 GMT+0600 (Восточный Казахстан)-Tue Jan 16 2024 14:36:00 GMT+0600 (Восточный Казахстан)",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1571": {
+          "ID": "1571",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5572",
+              "UF_ID_QUESTION": "1571",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5573",
+              "UF_ID_QUESTION": "1571",
+              "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
+              "UF_VARIANT_VALUE": "Телефон"
+            },
+            {
+              "ID": "5574",
+              "UF_ID_QUESTION": "1571",
+              "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
+              "UF_VARIANT_VALUE": "email"
+            },
+            {
+              "ID": "5575",
+              "UF_ID_QUESTION": "1571",
+              "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+              "UF_VARIANT_VALUE": "Область текста"
+            }
+          ]
+        },
+        "1572": {
+          "ID": "1572",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "272",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5576",
+              "UF_ID_QUESTION": "1572",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Текст 2"
+            },
+            {
+              "ID": "5577",
+              "UF_ID_QUESTION": "1572",
+              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_VARIANT_VALUE": "Телефон 2"
+            },
+            {
+              "ID": "5578",
+              "UF_ID_QUESTION": "1572",
+              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_VARIANT_VALUE": "Email 2"
+            },
+            {
+              "ID": "5579",
+              "UF_ID_QUESTION": "1572",
+              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_VARIANT_VALUE": "Область текста 2"
+            }
+          ]
+        },
+        "1573": {
+          "ID": "1573",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "65989748-d47a-45b9-b32c-b4ae4aaee04e",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "273",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля страница 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5580",
+              "UF_ID_QUESTION": "1573",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5581",
+              "UF_ID_QUESTION": "1573",
+              "UF_ID_VARIANT": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+              "UF_VARIANT_VALUE": "Телефон"
+            }
+          ]
+        },
+        "1574": {
+          "ID": "1574",
+          "UF_ID_RESULT": "483",
+          "UF_ID_QUESTION": "25d910eb-a8f4-44f8-8faf-7d4e5e49eedd",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "273",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный 2\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5582",
+              "UF_ID_QUESTION": "1574",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный 2 1"
+            },
+            {
+              "ID": "5583",
+              "UF_ID_QUESTION": "1574",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный 2 2"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2434",
+              "UF_ID_QUESTION": "1574",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        }
+      }
+    },
+    "484": {
+      "PAGE": {
+        "ID": "275",
+        "UF_NUMBER_PAGE": "page-c70c3587-4eb5-4e6c-9692-d0d818e29737",
+        "UF_ID_RESULT": "484"
+      },
+      "QUESTIONS": {
+        "1575": {
+          "ID": "1575",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный выбор\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5584",
+              "UF_ID_QUESTION": "1575",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный выбор 1"
+            },
+            {
+              "ID": "5585",
+              "UF_ID_QUESTION": "1575",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный выбор 2"
+            },
+            {
+              "ID": "5586",
+              "UF_ID_QUESTION": "1575",
+              "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
+              "UF_VARIANT_VALUE": "Одиночный выбор 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2435",
+              "UF_ID_QUESTION": "1575",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1576": {
+          "ID": "1576",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
+          "UF_QUESTION_TYPE": "drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выпадающий список\n"
+              }
+            ],
+            "TYPENAME": "Выпадающий список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5587",
+              "UF_ID_QUESTION": "1576",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Выпадающий список 1"
+            },
+            {
+              "ID": "5588",
+              "UF_ID_QUESTION": "1576",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Выпадающий список 2"
+            },
+            {
+              "ID": "5589",
+              "UF_ID_QUESTION": "1576",
+              "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
+              "UF_VARIANT_VALUE": "Выпадающий список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2436",
+              "UF_ID_QUESTION": "1576",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1577": {
+          "ID": "1577",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный вып. список\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5590",
+              "UF_ID_QUESTION": "1577",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный вып. список 1"
+            },
+            {
+              "ID": "5591",
+              "UF_ID_QUESTION": "1577",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный вып. список 2"
+            },
+            {
+              "ID": "5592",
+              "UF_ID_QUESTION": "1577",
+              "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
+              "UF_VARIANT_VALUE": "Множественный вып. список 3"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2437",
+              "UF_ID_QUESTION": "1577",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1578": {
+          "ID": "1578",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
+          "UF_QUESTION_TYPE": "multiple-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Множественный выбор\n"
+              }
+            ],
+            "TYPENAME": "Множественный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5593",
+              "UF_ID_QUESTION": "1578",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Множественный выбор 1"
+            },
+            {
+              "ID": "5594",
+              "UF_ID_QUESTION": "1578",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Множественный выбор 2"
+            },
+            {
+              "ID": "5595",
+              "UF_ID_QUESTION": "1578",
+              "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
+              "UF_VARIANT_VALUE": "Множественный выбор 3"
+            },
+            {
+              "ID": "5596",
+              "UF_ID_QUESTION": "1578",
+              "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
+              "UF_VARIANT_VALUE": "Множественный выбор 4"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2438",
+              "UF_ID_QUESTION": "1578",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1579": {
+          "ID": "1579",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
+          "UF_QUESTION_TYPE": "ranging",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Ранжирование\n"
+              }
+            ],
+            "TYPENAME": "Ранжирование",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5597",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Ранжирование 1"
+            },
+            {
+              "ID": "5598",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Ранжирование 2"
+            },
+            {
+              "ID": "5599",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_VARIANT_VALUE": "Ранжирование 3"
+            },
+            {
+              "ID": "5600",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_VARIANT_VALUE": "Ранжирование 4"
+            },
+            {
+              "ID": "5601",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_VARIANT_VALUE": "Ранжирование 5"
+            },
+            {
+              "ID": "5602",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_VARIANT_VALUE": "Ранжирование 6"
+            },
+            {
+              "ID": "5603",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_VARIANT_VALUE": "Ранжирование 7"
+            },
+            {
+              "ID": "5604",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_VARIANT_VALUE": "Ранжирование 8"
+            },
+            {
+              "ID": "5605",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_VARIANT_VALUE": "Ранжирование 9"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2439",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "1",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2440",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "2",
+              "UF_ID_USER_ANSWER": "2",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2441",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_ID_USER_ANSWER": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2442",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_ID_USER_ANSWER": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2443",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_ID_USER_ANSWER": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2444",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_ID_USER_ANSWER": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2445",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_ID_USER_ANSWER": "a1bc2f76-5043-4574-a81b-e40b6e577307",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2446",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_ID_USER_ANSWER": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            },
+            {
+              "ID": "2447",
+              "UF_ID_QUESTION": "1579",
+              "UF_ID_CORRECT_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_ID_USER_ANSWER": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1580": {
+          "ID": "1580",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
+          "UF_QUESTION_TYPE": "range-selection",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Выбор диапазона\n"
+              }
+            ],
+            "TYPENAME": "Выбор диапазона",
+            "GENERAL_RANGE_START": 100,
+            "GENERAL_RANGE_END": 1000
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2448",
+              "UF_ID_QUESTION": "1580",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "start",
+              "UF_RANGE_VALUE": "290"
+            },
+            {
+              "ID": "2449",
+              "UF_ID_QUESTION": "1580",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "",
+              "UF_RANGE_TYPE": "end",
+              "UF_RANGE_VALUE": "680"
+            }
+          ]
+        },
+        "1581": {
+          "ID": "1581",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2450",
+              "UF_ID_QUESTION": "1581",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "2024-01-10T10:50:00.000Z",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1582": {
+          "ID": "1582",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
+          "UF_QUESTION_TYPE": "date",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Дата диапазон дат\n"
+              }
+            ],
+            "TYPENAME": "Дата",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": null,
+          "ANSWERS": [
+            {
+              "ID": "2451",
+              "UF_ID_QUESTION": "1582",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "Wed Jan 17 2024 16:50:00 GMT+0600 (Восточный Казахстан)-Sat Jan 20 2024 16:50:00 GMT+0600 (Восточный Казахстан)",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        },
+        "1583": {
+          "ID": "1583",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5606",
+              "UF_ID_QUESTION": "1583",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5607",
+              "UF_ID_QUESTION": "1583",
+              "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
+              "UF_VARIANT_VALUE": "Телефон"
+            },
+            {
+              "ID": "5608",
+              "UF_ID_QUESTION": "1583",
+              "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
+              "UF_VARIANT_VALUE": "email"
+            },
+            {
+              "ID": "5609",
+              "UF_ID_QUESTION": "1583",
+              "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
+              "UF_VARIANT_VALUE": "Область текста"
+            }
+          ]
+        },
+        "1584": {
+          "ID": "1584",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "274",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5610",
+              "UF_ID_QUESTION": "1584",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Текст 2"
+            },
+            {
+              "ID": "5611",
+              "UF_ID_QUESTION": "1584",
+              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
+              "UF_VARIANT_VALUE": "Телефон 2"
+            },
+            {
+              "ID": "5612",
+              "UF_ID_QUESTION": "1584",
+              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
+              "UF_VARIANT_VALUE": "Email 2"
+            },
+            {
+              "ID": "5613",
+              "UF_ID_QUESTION": "1584",
+              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
+              "UF_VARIANT_VALUE": "Область текста 2"
+            }
+          ]
+        },
+        "1585": {
+          "ID": "1585",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "65989748-d47a-45b9-b32c-b4ae4aaee04e",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "275",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Кастомные поля страница 2\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5614",
+              "UF_ID_QUESTION": "1585",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "текст"
+            },
+            {
+              "ID": "5615",
+              "UF_ID_QUESTION": "1585",
+              "UF_ID_VARIANT": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
+              "UF_VARIANT_VALUE": "Телефон"
+            }
+          ]
+        },
+        "1586": {
+          "ID": "1586",
+          "UF_ID_RESULT": "484",
+          "UF_ID_QUESTION": "25d910eb-a8f4-44f8-8faf-7d4e5e49eedd",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "275",
+          "PARAMS": {
+            "NAME": [
+              {
+                "insert": "Одиночный 2\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "5616",
+              "UF_ID_QUESTION": "1586",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Одиночный 2 1"
+            },
+            {
+              "ID": "5617",
+              "UF_ID_QUESTION": "1586",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Одиночный 2 2"
+            }
+          ],
+          "ANSWERS": [
+            {
+              "ID": "2452",
+              "UF_ID_QUESTION": "1586",
+              "UF_ID_CORRECT_ANSWER": "",
+              "UF_ID_USER_ANSWER": "1",
+              "UF_RANGE_TYPE": "",
+              "UF_RANGE_VALUE": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

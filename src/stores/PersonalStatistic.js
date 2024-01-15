@@ -1,6 +1,7 @@
 import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 import axios from 'axios';
+import personalTestJson from '@/assets/personal.json';
 
 
 export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
@@ -9,7 +10,7 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
     const pollId = document.querySelector('#app').dataset.id;
 
     // Actions
-    const setPersonalStatisticData = (res) => personalStatisticData.value = res;
+    const setPersonalStatisticData = (data) => personalStatisticData.value = data;
 
     const getPersonalStatisticData = async (timeFilter) => {
         return new Promise((resolve, reject) => {
@@ -28,12 +29,13 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
                     }
                 })
                 .then((response) => {
-                    console.log(response);
-                    setPersonalStatisticData(response);
+                    console.log(response.data);
+                    setPersonalStatisticData(response.data);
                     resolve();
                 })
                 .catch((error) => {
                     console.log("Ошибка!!!", error);
+                    setPersonalStatisticData(personalTestJson);
                     reject();
                 });
         })

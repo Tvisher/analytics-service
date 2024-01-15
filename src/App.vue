@@ -34,7 +34,15 @@ onMounted(() => {
     })
     .catch(function (error) {
       if (process.env.NODE_ENV === "development") {
-        appLoaded.value = true;
+        getPersonalStatisticData()
+          .then((res) => {
+            console.log(res);
+            appLoaded.value = true;
+          })
+          .catch((err) => {
+            console.log(err);
+            appLoaded.value = true;
+          });
       } else {
         console.log("Ошибка!!!", error);
         appLoaded.value = false;

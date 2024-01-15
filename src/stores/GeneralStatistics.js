@@ -3,7 +3,6 @@ import { defineStore } from 'pinia';
 import axios from 'axios';
 
 import analiticTestJson from '@/assets/analitic.json';
-
 const pollId = document.querySelector('#app').dataset.id;
 export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
     // state refs
