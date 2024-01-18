@@ -1,32 +1,31 @@
 <template>
-  <AppInDevPoster v-if="pageInDev" />
-  <div v-else>
-    <div class="filter-list">
-      <AppFilter @addFilterItem="addFilterItem" />
-      <div
-        class="filter-list__item"
-        v-for="(filterItem, index) in filterItemsList"
-        :key="filterItem.id"
-      >
-        <span>Фильтр {{ index + 1 }}</span>
-        <button
-          class="remove-filter-item"
-          @click="removeFilterItem(filterItem.id)"
-        ></button>
+  <template v-if="appHasPersonalData">
+    <AppInDevPoster v-if="pageInDev" />
+    <div v-else>
+      <div class="filter-list">
+        <AppFilter @addFilterItem="addFilterItem" />
+        <div
+          class="filter-list__item"
+          v-for="(filterItem, index) in filterItemsList"
+          :key="filterItem.id"
+        >
+          <div>
+            Фильтр <span class="table-index">{{ index + 1 }}</span>
+          </div>
+          <button
+            class="remove-filter-item"
+            @click="removeFilterItem(filterItem.id)"
+          ></button>
+        </div>
       </div>
+      <AppPersonalStatisticTable
+        :idsList="actualPassingIdsList"
+        :dataForCreateTable="personalStatisticData"
+        :filterItemsList="filterItemsList"
+      />
     </div>
-    <!-- <pre style="opacity: 0.3">
-      {{ actualPassingIdsList }}
-    </pre> -->
-    <AppPersonalStatisticTable :idsList="actualPassingIdsList" />
-    <!-- <router-link
-      class=""
-      :to="{ name: 'personalStatisticItem', params: { id: 3 } }"
-      exact="true"
-    >
-      Персональная статистика по вопросу с ID 3
-    </router-link> -->
-  </div>
+  </template>
+  <h2 class="zero-data-title" v-else>За указанный период нет данных</h2>
 </template>
 
 <script setup>
@@ -36,15 +35,24 @@ import AppPersonalStatisticTable from "@/components/PersonalStatisticTable.vue";
 import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 
-import { ref } from "vue";
+import { storeToRefs } from "pinia";
+import { ref, watch } from "vue";
 import { usePersonalStatistic } from "@/stores/PersonalStatistic";
 
-const usePersonalStatisticStore = usePersonalStatistic();
+const personalStatisticStore = usePersonalStatistic();
+const { personalStatisticData, appHasPersonalData } = storeToRefs(
+  personalStatisticStore
+);
 const pageInDev = false;
 const filterItemsList = ref([]);
+
 const actualPassingIdsList = ref(
-  usePersonalStatisticStore.personalStatisticData.map((i) => i.resultId)
+  personalStatisticData.value.map((i) => i.resultId)
 );
+
+watch(personalStatisticData, () => {
+  generateTableData();
+});
 
 const addFilterItem = (filterItem) => {
   const isHasCurentFilter = filterItemsList.value.find((item) => {
@@ -70,7 +78,7 @@ const removeFilterItem = (itemId) => {
 
 const setFiltersOnServer = () => {
   const payloadData = {
-    id: usePersonalStatisticStore.pollId,
+    id: personalStatisticStore.pollId,
     filtersList: [...filterItemsList.value],
   };
   console.log(payloadData);
@@ -87,32 +95,6 @@ const setFiltersOnServer = () => {
       console.log(error);
     });
 };
-
-// const { LIST_RESULTS, TABLE_ORIGIN, RESPONDENT_NAME, TIME } =
-//   usePersonalStatisticStore.personalStatisticData;
-// const resultsIdies = Object.keys(LIST_RESULTS);
-
-// const resultsData = resultsIdies.reduce((acc, item) => {
-//   const userName = RESPONDENT_NAME[item] ? RESPONDENT_NAME[item] : "noname";
-//   const resultTime = TIME[item];
-//   const customFieldsData = TABLE_ORIGIN[item].TABLE_QUESTIONS;
-//   const questionsData = Object.values(LIST_RESULTS[item].QUESTIONS).map(
-//     (item) => {
-//       if (item.UF_QUESTION_TYPE === "custom-fields") {
-//         item.ANSWERS = customFieldsData[item.ID];
-//       }
-//       return item;
-//     }
-//   );
-
-//   acc.push({
-//     resultId: item,
-//     userName,
-//     resultTime,
-//     questionsData,
-//   });
-//   return acc;
-// }, []);
 
 function arraysEqual(arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -145,130 +127,139 @@ const firstTypeOfFilter = [
 function generateTableData() {
   // Если фильтров нет, отдаём id всех прохождений
   if (!filterItemsList.value.length) {
-    actualPassingIdsList.value =
-      usePersonalStatisticStore.personalStatisticData.map((i) => i.resultId);
+    actualPassingIdsList.value = personalStatisticData.value.map(
+      (i) => i.resultId
+    );
     return;
   }
   // Проходим циклом по всем фильтрах и ищем совпадения в каждом результате прохождения от пользователя
   const actualPassingIds = filterItemsList.value.map((filterItem) => {
     const { questionId, questionType, secondLevelFilterSelectedValue } =
       filterItem.params;
-    const curretnResults =
-      usePersonalStatisticStore.personalStatisticData.filter(
-        (resultElement) => {
-          const currentUserResult = resultElement.questionsData.find((item) => {
-            if (item.UF_ID_QUESTION === questionId) {
-              // Если тип вопроса одиночный/множественный выбор, или одиночный/множественный выпадающий список
-              if (firstTypeOfFilter.includes(questionType)) {
-                const userAnswersList = item.ANSWERS.map(
-                  (item) => item.UF_ID_USER_ANSWER
+    const curretnResults = personalStatisticData.value.filter(
+      (resultElement) => {
+        const currentUserResult = resultElement.questionsData.find((item) => {
+          if (item.UF_ID_QUESTION === questionId) {
+            if (!secondLevelFilterSelectedValue) {
+              return item;
+            }
+            // Если тип вопроса одиночный/множественный выбор, или одиночный/множественный выпадающий список
+            if (firstTypeOfFilter.includes(questionType)) {
+              const userAnswersList = item.ANSWERS.map(
+                (item) => item.UF_ID_USER_ANSWER
+              );
+
+              let filterItemAnswerIdList;
+              if (Array.isArray(secondLevelFilterSelectedValue)) {
+                filterItemAnswerIdList = secondLevelFilterSelectedValue.map(
+                  (item) => item.id
+                );
+              } else {
+                filterItemAnswerIdList = [secondLevelFilterSelectedValue.id];
+              }
+              return arraysEqual(userAnswersList, filterItemAnswerIdList);
+            }
+            // Если тип вопроса - ранжирование
+            if (questionType === "ranging") {
+              const rangingModel =
+                filterItem.params.secondLevelFilterSelectedValue;
+              let counter = 0;
+              for (let i = 0; i < rangingModel.length; i++) {
+                const element = rangingModel[i];
+                element.id == item.ANSWERS[element.index].UF_ID_USER_ANSWER
+                  ? counter++
+                  : counter--;
+              }
+              return rangingModel.length === counter;
+            }
+            // Если тип вопроса - выбор диапазона
+            if (questionType === "range-selection") {
+              const { from, to } =
+                filterItem.params.secondLevelFilterSelectedValue;
+              const userResultParamsFrom = item.ANSWERS[0].UF_RANGE_VALUE;
+              const userResultParamsTo = item.ANSWERS[1].UF_RANGE_VALUE;
+              if (
+                (from < to &&
+                  userResultParamsFrom >= from &&
+                  userResultParamsTo <= to) ||
+                (from > to &&
+                  userResultParamsFrom <= from &&
+                  userResultParamsTo >= to)
+              ) {
+                return item;
+              }
+            }
+            // Если тип вопроса - выбор даты
+            if (questionType === "date") {
+              // Если это диапазон дат
+              if (filterItem.params.secondLevelFilterSelectedValue.length) {
+                const filterDateFrom = new Date(
+                  filterItem.params.secondLevelFilterSelectedValue[0]
+                ).setHours(0, 0, 0, 0);
+                const filterDateTo = new Date(
+                  filterItem.params.secondLevelFilterSelectedValue[1]
+                ).setHours(0, 0, 0, 0);
+
+                const userDateAnswer =
+                  item.ANSWERS[0].UF_ID_USER_ANSWER.split("-");
+                const userDateFrom = new Date(userDateAnswer[0]).setHours(
+                  0,
+                  0,
+                  0,
+                  0
+                );
+                const userDateTo = new Date(userDateAnswer[1]).setHours(
+                  0,
+                  0,
+                  0,
+                  0
                 );
 
-                let filterItemAnswerIdList;
-                if (Array.isArray(secondLevelFilterSelectedValue)) {
-                  filterItemAnswerIdList = secondLevelFilterSelectedValue.map(
-                    (item) => item.id
-                  );
-                } else {
-                  filterItemAnswerIdList = [secondLevelFilterSelectedValue.id];
-                }
-                return arraysEqual(userAnswersList, filterItemAnswerIdList);
-              }
-              // Если тип вопроса - ранжирование
-              if (questionType === "ranging") {
-                const rangingModel =
-                  filterItem.params.secondLevelFilterSelectedValue;
-                let counter = 0;
-                for (let i = 0; i < rangingModel.length; i++) {
-                  const element = rangingModel[i];
-                  element.id == item.ANSWERS[element.index].UF_ID_USER_ANSWER
-                    ? counter++
-                    : counter--;
-                }
-                return rangingModel.length === counter;
-              }
-              // Если тип вопроса - выбор диапазона
-              if (questionType === "range-selection") {
-                const { from, to } =
-                  filterItem.params.secondLevelFilterSelectedValue;
-                const userResultParamsFrom = item.ANSWERS[0].UF_RANGE_VALUE;
-                const userResultParamsTo = item.ANSWERS[1].UF_RANGE_VALUE;
-                if (
-                  (from < to &&
-                    userResultParamsFrom >= from &&
-                    userResultParamsTo <= to) ||
-                  (from > to &&
-                    userResultParamsFrom <= from &&
-                    userResultParamsTo >= to)
-                ) {
-                  return item;
-                }
-              }
-              // Если тип вопроса - выбор даты
-              if (questionType === "date") {
-                // Если это диапазон дат
-                if (filterItem.params.secondLevelFilterSelectedValue.length) {
-                  const filterDateFrom = new Date(
-                    filterItem.params.secondLevelFilterSelectedValue[0]
-                  ).setHours(0, 0, 0, 0);
-                  const filterDateTo = new Date(
-                    filterItem.params.secondLevelFilterSelectedValue[1]
-                  ).setHours(0, 0, 0, 0);
-
-                  const userDateAnswer =
-                    item.ANSWERS[0].UF_ID_USER_ANSWER.split("-");
-                  const userDateFrom = new Date(userDateAnswer[0]).setHours(
-                    0,
-                    0,
-                    0,
-                    0
-                  );
-                  const userDateTo = new Date(userDateAnswer[1]).setHours(
-                    0,
-                    0,
-                    0,
-                    0
-                  );
-
-                  // console.log(filterDateFrom, filterDateTo);
-                  // console.log(userDateFrom, userDateTo);
-                  return (
-                    filterDateFrom <= userDateFrom && filterDateTo >= userDateTo
-                  );
-                } else {
-                  // Если это одиночная дата
-                  const filterDate = new Date(
-                    filterItem.params.secondLevelFilterSelectedValue
-                  ).setHours(0, 0, 0, 0);
-                  const userAnswerDate = new Date(
-                    item.ANSWERS[0].UF_ID_USER_ANSWER
-                  ).setHours(0, 0, 0, 0);
-                  return filterDate === userAnswerDate;
-                }
-              }
-              // Если тип вопроса - кастомные поля
-              if (questionType === "custom-fields") {
-                const userAnswers = item.ANSWERS;
-                // const filterItemFieldType =
-                //   filterItem.params.secondLevelFilterSelectedValue.type;
-                const filterItemFieldId =
-                  filterItem.params.secondLevelFilterSelectedValue.id;
-
-                const currentField = userAnswers.find(
-                  (el) => el.UF_ID_FIELD === filterItemFieldId
+                return (
+                  filterDateFrom <= userDateFrom && filterDateTo >= userDateTo
                 );
-                const currentFieldValue = currentField.UF_FILED_ANSWER;
-                const filterValue = filterItem.params.thirdLevelValue;
+              } else {
+                // Если это одиночная дата
+                const filterDate = new Date(
+                  filterItem.params.secondLevelFilterSelectedValue
+                ).setHours(0, 0, 0, 0);
+                const userAnswerDate = new Date(
+                  item.ANSWERS[0].UF_ID_USER_ANSWER
+                ).setHours(0, 0, 0, 0);
 
+                return filterDate === userAnswerDate;
+              }
+            }
+            // Если тип вопроса - кастомные поля
+            if (questionType === "custom-fields") {
+              const userAnswers = item.ANSWERS;
+              const filterItemFieldId =
+                filterItem.params.secondLevelFilterSelectedValue.id;
+
+              const currentField = userAnswers.find(
+                (el) => el.UF_ID_FIELD === filterItemFieldId
+              );
+              const currentFieldValue = currentField.UF_FILED_ANSWER;
+              const filterValue = filterItem.params.thirdLevelValue;
+              if (!filterValue) {
+                return item;
+              }
+
+              if (secondLevelFilterSelectedValue.type == "phone") {
+                return currentFieldValue
+                  .replace(/[^+\d]/g, "")
+                  .startsWith(filterValue);
+              } else {
                 return currentFieldValue
                   .toLowerCase()
                   .includes(filterValue.toLowerCase());
               }
             }
-          });
-          return currentUserResult;
-        }
-      );
+          }
+        });
+        return currentUserResult;
+      }
+    );
     return curretnResults.map((el) => el.resultId);
   });
   actualPassingIdsList.value = findCommonIds(actualPassingIds);
@@ -298,6 +289,11 @@ function generateTableData() {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+  .table-index {
+    line-height: 100%;
+    margin-right: 0;
+    margin-left: 5px;
+  }
 }
 
 .remove-filter-item {
@@ -310,6 +306,6 @@ function generateTableData() {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 16px;
+  margin-left: 5px;
 }
 </style>

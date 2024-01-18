@@ -7,6 +7,7 @@ import personalTestJson from '@/assets/personal.json';
 export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
 
     const personalStatisticData = ref(null);
+    const appHasPersonalData = ref(null)
     const pollId = document.querySelector('#app').dataset.id;
     // Getters
     const currentUserResult = (id) => computed(() => personalStatisticData.value.find(res => res.resultId === id));
@@ -15,6 +16,11 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
         console.log(data);
         const { LIST_RESULTS, TABLE_ORIGIN, RESPONDENT_NAME, TIME } = data;
         const resultsIdies = Object.keys(LIST_RESULTS);
+        if (resultsIdies.length < 1) {
+            personalStatisticData.value = [];
+            appHasPersonalData.value = false;
+            return
+        }
         const resultsData = resultsIdies.reduce((acc, item) => {
             const userName = RESPONDENT_NAME[item] ? RESPONDENT_NAME[item] : "noname";
             const resultTime = TIME[item];
@@ -37,6 +43,7 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
             return acc;
         }, []);
         personalStatisticData.value = resultsData;
+        appHasPersonalData.value = true;
     };
     const getPersonalStatisticData = async (timeFilter) => {
         return new Promise((resolve, reject) => {
@@ -69,6 +76,7 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
 
     return {
         pollId,
+        appHasPersonalData,
         getPersonalStatisticData,
         personalStatisticData,
         currentUserResult

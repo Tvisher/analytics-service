@@ -39,6 +39,10 @@
                 class="filter-select"
                 v-if="firstLevelFilterSelected.questionType == 'ranging'"
               >
+                <label class="is-consider-level">
+                  <input type="checkbox" v-model="considerSecondLevel" />
+                  <span>Учитывать второй уровень фильтра</span>
+                </label>
                 <div class="flex-wrapper">
                   <span class="level-descr">Учитывать пункты</span>
                   <span class="level-descr">Укажите желаемый порядок</span>
@@ -54,6 +58,11 @@
                   firstLevelFilterSelected.questionType == 'range-selection'
                 "
               >
+                <label class="is-consider-level">
+                  <input type="checkbox" v-model="considerSecondLevel" />
+                  <span>Учитывать второй уровень фильтра</span>
+                </label>
+
                 <span class="level-descr"
                   >Укажите интересующий вас диапазон</span
                 >
@@ -140,6 +149,7 @@ const showFilterModal = ref(false);
 
 const firstLevelFilterSelected = ref(null);
 const openSecondLevel = ref(false);
+const considerSecondLevel = ref(false);
 const dataForSecondLevelFilter = ref(null);
 const secondLevelFilterSelectedValue = ref(null);
 const openThirdLevel = ref(false);
@@ -204,6 +214,7 @@ const firstLevelSelect = (data) => {
   firstLevelFilterSelected.value = data;
   dataForSecondLevelFilter.value = null;
   secondLevelFilterSelectedValue.value = null;
+  considerSecondLevel.value = false;
   if (secondLevelIsSelect.value) {
     const options = Object.values(data.questionOptions).map((item) => {
       return {
@@ -218,6 +229,10 @@ const firstLevelSelect = (data) => {
   }
   if (data.questionType === "range-selection") {
     dataForSecondLevelFilter.value = data.params;
+    secondLevelFilterSelectedValue.value = {
+      from: data.params.GENERAL_RANGE_START,
+      to: data.params.GENERAL_RANGE_END,
+    };
   }
 
   if (data.questionType === "date") {
@@ -296,38 +311,50 @@ const resetFilterAdnCloseModal = () => {
   thirdLevelFilterSelectedValue.value = null;
   openSecondLevel.value = false;
   openThirdLevel.value = false;
+  considerSecondLevel.value = false;
 };
 
 const addFilter = () => {
-  if (
-    !firstLevelFilterSelected.value ||
-    !secondLevelFilterSelectedValue.value
-  ) {
+  if (!firstLevelFilterSelected.value) {
     return;
   }
 
   let thirdLevelValue;
   if (thirdLeveltype.value === "phone") {
-    thirdLevelValue = masked.value;
+    thirdLevelValue = masked.value.replace(/[^+\d]/g, "");
   } else {
     thirdLevelValue = thirdLevelFilterSelectedValue.value
       ? thirdLevelFilterSelectedValue.value.trim()
       : null;
   }
 
-  if (
-    firstLevelFilterSelected.value.questionType === "custom-fields" &&
-    (!thirdLevelValue ||
-      (thirdLeveltype.value === "phone" &&
-        thirdLevelValue.trim().replace(/[^+\d]/g, "").length < 12))
-  ) {
-    return;
-  }
+  // if (
+  //   firstLevelFilterSelected.value.questionType === "custom-fields" &&
+  //   (!thirdLevelValue ||
+  //     (thirdLeveltype.value === "phone" &&
+  //       thirdLevelValue.trim().replace(/[^+\d]/g, "").length < 12))
+  // ) {
+  //   thirdLevelValue = thirdLevelValue.trim().replace(/[^+\d]/g, "");
+  //   console.log(thirdLevelValue);
+  // }
 
+  let secodLevelValue;
+  if (
+    ["ranging", "range-selection"].includes(
+      firstLevelFilterSelected.value.questionType
+    )
+  ) {
+    secodLevelValue = considerSecondLevel.value
+      ? secondLevelFilterSelectedValue.value
+      : null;
+  } else {
+    secodLevelValue = secondLevelFilterSelectedValue.value;
+  }
   const filterItemData = {
+    questionLabel: firstLevelFilterSelected.value.label,
     questionId: firstLevelFilterSelected.value.questionId,
     questionType: firstLevelFilterSelected.value.questionType,
-    secondLevelFilterSelectedValue: secondLevelFilterSelectedValue.value,
+    secondLevelFilterSelectedValue: secodLevelValue,
     thirdLevelValue,
   };
   emit("addFilterItem", filterItemData);

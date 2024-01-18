@@ -48,7 +48,7 @@
               </svg>
             </div>
             <div class="rangin-visual__num">{{ index + 1 }}</div>
-            <div class="rangin-visual__text">{{ variant.value }}</div>
+            <div class="rangin-visual__text">{{ variant.label }}</div>
           </div>
           <div class="rangin-visual__btns">
             <div
@@ -202,7 +202,7 @@ export default {
     this.optionsList = optionVariants.map((variant) => {
       return {
         id: variant.UF_ID_VARIANT,
-        value: variant.UF_VARIANT_VALUE,
+        label: variant.UF_VARIANT_VALUE,
         trackedIndex: true,
       };
     });

@@ -17,11 +17,14 @@
 </template>
 <script setup>
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
+import { usePersonalStatistic } from "@/stores/PersonalStatistic";
+
 import { ref } from "vue";
 import VueDatePicker from "@vuepic/vue-datepicker";
 import { customFormattedDate } from "@/helpers/customDateFormatter";
 
 const generalStatisticsStore = useGeneralStatistics();
+const personalStatisticsStore = usePersonalStatistic();
 const changeDateFilter = generalStatisticsStore.changeDateFilter;
 let dateFilterData = generalStatisticsStore.dateFilterData;
 
@@ -48,7 +51,15 @@ const handleDate = (modelData) => {
     from: customFormattedDate(date.value[0]),
     to: customFormattedDate(date.value[1]),
   };
-  generalStatisticsStore.getAppData(dateDataObject);
+  generalStatisticsStore
+    .getAppData(dateDataObject)
+    .then((res) => {
+      console.log("Общие данныес фтльтром по дате получены");
+      personalStatisticsStore.getPersonalStatisticData(dateDataObject);
+    })
+    .catch((err) =>
+      console.log(`Ошибка в запросе данных с фиьтром даты: ${err}`)
+    );
 };
 </script>
 

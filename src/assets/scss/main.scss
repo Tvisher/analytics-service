@@ -251,7 +251,7 @@ $mainColor: #fa0056;
     color: #262b31;
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 100%;
     margin-bottom: 6px;
   }
@@ -651,6 +651,13 @@ $mainColor: #fa0056;
   line-height: 140%;
   &.head-row {
     font-weight: 700;
+    .inner-tr-text {
+      display: block;
+      width: 100%;
+      white-space: nowrap; /* Текст не переносится */
+      overflow: hidden; /* Обрезаем всё за пределами блока */
+      text-overflow: ellipsis; /* Добавляем многоточие */
+    }
   }
   transition: color 0.2s ease;
   &:not(.head-row):hover {
@@ -704,5 +711,38 @@ $mainColor: #fa0056;
   &::-webkit-scrollbar-button:horizontal:start:decrement,
   &::-webkit-scrollbar-button:horizontal:end:increment {
     display: none;
+  }
+}
+
+.tippy-box {
+  background-color: #fff !important;
+  color: #000 !important;
+  font-family: Montserrat !important;
+  box-shadow: 0px 1px 2px 0px rgba(56, 63, 72, 0.1),
+    0px 2px 12px 0px rgba(37, 51, 66, 0.08);
+  border-radius: 6px;
+  .tippy-content {
+    z-index: 2;
+  }
+  .tippy-arrow {
+    color: #fff !important;
+    z-index: 1;
+  }
+}
+
+.col-item-span {
+  margin-bottom: 10px;
+}
+
+.is-consider-level {
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: green;
   }
 }

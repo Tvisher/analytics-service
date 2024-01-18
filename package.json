@@ -23,6 +23,7 @@
     "vue-imask": "^7.3.0",
     "vue-router": "^4.2.5",
     "vue-select": "^4.0.0-beta.6",
+    "vue-tippy": "^6.4.1",
     "vue3-slide-up-down": "^2.0.1"
   },
   "devDependencies": {
