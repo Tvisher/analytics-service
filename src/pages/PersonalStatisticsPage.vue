@@ -6,7 +6,7 @@
         <AppFilter @addFilterItem="addFilterItem" />
         <div
           class="filter-list__item"
-          v-for="(filterItem, index) in filterItemsList"
+          v-for="(filterItem, index) in filtersList"
           :key="filterItem.id"
         >
           <div>
@@ -21,7 +21,6 @@
       <AppPersonalStatisticTable
         :idsList="actualPassingIdsList"
         :dataForCreateTable="personalStatisticData"
-        :filterItemsList="filterItemsList"
       />
     </div>
   </template>
@@ -36,42 +35,41 @@ import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 
 import { storeToRefs } from "pinia";
-import { ref, watch } from "vue";
+import { ref, watch, onMounted } from "vue";
 import { usePersonalStatistic } from "@/stores/PersonalStatistic";
 
 const personalStatisticStore = usePersonalStatistic();
-const { personalStatisticData, appHasPersonalData } = storeToRefs(
+const { personalStatisticData, appHasPersonalData, filtersList } = storeToRefs(
   personalStatisticStore
 );
+
 const pageInDev = false;
-const filterItemsList = ref([]);
 
-const actualPassingIdsList = ref(
-  personalStatisticData.value.map((i) => i.resultId)
-);
-
-watch(personalStatisticData, () => {
-  generateTableData();
-});
+const actualPassingIdsList = ref([]);
 
 const addFilterItem = (filterItem) => {
-  const isHasCurentFilter = filterItemsList.value.find((item) => {
+  const isHasCurentFilter = filtersList.value.find((item) => {
     return JSON.stringify(item.params) === JSON.stringify(filterItem);
   });
   if (!isHasCurentFilter) {
-    filterItemsList.value.push({
-      id: uuidv4(),
-      params: filterItem,
-    });
+    const updatedFilterList = [
+      ...filtersList.value,
+      {
+        id: uuidv4(),
+        params: filterItem,
+      },
+    ];
+    personalStatisticStore.updateFiltersList(updatedFilterList);
     setFiltersOnServer();
     generateTableData();
   }
 };
 
 const removeFilterItem = (itemId) => {
-  filterItemsList.value = filterItemsList.value.filter(
+  const updatedFilterList = filtersList.value.filter(
     (item) => item.id !== itemId
   );
+  personalStatisticStore.updateFiltersList(updatedFilterList);
   setFiltersOnServer();
   generateTableData();
 };
@@ -79,11 +77,10 @@ const removeFilterItem = (itemId) => {
 const setFiltersOnServer = () => {
   const payloadData = {
     id: personalStatisticStore.pollId,
-    filtersList: [...filterItemsList.value],
+    filtersList: [...filtersList.value],
   };
-  console.log(payloadData);
   axios
-    .post("/someUrl.php", payloadData, {
+    .post("/ajax/filterPersonalSave.php", payloadData, {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
@@ -126,26 +123,31 @@ const firstTypeOfFilter = [
 
 function generateTableData() {
   // Если фильтров нет, отдаём id всех прохождений
-  if (!filterItemsList.value.length) {
+  if (!filtersList.value.length) {
     actualPassingIdsList.value = personalStatisticData.value.map(
       (i) => i.resultId
     );
     return;
   }
+
   // Проходим циклом по всем фильтрах и ищем совпадения в каждом результате прохождения от пользователя
-  const actualPassingIds = filterItemsList.value.map((filterItem) => {
+  const actualPassingIds = filtersList.value.map((filterItem) => {
     const { questionId, questionType, secondLevelFilterSelectedValue } =
       filterItem.params;
     const curretnResults = personalStatisticData.value.filter(
       (resultElement) => {
         const currentUserResult = resultElement.questionsData.find((item) => {
+          const ANSWERS = Array.isArray(item.ANSWERS)
+            ? item.ANSWERS
+            : Object.values(item.ANSWERS);
+
           if (item.UF_ID_QUESTION === questionId) {
             if (!secondLevelFilterSelectedValue) {
               return item;
             }
             // Если тип вопроса одиночный/множественный выбор, или одиночный/множественный выпадающий список
             if (firstTypeOfFilter.includes(questionType)) {
-              const userAnswersList = item.ANSWERS.map(
+              const userAnswersList = ANSWERS.map(
                 (item) => item.UF_ID_USER_ANSWER
               );
 
@@ -166,7 +168,7 @@ function generateTableData() {
               let counter = 0;
               for (let i = 0; i < rangingModel.length; i++) {
                 const element = rangingModel[i];
-                element.id == item.ANSWERS[element.index].UF_ID_USER_ANSWER
+                element.id == ANSWERS[element.index].UF_ID_USER_ANSWER
                   ? counter++
                   : counter--;
               }
@@ -176,8 +178,8 @@ function generateTableData() {
             if (questionType === "range-selection") {
               const { from, to } =
                 filterItem.params.secondLevelFilterSelectedValue;
-              const userResultParamsFrom = item.ANSWERS[0].UF_RANGE_VALUE;
-              const userResultParamsTo = item.ANSWERS[1].UF_RANGE_VALUE;
+              const userResultParamsFrom = ANSWERS[0].UF_RANGE_VALUE;
+              const userResultParamsTo = ANSWERS[1].UF_RANGE_VALUE;
               if (
                 (from < to &&
                   userResultParamsFrom >= from &&
@@ -200,8 +202,7 @@ function generateTableData() {
                   filterItem.params.secondLevelFilterSelectedValue[1]
                 ).setHours(0, 0, 0, 0);
 
-                const userDateAnswer =
-                  item.ANSWERS[0].UF_ID_USER_ANSWER.split("-");
+                const userDateAnswer = ANSWERS[0].UF_ID_USER_ANSWER.split("-");
                 const userDateFrom = new Date(userDateAnswer[0]).setHours(
                   0,
                   0,
@@ -224,7 +225,7 @@ function generateTableData() {
                   filterItem.params.secondLevelFilterSelectedValue
                 ).setHours(0, 0, 0, 0);
                 const userAnswerDate = new Date(
-                  item.ANSWERS[0].UF_ID_USER_ANSWER
+                  ANSWERS[0].UF_ID_USER_ANSWER
                 ).setHours(0, 0, 0, 0);
 
                 return filterDate === userAnswerDate;
@@ -232,11 +233,10 @@ function generateTableData() {
             }
             // Если тип вопроса - кастомные поля
             if (questionType === "custom-fields") {
-              const userAnswers = item.ANSWERS;
               const filterItemFieldId =
                 filterItem.params.secondLevelFilterSelectedValue.id;
 
-              const currentField = userAnswers.find(
+              const currentField = ANSWERS.find(
                 (el) => el.UF_ID_FIELD === filterItemFieldId
               );
               const currentFieldValue = currentField.UF_FILED_ANSWER;
@@ -264,6 +264,14 @@ function generateTableData() {
   });
   actualPassingIdsList.value = findCommonIds(actualPassingIds);
 }
+
+onMounted(() => {
+  generateTableData();
+});
+
+watch(personalStatisticData, () => {
+  generateTableData();
+});
 </script>
 
 <style lang="scss">

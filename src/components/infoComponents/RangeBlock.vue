@@ -34,4 +34,5 @@ const props = defineProps({
   data: Object,
   title: String,
 });
+console.log(props.data);
 </script>

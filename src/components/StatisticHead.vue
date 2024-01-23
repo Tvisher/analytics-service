@@ -1,5 +1,8 @@
 <template>
-  <div class="statistic-head">
+  <div
+    class="statistic-head"
+    :class="{ isPersonalInfoPage: isPersonalInfoPage }"
+  >
     <div class="statistic-head__top">
       <div class="vertical-wrapper">
         <div class="survey__name">{{ pollName }}</div>
@@ -13,6 +16,13 @@
         </div>
       </div>
       <div class="upload-buttons">
+        <router-link
+          class="back-to-list"
+          v-if="isPersonalInfoPage"
+          :to="{ name: 'personalStatistics' }"
+        >
+          К списку
+        </router-link>
         <div class="upload-button" data-btn="pdf"></div>
         <div class="upload-button" data-btn="exel"></div>
         <div class="upload-button" data-btn="share"></div>
@@ -29,49 +39,51 @@
       <button class="btn">Закрыть опрос</button>
       <button class="btn refresh-btn" @click="refreshData"></button>
     </div>
-    <AppDateRange />
-
-    <div class="statistic-head__bottom">
-      <div class="origin-information">
-        <div class="information-block">
-          <div class="information-block__ico">
-            <img src="@/assets/img/head-ico-1.svg" alt="" />
-          </div>
-          <div class="information-block__data">
-            <div class="data-value">{{ respondentsCount }}</div>
-            <div class="data-descr">
-              Количество<br />
-              респондентов
+    <template v-if="!isPersonalInfoPage">
+      <AppDateRange />
+      <div class="statistic-head__bottom">
+        <div class="origin-information">
+          <div class="information-block">
+            <div class="information-block__ico">
+              <img src="@/assets/img/head-ico-1.svg" alt="" />
+            </div>
+            <div class="information-block__data">
+              <div class="data-value">{{ respondentsCount }}</div>
+              <div class="data-descr">
+                Количество<br />
+                респондентов
+              </div>
             </div>
           </div>
-        </div>
-        <div class="information-block">
-          <div class="information-block__ico">
-            <img src="@/assets/img/head-ico-2.svg" alt="" />
+          <div class="information-block">
+            <div class="information-block__ico">
+              <img src="@/assets/img/head-ico-2.svg" alt="" />
+            </div>
+            <div class="information-block__data">
+              <div class="data-value">{{ middleTimeFixed }}</div>
+              <div class="data-descr">Среднее время прохождения</div>
+            </div>
           </div>
-          <div class="information-block__data">
-            <div class="data-value">{{ middleTimeFixed }}</div>
-            <div class="data-descr">Среднее время прохождения</div>
-          </div>
-        </div>
-        <div class="information-block">
-          <div class="information-block__ico">
-            <img src="@/assets/img/head-ico-3.svg" alt="" />
-          </div>
-          <div class="information-block__data">
-            <div class="data-value">{{ unfinishCount }}</div>
-            <div class="data-descr">
-              Количество<br />
-              незавершенных сессий
+          <div class="information-block">
+            <div class="information-block__ico">
+              <img src="@/assets/img/head-ico-3.svg" alt="" />
+            </div>
+            <div class="information-block__data">
+              <div class="data-value">{{ unfinishCount }}</div>
+              <div class="data-descr">
+                Количество<br />
+                незавершенных сессий
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </template>
   </div>
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
 import AppDateRange from "@/components/DateRange.vue";
 import { computed } from "vue";
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
@@ -115,6 +127,10 @@ const middleTimeFixed = computed(() => {
   str = minText + secText;
   return str.length > 0 ? str : "Нет данных";
 });
+
+const isPersonalInfoPage = computed(
+  () => useRoute().name === "personalStatisticItem"
+);
 
 function chooseWord(number, wordForms) {
   if (number % 10 == 1 && number % 100 != 11) {

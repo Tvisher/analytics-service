@@ -4,7 +4,7 @@
       <div class="poll-item__num">{{ props.indexNumber }}</div>
       <div class="poll-item__name">{{ pollItemType }}</div>
     </div>
-    <div class="poll-item__answer" v-html="questionText"></div>
+    <div class="poll-item__question" v-html="questionText"></div>
     <AppPollItemStatisticBody :data="props.data" />
     <div class="poll-item__footer">
       от {{ filterDateFrom }} до {{ filterDateTo }}

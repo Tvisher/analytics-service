@@ -5,124 +5,128 @@
         Добавить фильтр
       </button>
     </div>
-    <transition name="modal-fade" mode="out-in">
-      <div
-        class="filter-modal"
-        v-if="showFilterModal"
-        @click="closeFilterModal"
-      >
-        <div class="filter-modal__content">
-          <div class="filter-modal__close"></div>
-          <h2 class="filter-modal__title">Добавить фильтр</h2>
-          <div class="filter-select">
-            <vSelect
-              :options="dataForFirtsLevelFilter"
-              v-model="firstLevelFilterSelected"
-              :searchable="false"
-              placeholder="Выберите вопрос"
-              @option:selected="firstLevelSelect"
-            ></vSelect>
-          </div>
-          <Vue3SlideUpDown v-model="openSecondLevel" :duration="300">
-            <div class="filter-items">
-              <div class="filter-select" v-if="secondLevelIsSelect">
-                <vSelect
-                  :options="dataForSecondLevelFilter"
-                  v-model="secondLevelFilterSelectedValue"
-                  :searchable="false"
-                  placeholder="Выберите опцию"
-                  @option:selected="secondLevelSelect"
-                  :multiple="isMultipleSelect"
-                ></vSelect>
-              </div>
-              <div
-                class="filter-select"
-                v-if="firstLevelFilterSelected.questionType == 'ranging'"
-              >
-                <label class="is-consider-level">
-                  <input type="checkbox" v-model="considerSecondLevel" />
-                  <span>Учитывать второй уровень фильтра</span>
-                </label>
-                <div class="flex-wrapper">
-                  <span class="level-descr">Учитывать пункты</span>
-                  <span class="level-descr">Укажите желаемый порядок</span>
-                </div>
-                <RanginVisual
-                  :optionsData="dataForSecondLevelFilter"
-                  @setSecondLevelData="secondLevelSelect"
-                />
-              </div>
-              <div
-                class="filter-select"
-                v-if="
-                  firstLevelFilterSelected.questionType == 'range-selection'
-                "
-              >
-                <label class="is-consider-level">
-                  <input type="checkbox" v-model="considerSecondLevel" />
-                  <span>Учитывать второй уровень фильтра</span>
-                </label>
-
-                <span class="level-descr"
-                  >Укажите интересующий вас диапазон</span
-                >
-                <RangeSelection
-                  :data="dataForSecondLevelFilter"
-                  @setSecondLevelData="secondLevelSelect"
-                />
-              </div>
-              <div
-                class="filter-select"
-                v-if="firstLevelFilterSelected.questionType == 'date'"
-              >
-                <DateSelection
-                  :isRange="!dataForSecondLevelFilter"
-                  :key="dataForSecondLevelFilter"
-                  @setSecondLevelData="secondLevelSelect"
-                />
-              </div>
-              <div
-                class="filter-select"
-                v-if="firstLevelFilterSelected.questionType == 'custom-fields'"
-              >
-                <vSelect
-                  :options="dataForSecondLevelFilter"
-                  v-model="secondLevelFilterSelectedValue"
-                  :searchable="false"
-                  placeholder="Наименование поля"
-                  @option:selected="secondLevelSelect"
-                  :multiple="isMultipleSelect"
-                ></vSelect>
-                <Vue3SlideUpDown v-model="openThirdLevel" :duration="300">
-                  <div
-                    class="third-level-field"
-                    v-if="secondLevelFilterSelectedValue"
-                  >
-                    <span>Oтвет пользователя</span>
-
-                    <input
-                      v-if="thirdLeveltype === 'phone'"
-                      class="mofal-filter-input"
-                      type="text"
-                      ref="el"
-                    />
-                    <input
-                      v-else
-                      class="mofal-filter-input"
-                      type="text"
-                      v-model="thirdLevelFilterSelectedValue"
-                    />
-                  </div>
-                </Vue3SlideUpDown>
-              </div>
+    <teleport to="body">
+      <transition name="modal-fade" mode="out-in">
+        <div
+          class="filter-modal"
+          v-if="showFilterModal"
+          @click="closeFilterModal"
+        >
+          <div class="filter-modal__content">
+            <div class="filter-modal__close"></div>
+            <h2 class="filter-modal__title">Добавить фильтр</h2>
+            <div class="filter-select">
+              <vSelect
+                :options="dataForFirtsLevelFilter"
+                v-model="firstLevelFilterSelected"
+                :searchable="false"
+                placeholder="Выберите вопрос"
+                @option:selected="firstLevelSelect"
+              ></vSelect>
             </div>
-          </Vue3SlideUpDown>
-          <button class="btn filter-modal__btn" @click="addFilter">
-            Добавить фильтр
-          </button>
+            <Vue3SlideUpDown v-model="openSecondLevel" :duration="300">
+              <div class="filter-items">
+                <div class="filter-select" v-if="secondLevelIsSelect">
+                  <vSelect
+                    :options="dataForSecondLevelFilter"
+                    v-model="secondLevelFilterSelectedValue"
+                    :searchable="false"
+                    placeholder="Выберите опцию"
+                    @option:selected="secondLevelSelect"
+                    :multiple="isMultipleSelect"
+                  ></vSelect>
+                </div>
+                <div
+                  class="filter-select"
+                  v-if="firstLevelFilterSelected.questionType == 'ranging'"
+                >
+                  <label class="is-consider-level">
+                    <input type="checkbox" v-model="considerSecondLevel" />
+                    <span>Учитывать второй уровень фильтра</span>
+                  </label>
+                  <div class="flex-wrapper">
+                    <span class="level-descr">Учитывать пункты</span>
+                    <span class="level-descr">Укажите желаемый порядок</span>
+                  </div>
+                  <RanginVisual
+                    :optionsData="dataForSecondLevelFilter"
+                    @setSecondLevelData="secondLevelSelect"
+                  />
+                </div>
+                <div
+                  class="filter-select"
+                  v-if="
+                    firstLevelFilterSelected.questionType == 'range-selection'
+                  "
+                >
+                  <label class="is-consider-level">
+                    <input type="checkbox" v-model="considerSecondLevel" />
+                    <span>Учитывать второй уровень фильтра</span>
+                  </label>
+
+                  <span class="level-descr"
+                    >Укажите интересующий вас диапазон</span
+                  >
+                  <RangeSelection
+                    :data="dataForSecondLevelFilter"
+                    @setSecondLevelData="secondLevelSelect"
+                  />
+                </div>
+                <div
+                  class="filter-select"
+                  v-if="firstLevelFilterSelected.questionType == 'date'"
+                >
+                  <DateSelection
+                    :isRange="!dataForSecondLevelFilter"
+                    :key="dataForSecondLevelFilter"
+                    @setSecondLevelData="secondLevelSelect"
+                  />
+                </div>
+                <div
+                  class="filter-select"
+                  v-if="
+                    firstLevelFilterSelected.questionType == 'custom-fields'
+                  "
+                >
+                  <vSelect
+                    :options="dataForSecondLevelFilter"
+                    v-model="secondLevelFilterSelectedValue"
+                    :searchable="false"
+                    placeholder="Наименование поля"
+                    @option:selected="secondLevelSelect"
+                    :multiple="isMultipleSelect"
+                  ></vSelect>
+                  <Vue3SlideUpDown v-model="openThirdLevel" :duration="300">
+                    <div
+                      class="third-level-field"
+                      v-if="secondLevelFilterSelectedValue"
+                    >
+                      <span>Oтвет пользователя</span>
+
+                      <input
+                        v-if="thirdLeveltype === 'phone'"
+                        class="mofal-filter-input"
+                        type="text"
+                        ref="el"
+                      />
+                      <input
+                        v-else
+                        class="mofal-filter-input"
+                        type="text"
+                        v-model="thirdLevelFilterSelectedValue"
+                      />
+                    </div>
+                  </Vue3SlideUpDown>
+                </div>
+              </div>
+            </Vue3SlideUpDown>
+            <button class="btn filter-modal__btn" @click="addFilter">
+              Добавить фильтр
+            </button>
+          </div>
         </div>
-      </div>
-    </transition>
+      </transition>
+    </teleport>
   </div>
 </template>
 

@@ -5,6 +5,7 @@
 $mainColor: #fa0056;
 
 #app {
+  background-color: #fff;
   position: relative;
   z-index: 20;
   font-family: Montserrat !important;
@@ -78,6 +79,11 @@ $mainColor: #fa0056;
   background: #ecf4ff;
   margin-bottom: 20px;
   border-radius: 8px;
+
+  &.isPersonalInfoPage {
+    margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
+  }
 }
 .statistic-head__top {
   display: flex;
@@ -272,6 +278,10 @@ $mainColor: #fa0056;
   background: #ecf4ff;
   border-radius: 8px;
   min-height: 500px;
+  &.isPersonalInfoPage {
+    border-radius: 0 0 8px 8px;
+    padding-top: 0;
+  }
 }
 
 .poll-item {
@@ -292,7 +302,7 @@ $mainColor: #fa0056;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(0, 66, 105, 0.28);
 }
-.poll-item__answer {
+.poll-item__question {
   margin: 20px 0;
   color: #202020;
   font-size: 18px;
@@ -745,4 +755,24 @@ $mainColor: #fa0056;
     height: 20px;
     accent-color: green;
   }
+}
+
+.back-to-list {
+  margin-right: 10px;
+  padding: 14px 20px;
+  padding-left: 44px;
+  border-radius: 4px;
+  border: 1px solid #b8cad5;
+  background: #ffe7ef;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.7574 18.4848L10.5147 14.2422M10.5147 14.2422L14.7574 9.99955M10.5147 14.2422L19 14.2422' stroke='%23FA0056' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-size: 28px;
+  background-position: left 10px center;
+  color: #262b31;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
 }
