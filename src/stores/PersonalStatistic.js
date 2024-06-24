@@ -10,6 +10,7 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
     const appHasPersonalData = ref(null)
     const filtersList = ref([]);
     const pollId = document.querySelector('#app').dataset.id;
+    const tableForExelData = ref({});
     // Getters
     const currentUserResult = (id) => computed(() => personalStatisticData.value.find(res => res.resultId === id));
     // Actions
@@ -80,13 +81,16 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
                 })
                 .catch((error) => {
                     console.log("Ошибка!!!", error);
-                    setPersonalStatisticData(personalTestJson);
+                    if (process.env.NODE_ENV === "development") {
+                        setPersonalStatisticData(personalTestJson);
+                    }
                     reject();
                 });
         })
     };
 
     return {
+        tableForExelData,
         pollId,
         appHasPersonalData,
         filtersList,

@@ -35,14 +35,14 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
 import AppShowBySelect from "@/components/ShowBySelect.vue";
 
 import { storeToRefs } from "pinia";
 import { usePersonalStatistic } from "@/stores/PersonalStatistic";
 const personalStatisticStore = usePersonalStatistic();
-const { filtersList } = storeToRefs(personalStatisticStore);
+const { filtersList, tableForExelData } = storeToRefs(personalStatisticStore);
 const props = defineProps({
   idsList: Array,
   dataForCreateTable: Array,
@@ -211,7 +211,7 @@ const tableBodyData = computed(() => {
               if (questionType === "custom-fields") {
                 const userAnswerStrings = ANSWERS.map(
                   (el) =>
-                    `<div class="col-item-span">${el.UF_VALUE_FIELD} : <strong>${el.UF_FILED_ANSWER}</strong></div>`
+                    `<div class="col-item-span">${el.UF_VALUE_FIELD} : <strong>${el.UF_FILED_ANSWER}</strong></div>\n`
                 ).join("");
                 userAnswers = userAnswerStrings;
               }
@@ -227,6 +227,28 @@ const tableBodyData = computed(() => {
       }
     })
     .reverse();
+});
+function stripHtml(html) {
+  let doc = new DOMParser().parseFromString(html, "text/html");
+  return doc.body.textContent || "";
+}
+watch(tableBodyData, (newValue, oldValue) => {
+  const dataForExel = tableHeadData.value.reduce((acc, item, index) => {
+    let fieldName = stripHtml(item);
+    if (!isNaN(fieldName[0])) {
+      fieldName = fieldName.substring(1);
+    }
+    acc[fieldName] = {};
+    newValue.forEach((el, ind) => {
+      const fieldData = el.fieldsData[index];
+
+      acc[fieldName][ind] = stripHtml(fieldData);
+    });
+
+    return acc;
+  }, {});
+
+  tableForExelData.value = dataForExel;
 });
 
 const selectCountToShow = (count) => (selectedRowCount.value = count);

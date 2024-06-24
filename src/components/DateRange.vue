@@ -67,7 +67,7 @@ const handleDate = (modelData) => {
 @import "@vuepic/vue-datepicker/dist/main.css";
 
 .app-date-range {
-  max-width: 230px;
+  max-width: 250px;
   margin: 20px 0;
 }
 

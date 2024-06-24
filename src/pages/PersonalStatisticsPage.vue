@@ -43,6 +43,11 @@ const { personalStatisticData, appHasPersonalData, filtersList } = storeToRefs(
   personalStatisticStore
 );
 
+// const getPersonalStatisticData =
+//   personalStatisticStore.getPersonalStatisticData;
+
+// console.log(getPersonalStatisticData);
+
 const pageInDev = false;
 
 const actualPassingIdsList = ref([]);

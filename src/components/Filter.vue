@@ -193,7 +193,7 @@ const dataForFirtsLevelFilter = store.pagesGeneralData
     const questionOptions = question.VARIANTS;
     let label = new QuillDeltaToHtmlConverter(question.PARAMS.NAME)
       .convert()
-      .replace(/<\/?p>/g, "");
+      .replace(/<[^>]*>/g, "");
 
     const filterItem = {
       questionId,

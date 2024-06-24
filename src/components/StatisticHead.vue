@@ -24,7 +24,11 @@
           К списку
         </router-link>
         <div class="upload-button" data-btn="pdf"></div>
-        <div class="upload-button" data-btn="exel"></div>
+        <div
+          class="upload-button"
+          @click="createExelFile"
+          data-btn="exel"
+        ></div>
         <div class="upload-button" data-btn="share"></div>
       </div>
     </div>
@@ -83,13 +87,16 @@
 </template>
 
 <script setup>
+import axios from "axios";
 import { useRoute } from "vue-router";
 import AppDateRange from "@/components/DateRange.vue";
 import { computed } from "vue";
 import { useGeneralStatistics } from "@/stores/GeneralStatistics";
+import { usePersonalStatistic } from "@/stores/PersonalStatistic";
 import { customFormattedDate } from "@/helpers/customDateFormatter";
-
+const route = useRoute();
 const generalStatisticsStore = useGeneralStatistics();
+const personalStatisticsStore = usePersonalStatistic();
 
 const pollName = computed(() => generalStatisticsStore.pollName);
 const questionsCount = computed(() => generalStatisticsStore.questionsCount);
@@ -159,6 +166,55 @@ const refreshData = (e) => {
     .then(() => setTimeout(() => targetBtn.classList.remove("spin"), 1000))
     .catch(() => setTimeout(() => targetBtn.classList.remove("spin"), 1000));
 };
+
+const appId = document.querySelector("#app").dataset.id;
+const createExelFile = (e) => {
+  const targetBtn = e.target.closest(".upload-button");
+  if (targetBtn) {
+    if (targetBtn.classList.contains("sending")) {
+      return;
+    }
+    targetBtn.classList.add("sending");
+  }
+  let createFileUrl;
+  let postData = {
+    id: appId,
+  };
+  if (route.name === "generalStatistics") {
+    postData.from = customFormattedDate(
+      generalStatisticsStore.dateFilterData.from
+    );
+    postData.to = customFormattedDate(generalStatisticsStore.dateFilterData.to);
+    createFileUrl = "/ajax/resultStatisticExcel.php";
+  }
+  if (route.name === "personalStatistics") {
+    postData.table = personalStatisticsStore.tableForExelData;
+    createFileUrl = "/ajax/personTableStatisticExcel.php";
+  }
+  return new Promise((resolve, reject) => {
+    axios
+      .post(createFileUrl, postData, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+      .then((response) => {
+        const downloadFileLink = response.data;
+        targetBtn.classList.remove("sending");
+
+        window.open(downloadFileLink, "_blank");
+        resolve();
+      })
+      .catch((error) => {
+        console.log("Ошибка!!!", error);
+        reject();
+      });
+  });
+};
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.upload-button.sending {
+  cursor: progress;
+}
+</style>
