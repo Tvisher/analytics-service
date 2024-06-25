@@ -1,56 +1,29 @@
 {
-  "ID": "317",
-  "NAME": "опрос для создания фильтра",
+  "ID": "58",
+  "NAME": "Исследование рынка корпоративных книг",
   "TYPE": "опрос",
-  "PAGES": 2,
-  "QUESTION_COUNT": 12,
-  "DATE_CREAT": "28.12.2023",
-  "RESPONDENT": 7,
+  "PAGES": 1,
+  "QUESTION_COUNT": 14,
+  "DATE_CREAT": "18.04.2024",
+  "RESPONDENT": 87,
   "MIDDLE_TIME": {
-    "MIN": 0,
-    "SEC": 48
+    "MIN": 12,
+    "SEC": 49
   },
-  "UNFINISH": 0,
+  "UNFINISH": 60,
   "ACTIVE": true,
   "RESULTS": {
     "FORMS": {
-      "90c21656-c81d-47f0-800a-44abfd799418": [
+      "da4f23b1-e1ed-439b-8847-4f6b4c250dc6": [
         [
           [
             {
-              "ID": "449",
-              "UF_ID_QUESTION": "1523",
+              "ID": "217",
+              "UF_ID_QUESTION": "634",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "12312",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "450",
-              "UF_ID_QUESTION": "1523",
-              "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "451",
-              "UF_ID_QUESTION": "1523",
-              "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "фывфы@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "452",
-              "UF_ID_QUESTION": "1523",
-              "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста",
-              "UF_FILED_ANSWER": "фывфы@mail.ru",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "КМПМП",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -58,39 +31,12 @@
         [
           [
             {
-              "ID": "459",
-              "UF_ID_QUESTION": "1535",
+              "ID": "254",
+              "UF_ID_QUESTION": "692",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "123123",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "460",
-              "UF_ID_QUESTION": "1535",
-              "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "461",
-              "UF_ID_QUESTION": "1535",
-              "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "asdasd@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "462",
-              "UF_ID_QUESTION": "1535",
-              "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста",
-              "UF_FILED_ANSWER": "123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Альпина PRO",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -98,39 +44,12 @@
         [
           [
             {
-              "ID": "469",
-              "UF_ID_QUESTION": "1547",
+              "ID": "263",
+              "UF_ID_QUESTION": "707",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "12312312",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "470",
-              "UF_ID_QUESTION": "1547",
-              "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)121-23-12",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "471",
-              "UF_ID_QUESTION": "1547",
-              "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "asds@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "472",
-              "UF_ID_QUESTION": "1547",
-              "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста",
-              "UF_FILED_ANSWER": "123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Ростех",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -138,39 +57,12 @@
         [
           [
             {
-              "ID": "479",
-              "UF_ID_QUESTION": "1559",
+              "ID": "273",
+              "UF_ID_QUESTION": "735",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "Поле имя",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "480",
-              "UF_ID_QUESTION": "1559",
-              "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(111)111-11-11",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "481",
-              "UF_ID_QUESTION": "1559",
-              "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "email@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "482",
-              "UF_ID_QUESTION": "1559",
-              "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста",
-              "UF_FILED_ANSWER": "Какой то текст",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "НЛМК",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -178,39 +70,12 @@
         [
           [
             {
-              "ID": "489",
-              "UF_ID_QUESTION": "1571",
+              "ID": "278",
+              "UF_ID_QUESTION": "749",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "123123",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "490",
-              "UF_ID_QUESTION": "1571",
-              "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "491",
-              "UF_ID_QUESTION": "1571",
-              "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "asdsa@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "492",
-              "UF_ID_QUESTION": "1571",
-              "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста",
-              "UF_FILED_ANSWER": "123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Мосэнерго",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -218,39 +83,12 @@
         [
           [
             {
-              "ID": "499",
-              "UF_ID_QUESTION": "1583",
+              "ID": "283",
+              "UF_ID_QUESTION": "763",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "dfvasdf",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "500",
-              "UF_ID_QUESTION": "1583",
-              "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)121-23-12",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "501",
-              "UF_ID_QUESTION": "1583",
-              "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "asd@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "502",
-              "UF_ID_QUESTION": "1583",
-              "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста",
-              "UF_FILED_ANSWER": "asd@mail.ru",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Зарубежнефть",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -258,81 +96,287 @@
         [
           [
             {
-              "ID": "509",
-              "UF_ID_QUESTION": "1595",
+              "ID": "288",
+              "UF_ID_QUESTION": "777",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "Я текстовое поле",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "АО НИИ стали",
               "UF_FIELD_FILLED": "true"
-            },
+            }
+          ]
+        ],
+        [
+          [
             {
-              "ID": "510",
-              "UF_ID_QUESTION": "1595",
-              "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(111)111-11-11",
+              "ID": "293",
+              "UF_ID_QUESTION": "791",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Hopper IT",
               "UF_FIELD_FILLED": "true"
-            },
+            }
+          ]
+        ],
+        [
+          [
             {
-              "ID": "511",
-              "UF_ID_QUESTION": "1595",
-              "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "email",
-              "UF_FILED_ANSWER": "MYEmail@mail.ru",
+              "ID": "298",
+              "UF_ID_QUESTION": "805",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "ФГБОУ ВО ПГТУ",
               "UF_FIELD_FILLED": "true"
-            },
+            }
+          ]
+        ],
+        [
+          [
             {
-              "ID": "512",
-              "UF_ID_QUESTION": "1595",
-              "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста",
-              "UF_FILED_ANSWER": "Какой то рандомный текст",
+              "ID": "303",
+              "UF_ID_QUESTION": "819",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "BIOCAD",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "308",
+              "UF_ID_QUESTION": "833",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "АО  \"Упаковочные системы\"",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "313",
+              "UF_ID_QUESTION": "847",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "НИИПП",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "318",
+              "UF_ID_QUESTION": "861",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "АО \"АЭМ-технологии\"",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "323",
+              "UF_ID_QUESTION": "875",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Балтика",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "328",
+              "UF_ID_QUESTION": "889",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "АО ДКС",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "333",
+              "UF_ID_QUESTION": "903",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Интер РАО",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "338",
+              "UF_ID_QUESTION": "918",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "АО \"НПО \"Микроген",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "343",
+              "UF_ID_QUESTION": "934",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "EKF",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "348",
+              "UF_ID_QUESTION": "948",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "EKF",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "353",
+              "UF_ID_QUESTION": "962",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "EKF",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "358",
+              "UF_ID_QUESTION": "976",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Транспортная группа FESCO",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "363",
+              "UF_ID_QUESTION": "990",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Газпромбанк",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "368",
+              "UF_ID_QUESTION": "1032",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Общество с ограниченной ответственностью «Сахалинская Энергия»",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "374",
+              "UF_ID_QUESTION": "1078",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "ГБУЗ Психиатрическая клиническая больница N 4 им. П. Б. Ганнушкина департамента здравоохранения г. Москвы",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "379",
+              "UF_ID_QUESTION": "1176",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "ТрансКонтейнер",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "385",
+              "UF_ID_QUESTION": "16650",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Футура-М",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "390",
+              "UF_ID_QUESTION": "18400",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Металлоинвест",
               "UF_FIELD_FILLED": "true"
             }
           ]
         ]
       ],
-      "0be8c1c0-7e08-46bc-929c-1d4f382ec74c": [
+      "59cd22d8-c3d6-4381-8827-adfb088d6c9c": [
         [
           [
             {
-              "ID": "453",
-              "UF_ID_QUESTION": "1524",
+              "ID": "222",
+              "UF_ID_QUESTION": "645",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "Текст 2",
-              "UF_FILED_ANSWER": "фывфы@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "454",
-              "UF_ID_QUESTION": "1524",
-              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон 2",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "455",
-              "UF_ID_QUESTION": "1524",
-              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "Email 2",
-              "UF_FILED_ANSWER": "фывфы@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "456",
-              "UF_ID_QUESTION": "1524",
-              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста 2",
-              "UF_FILED_ANSWER": "123123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "мророр",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -340,39 +384,12 @@
         [
           [
             {
-              "ID": "463",
-              "UF_ID_QUESTION": "1536",
+              "ID": "259",
+              "UF_ID_QUESTION": "703",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "Текст 2",
-              "UF_FILED_ANSWER": "asdasd",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "464",
-              "UF_ID_QUESTION": "1536",
-              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон 2",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "465",
-              "UF_ID_QUESTION": "1536",
-              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "Email 2",
-              "UF_FILED_ANSWER": "asdsa@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "466",
-              "UF_ID_QUESTION": "1536",
-              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста 2",
-              "UF_FILED_ANSWER": "123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -380,39 +397,12 @@
         [
           [
             {
-              "ID": "473",
-              "UF_ID_QUESTION": "1548",
+              "ID": "264",
+              "UF_ID_QUESTION": "718",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "Текст 2",
-              "UF_FILED_ANSWER": "asdasd",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "474",
-              "UF_ID_QUESTION": "1548",
-              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон 2",
-              "UF_FILED_ANSWER": "+7(123)123-13-12",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "475",
-              "UF_ID_QUESTION": "1548",
-              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "Email 2",
-              "UF_FILED_ANSWER": "asdasd@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "476",
-              "UF_ID_QUESTION": "1548",
-              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста 2",
-              "UF_FILED_ANSWER": "123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -420,39 +410,12 @@
         [
           [
             {
-              "ID": "483",
-              "UF_ID_QUESTION": "1560",
+              "ID": "274",
+              "UF_ID_QUESTION": "746",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "Текст 2",
-              "UF_FILED_ANSWER": "Поле имя 2",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "484",
-              "UF_ID_QUESTION": "1560",
-              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон 2",
-              "UF_FILED_ANSWER": "+7(222)222-22-22",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "485",
-              "UF_ID_QUESTION": "1560",
-              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "Email 2",
-              "UF_FILED_ANSWER": "email@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "486",
-              "UF_ID_QUESTION": "1560",
-              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста 2",
-              "UF_FILED_ANSWER": "Какой то текст 2",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -460,39 +423,12 @@
         [
           [
             {
-              "ID": "493",
-              "UF_ID_QUESTION": "1572",
+              "ID": "279",
+              "UF_ID_QUESTION": "760",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "Текст 2",
-              "UF_FILED_ANSWER": "123123",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "494",
-              "UF_ID_QUESTION": "1572",
-              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон 2",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "495",
-              "UF_ID_QUESTION": "1572",
-              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "Email 2",
-              "UF_FILED_ANSWER": "asdas@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "496",
-              "UF_ID_QUESTION": "1572",
-              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста 2",
-              "UF_FILED_ANSWER": "123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Конкурс Газпрома, КонТэкст",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -500,39 +436,12 @@
         [
           [
             {
-              "ID": "503",
-              "UF_ID_QUESTION": "1584",
+              "ID": "284",
+              "UF_ID_QUESTION": "774",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "Текст 2",
-              "UF_FILED_ANSWER": "asd@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "504",
-              "UF_ID_QUESTION": "1584",
-              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон 2",
-              "UF_FILED_ANSWER": "+7(123)123-31-23",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "505",
-              "UF_ID_QUESTION": "1584",
-              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "Email 2",
-              "UF_FILED_ANSWER": "asd@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "506",
-              "UF_ID_QUESTION": "1584",
-              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста 2",
-              "UF_FILED_ANSWER": "asd@mail.ru",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -540,63 +449,287 @@
         [
           [
             {
-              "ID": "513",
-              "UF_ID_QUESTION": "1596",
+              "ID": "289",
+              "UF_ID_QUESTION": "788",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "Текст 2",
-              "UF_FILED_ANSWER": "Я текстовое поле которое есть",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
-            },
+            }
+          ]
+        ],
+        [
+          [
             {
-              "ID": "514",
-              "UF_ID_QUESTION": "1596",
-              "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон 2",
-              "UF_FILED_ANSWER": "+7(222)222-22-22",
+              "ID": "294",
+              "UF_ID_QUESTION": "802",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "нет",
               "UF_FIELD_FILLED": "true"
-            },
+            }
+          ]
+        ],
+        [
+          [
             {
-              "ID": "515",
-              "UF_ID_QUESTION": "1596",
-              "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_ID_TYPE_FIELD": "email",
-              "UF_VALUE_FIELD": "Email 2",
-              "UF_FILED_ANSWER": "MYSecondEmail@mail.ru",
+              "ID": "299",
+              "UF_ID_QUESTION": "816",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
-            },
+            }
+          ]
+        ],
+        [
+          [
             {
-              "ID": "516",
-              "UF_ID_QUESTION": "1596",
-              "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_ID_TYPE_FIELD": "textarea",
-              "UF_VALUE_FIELD": "Область текста 2",
-              "UF_FILED_ANSWER": "Какой то рандомный текст в другом поле",
+              "ID": "304",
+              "UF_ID_QUESTION": "830",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "да",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "309",
+              "UF_ID_QUESTION": "844",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Пока нет:)",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "314",
+              "UF_ID_QUESTION": "858",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "319",
+              "UF_ID_QUESTION": "872",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Серебряные нити и другие",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "324",
+              "UF_ID_QUESTION": "886",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Возможно",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "329",
+              "UF_ID_QUESTION": "900",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "нет",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "334",
+              "UF_ID_QUESTION": "914",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "КонТэкст",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "339",
+              "UF_ID_QUESTION": "929",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Пока не представляли",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "344",
+              "UF_ID_QUESTION": "945",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "еще не думали над этим вопросом",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "349",
+              "UF_ID_QUESTION": "959",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Пока не участвовали. Но рассматриваем, хотим поучаствовать",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "354",
+              "UF_ID_QUESTION": "973",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "359",
+              "UF_ID_QUESTION": "987",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Не представляли.",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "364",
+              "UF_ID_QUESTION": "1001",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "нет",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "369",
+              "UF_ID_QUESTION": "1043",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Всероссийский конкурс АКМР «Лучшее корпоративное медиа»",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "375",
+              "UF_ID_QUESTION": "1089",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Пока не думали об этом",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "380",
+              "UF_ID_QUESTION": "1187",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "386",
+              "UF_ID_QUESTION": "16661",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Незнаю",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "391",
+              "UF_ID_QUESTION": "18411",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
             }
           ]
         ]
       ],
-      "65989748-d47a-45b9-b32c-b4ae4aaee04e": [
+      "bf722084-571b-4b42-9619-bf7e0ae4fcb7": [
         [
           [
             {
-              "ID": "457",
-              "UF_ID_QUESTION": "1525",
+              "ID": "223",
+              "UF_ID_QUESTION": "646",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "фывфы@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "458",
-              "UF_ID_QUESTION": "1525",
-              "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "спрапа",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -604,21 +737,12 @@
         [
           [
             {
-              "ID": "467",
-              "UF_ID_QUESTION": "1537",
+              "ID": "260",
+              "UF_ID_QUESTION": "704",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "fhjkfghjk",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "468",
-              "UF_ID_QUESTION": "1537",
-              "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(342)342-34-23",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Продажи",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -626,21 +750,12 @@
         [
           [
             {
-              "ID": "477",
-              "UF_ID_QUESTION": "1549",
+              "ID": "265",
+              "UF_ID_QUESTION": "719",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "asdasd",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "478",
-              "UF_ID_QUESTION": "1549",
-              "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Нет",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -648,21 +763,12 @@
         [
           [
             {
-              "ID": "487",
-              "UF_ID_QUESTION": "1561",
+              "ID": "275",
+              "UF_ID_QUESTION": "747",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "Имя 3",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "488",
-              "UF_ID_QUESTION": "1561",
-              "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(333)333-33-33",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Опрос среди ее читателей",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -670,21 +776,12 @@
         [
           [
             {
-              "ID": "497",
-              "UF_ID_QUESTION": "1573",
+              "ID": "280",
+              "UF_ID_QUESTION": "761",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "123123",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "498",
-              "UF_ID_QUESTION": "1573",
-              "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Спрос внутри компании и вовне)",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -692,21 +789,12 @@
         [
           [
             {
-              "ID": "507",
-              "UF_ID_QUESTION": "1585",
+              "ID": "285",
+              "UF_ID_QUESTION": "775",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "asd@mail.ru",
-              "UF_FIELD_FILLED": "true"
-            },
-            {
-              "ID": "508",
-              "UF_ID_QUESTION": "1585",
-              "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Обратная связь сотрудников по результатам опроса",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -714,21 +802,868 @@
         [
           [
             {
-              "ID": "517",
-              "UF_ID_QUESTION": "1597",
+              "ID": "290",
+              "UF_ID_QUESTION": "789",
               "UF_ID_FIELD": "1",
               "UF_ID_TYPE_FIELD": "text",
-              "UF_VALUE_FIELD": "текст",
-              "UF_FILED_ANSWER": "123123",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Не установлены показатели",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "295",
+              "UF_ID_QUESTION": "803",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "нет",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "300",
+              "UF_ID_QUESTION": "817",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "1",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "305",
+              "UF_ID_QUESTION": "831",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "-",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "310",
+              "UF_ID_QUESTION": "845",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Пока это неформализованные опроосы",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "315",
+              "UF_ID_QUESTION": "859",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Не измеряем",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "320",
+              "UF_ID_QUESTION": "873",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Опрос, спрос, обратная связь",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "325",
+              "UF_ID_QUESTION": "887",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Обратная связь от тех, кому подарили",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "330",
+              "UF_ID_QUESTION": "901",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "опрос",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "335",
+              "UF_ID_QUESTION": "915",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Скорее по отзывам",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "340",
+              "UF_ID_QUESTION": "930",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "пока не измеряем",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "345",
+              "UF_ID_QUESTION": "946",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "не измеряем",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "350",
+              "UF_ID_QUESTION": "960",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Кол-во прочтений, кол-во переходов по ссылке на портал, кол-во реакций, информированность",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "355",
+              "UF_ID_QUESTION": "974",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Участие сотрудников в написании, вовлеченность",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "360",
+              "UF_ID_QUESTION": "988",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Измерение эффективности не проводилось.",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "365",
+              "UF_ID_QUESTION": "1002",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "обратная связь",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "370",
+              "UF_ID_QUESTION": "1044",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Обратная связь от представителей целевой аудитории, повышение эффективности бизнес-процессов (работы по привлечению и найму персонала и пр.), поддержание корпоративной культуры",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "376",
+              "UF_ID_QUESTION": "1090",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Знания сотрудников об истории больницы, отрасли ( в 2027 больнице исполнится 250 лет, она является колыбелью Российской психиатрии)",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "381",
+              "UF_ID_QUESTION": "1188",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Обратная связь от сотрудников",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "387",
+              "UF_ID_QUESTION": "16662",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Отзывы",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "392",
+              "UF_ID_QUESTION": "18412",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "",
+              "UF_FILED_ANSWER": "Один из эффективных инструментов",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ]
+      ],
+      "b7c13122-13e1-4713-b624-0518a2c4a50b": [
+        [
+          [
+            {
+              "ID": "224",
+              "UF_ID_QUESTION": "647",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "иарапр",
               "UF_FIELD_FILLED": "true"
             },
             {
-              "ID": "518",
-              "UF_ID_QUESTION": "1597",
-              "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_ID_TYPE_FIELD": "phone",
-              "UF_VALUE_FIELD": "Телефон",
-              "UF_FILED_ANSWER": "+7(123)123-12-31",
+              "ID": "225",
+              "UF_ID_QUESTION": "647",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "dc_21@mail.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "261",
+              "UF_ID_QUESTION": "705",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Яна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "262",
+              "UF_ID_QUESTION": "705",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "y.lukasheva@alpina.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "266",
+              "UF_ID_QUESTION": "720",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            },
+            {
+              "ID": "267",
+              "UF_ID_QUESTION": "720",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "276",
+              "UF_ID_QUESTION": "748",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Ларина Яна Юрьевна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "277",
+              "UF_ID_QUESTION": "748",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "larina_yy@nlmk.com",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "281",
+              "UF_ID_QUESTION": "762",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Лушпаева Елена",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "282",
+              "UF_ID_QUESTION": "762",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Lushpaeva@mosenergo.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "286",
+              "UF_ID_QUESTION": "776",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            },
+            {
+              "ID": "287",
+              "UF_ID_QUESTION": "776",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "291",
+              "UF_ID_QUESTION": "790",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Малайкина Наталья Николаевна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "292",
+              "UF_ID_QUESTION": "790",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "nmalaykina@yandex.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "296",
+              "UF_ID_QUESTION": "804",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Тихомирова Анна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "297",
+              "UF_ID_QUESTION": "804",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "tikhomirovaas@hopper-it.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "301",
+              "UF_ID_QUESTION": "818",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            },
+            {
+              "ID": "302",
+              "UF_ID_QUESTION": "818",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "306",
+              "UF_ID_QUESTION": "832",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            },
+            {
+              "ID": "307",
+              "UF_ID_QUESTION": "832",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "311",
+              "UF_ID_QUESTION": "846",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Мосина Алиса Евгеньевна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "312",
+              "UF_ID_QUESTION": "846",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "alisa.mosina@packaging-systems.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "316",
+              "UF_ID_QUESTION": "860",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Александр",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "317",
+              "UF_ID_QUESTION": "860",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "vav@niipp.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "321",
+              "UF_ID_QUESTION": "874",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Сидорова Лилия Владимировна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "322",
+              "UF_ID_QUESTION": "874",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "L.sidorova@aemtech.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "326",
+              "UF_ID_QUESTION": "888",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Бреусенко Наталья Викторовна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "327",
+              "UF_ID_QUESTION": "888",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Breus2001@mail.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "331",
+              "UF_ID_QUESTION": "902",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            },
+            {
+              "ID": "332",
+              "UF_ID_QUESTION": "902",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "336",
+              "UF_ID_QUESTION": "916",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Кленин Александр Александрович",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "337",
+              "UF_ID_QUESTION": "916",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "klenin_aa@interrao.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "341",
+              "UF_ID_QUESTION": "931",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Шеремецева Ольга Сергеевна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "342",
+              "UF_ID_QUESTION": "931",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "o.s.sheremetseva@microgen.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "346",
+              "UF_ID_QUESTION": "947",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Федотовских Анна Игоревна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "347",
+              "UF_ID_QUESTION": "947",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "a.fedotovskikh@ekf.su",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "351",
+              "UF_ID_QUESTION": "961",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Морозова Татьяна Ивановна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "352",
+              "UF_ID_QUESTION": "961",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "T.Morozova@ekf.su",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "356",
+              "UF_ID_QUESTION": "975",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            },
+            {
+              "ID": "357",
+              "UF_ID_QUESTION": "975",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Нет ответа",
+              "UF_FIELD_FILLED": "false"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "361",
+              "UF_ID_QUESTION": "989",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Железнякова Виктория Михайловна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "362",
+              "UF_ID_QUESTION": "989",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "VZheleznyakova@fesco.com",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "366",
+              "UF_ID_QUESTION": "1003",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "кириченко татьяна андреевна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "367",
+              "UF_ID_QUESTION": "1003",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "nfyz142005@mail.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "371",
+              "UF_ID_QUESTION": "1045",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Лузан Татьяна Васильевна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "372",
+              "UF_ID_QUESTION": "1045",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "Tatyana.Luzan@sakhalin2.ru; ask@sakhalin2.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "377",
+              "UF_ID_QUESTION": "1091",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Валинурова Юлия Ришатовна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "378",
+              "UF_ID_QUESTION": "1091",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "ValinurovaYR@zdrav.mos.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "382",
+              "UF_ID_QUESTION": "1189",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Акимова Татьяна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "383",
+              "UF_ID_QUESTION": "1189",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "atvreport@mail.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "388",
+              "UF_ID_QUESTION": "16663",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Михаил Калинин",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "389",
+              "UF_ID_QUESTION": "16663",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "MK@futura-m.ru",
+              "UF_FIELD_FILLED": "true"
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "ID": "393",
+              "UF_ID_QUESTION": "18413",
+              "UF_ID_FIELD": "1",
+              "UF_ID_TYPE_FIELD": "text",
+              "UF_VALUE_FIELD": "ФИО",
+              "UF_FILED_ANSWER": "Филоненко Галина Александровна",
+              "UF_FIELD_FILLED": "true"
+            },
+            {
+              "ID": "394",
+              "UF_ID_QUESTION": "18413",
+              "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_ID_TYPE_FIELD": "email",
+              "UF_VALUE_FIELD": "Почта",
+              "UF_FILED_ANSWER": "g.filonenko@mediacentr.org",
               "UF_FIELD_FILLED": "true"
             }
           ]
@@ -738,16 +1673,70 @@
     "QUESTION": [
       [
         {
-          "ID": "1515",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "a9234e5a-fe09-4a68-be31-55247ad9749c",
-          "UF_QUESTION_TYPE": "single-choice",
+          "ID": "634",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "da4f23b1-e1ed-439b-8847-4f6b4c250dc6",
+          "UF_QUESTION_TYPE": "custom-fields",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
+          "UF_ID_PAGE": "60",
           "PARAMS": {
             "NAME": [
               {
-                "insert": "Одиночный выбор\n"
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Название вашей компании:"
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2453",
+              "UF_ID_QUESTION": "634",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": ""
+            }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "217",
+                "UF_ID_QUESTION": "634",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "",
+                "UF_FILED_ANSWER": "КМПМП",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          "ANSWERS": {
+            "USER_ANSWER": null
+          }
+        },
+        {
+          "ID": "635",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "0ab6a708-93db-4018-bc77-04c86310bdd5",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Подразделение:"
+              },
+              {
+                "insert": "\n"
               }
             ],
             "TYPENAME": "Одиночный выбор",
@@ -756,114 +1745,214 @@
           },
           "VARIANTS": [
             {
-              "ID": "5414",
-              "UF_ID_QUESTION": "1515",
+              "ID": "2454",
+              "UF_ID_QUESTION": "635",
               "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "Одиночный выбор 1"
+              "UF_VARIANT_VALUE": "Маркетинг"
             },
             {
-              "ID": "5415",
-              "UF_ID_QUESTION": "1515",
+              "ID": "2455",
+              "UF_ID_QUESTION": "635",
               "UF_ID_VARIANT": "2",
-              "UF_VARIANT_VALUE": "Одиночный выбор 2"
+              "UF_VARIANT_VALUE": "HR"
             },
             {
-              "ID": "5416",
-              "UF_ID_QUESTION": "1515",
-              "UF_ID_VARIANT": "08ce1c9d-5867-4038-857a-300732d78d9c",
-              "UF_VARIANT_VALUE": "Одиночный выбор 3"
+              "ID": "2456",
+              "UF_ID_QUESTION": "635",
+              "UF_ID_VARIANT": "41a30518-6609-4923-a765-cca671e151ca",
+              "UF_VARIANT_VALUE": "Внутренние коммуникации"
+            },
+            {
+              "ID": "2457",
+              "UF_ID_QUESTION": "635",
+              "UF_ID_VARIANT": "2000e515-c292-4e58-9a47-643414bced4f",
+              "UF_VARIANT_VALUE": "PR"
             }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "218",
+                "UF_ID_QUESTION": "635",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "",
+                "UF_VALUE_FIELD": "Маркетинг",
+                "UF_FILED_ANSWER": "",
+                "UF_FIELD_FILLED": ""
+              }
+            ]
           ],
           "ANSWERS": {
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": {
               "1": {
-                "TEXT": "Одиночный выбор 1",
-                "COUNT_ANSWER": 2,
-                "PROCENT": 28.6
+                "TEXT": "Маркетинг",
+                "COUNT_ANSWER": 4,
+                "PROCENT": 14.8
               },
               "2": {
-                "TEXT": "Одиночный выбор 2",
-                "COUNT_ANSWER": 3,
-                "PROCENT": 42.9
-              },
-              "08ce1c9d-5867-4038-857a-300732d78d9c": {
-                "TEXT": "Одиночный выбор 3",
+                "TEXT": "HR",
                 "COUNT_ANSWER": 2,
-                "PROCENT": 28.6
+                "PROCENT": 7.4
+              },
+              "41a30518-6609-4923-a765-cca671e151ca": {
+                "TEXT": "Внутренние коммуникации",
+                "COUNT_ANSWER": 6,
+                "PROCENT": 22.2
+              },
+              "2000e515-c292-4e58-9a47-643414bced4f": {
+                "TEXT": "PR",
+                "COUNT_ANSWER": 6,
+                "PROCENT": 22.2
               }
             }
           }
         },
         {
-          "ID": "1516",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "f042fd90-5c16-4ccf-be11-6855dc62bcd5",
-          "UF_QUESTION_TYPE": "drop-down-list",
+          "ID": "636",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "016ae5d2-4647-4d09-9b33-559d9ed21fcc",
+          "UF_QUESTION_TYPE": "single-choice",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
+          "UF_ID_PAGE": "60",
           "PARAMS": {
             "NAME": [
               {
-                "insert": "Выпадающий список\n"
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Сфера деятельности компании:"
+              },
+              {
+                "insert": "\n"
               }
             ],
-            "TYPENAME": "Выпадающий список",
+            "TYPENAME": "Одиночный выбор",
             "GENERAL_RANGE_START": null,
             "GENERAL_RANGE_END": null
           },
           "VARIANTS": [
             {
-              "ID": "5417",
-              "UF_ID_QUESTION": "1516",
+              "ID": "2458",
+              "UF_ID_QUESTION": "636",
               "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "Выпадающий список 1"
+              "UF_VARIANT_VALUE": "Промышленность"
             },
             {
-              "ID": "5418",
-              "UF_ID_QUESTION": "1516",
+              "ID": "2459",
+              "UF_ID_QUESTION": "636",
               "UF_ID_VARIANT": "2",
-              "UF_VARIANT_VALUE": "Выпадающий список 2"
+              "UF_VARIANT_VALUE": "Металлургия"
             },
             {
-              "ID": "5419",
-              "UF_ID_QUESTION": "1516",
-              "UF_ID_VARIANT": "4a21b98b-dd7c-4124-b106-24b612fcb673",
-              "UF_VARIANT_VALUE": "Выпадающий список 3"
+              "ID": "2460",
+              "UF_ID_QUESTION": "636",
+              "UF_ID_VARIANT": "6820d05c-d998-46a2-99b0-436e70883f37",
+              "UF_VARIANT_VALUE": "Фарма"
+            },
+            {
+              "ID": "2461",
+              "UF_ID_QUESTION": "636",
+              "UF_ID_VARIANT": "6b5f6206-0ed8-4cbd-ad8d-68d02fe1d5d3",
+              "UF_VARIANT_VALUE": "Торговля"
+            },
+            {
+              "ID": "2462",
+              "UF_ID_QUESTION": "636",
+              "UF_ID_VARIANT": "e3de28a8-b32e-40f7-b145-bb7d0947d05d",
+              "UF_VARIANT_VALUE": "IT"
+            },
+            {
+              "ID": "2463",
+              "UF_ID_QUESTION": "636",
+              "UF_ID_VARIANT": "e1ab6e63-b3ec-4861-9aca-c0ef47906791",
+              "UF_VARIANT_VALUE": "Добыча ресурсов"
+            },
+            {
+              "ID": "2464",
+              "UF_ID_QUESTION": "636",
+              "UF_ID_VARIANT": "950a231b-987c-4ff8-b58a-48fea59a28ca",
+              "UF_VARIANT_VALUE": "Энергетика"
+            },
+            {
+              "ID": "2465",
+              "UF_ID_QUESTION": "636",
+              "UF_ID_VARIANT": "ef248463-01e7-4af2-8d23-6daffdb85d0a",
+              "UF_VARIANT_VALUE": "Финансы"
+            },
+            {
+              "ID": "2466",
+              "UF_ID_QUESTION": "636",
+              "UF_ID_VARIANT": "18814fa8-4322-4c92-b5f4-e1a920af449e",
+              "UF_VARIANT_VALUE": "Сельское хозяйство"
             }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "219",
+                "UF_ID_QUESTION": "636",
+                "UF_ID_FIELD": "6820d05c-d998-46a2-99b0-436e70883f37",
+                "UF_ID_TYPE_FIELD": "",
+                "UF_VALUE_FIELD": "Фарма",
+                "UF_FILED_ANSWER": "",
+                "UF_FIELD_FILLED": ""
+              }
+            ]
           ],
           "ANSWERS": {
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": {
               "1": {
-                "TEXT": "Выпадающий список 1",
-                "COUNT_ANSWER": 2,
-                "PROCENT": 28.6
+                "TEXT": "Промышленность",
+                "COUNT_ANSWER": 8,
+                "PROCENT": 29.6
               },
               "2": {
-                "TEXT": "Выпадающий список 2",
-                "COUNT_ANSWER": 3,
-                "PROCENT": 42.9
-              },
-              "4a21b98b-dd7c-4124-b106-24b612fcb673": {
-                "TEXT": "Выпадающий список 3",
+                "TEXT": "Металлургия",
                 "COUNT_ANSWER": 2,
-                "PROCENT": 28.6
+                "PROCENT": 7.4
+              },
+              "950a231b-987c-4ff8-b58a-48fea59a28ca": {
+                "TEXT": "Энергетика",
+                "COUNT_ANSWER": 3,
+                "PROCENT": 11.1
+              },
+              "e1ab6e63-b3ec-4861-9aca-c0ef47906791": {
+                "TEXT": "Добыча ресурсов",
+                "COUNT_ANSWER": 1,
+                "PROCENT": 3.7
+              },
+              "e3de28a8-b32e-40f7-b145-bb7d0947d05d": {
+                "TEXT": "IT",
+                "COUNT_ANSWER": 2,
+                "PROCENT": 7.4
+              },
+              "6820d05c-d998-46a2-99b0-436e70883f37": {
+                "TEXT": "Фарма",
+                "COUNT_ANSWER": 2,
+                "PROCENT": 7.4
               }
             }
           }
         },
         {
-          "ID": "1517",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "c72e884d-dc71-4af4-81f7-abc32d392000",
+          "ID": "637",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "f0c2ad38-b329-40af-a622-4798b712ec64",
           "UF_QUESTION_TYPE": "multiple-drop-down-list",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
+          "UF_ID_PAGE": "60",
           "PARAMS": {
             "NAME": [
               {
-                "insert": "Множественный вып. список\n"
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Какие задачи решает издание вашей корпоративной книги?"
+              },
+              {
+                "insert": "\n"
               }
             ],
             "TYPENAME": "Множественный вып. список",
@@ -872,1005 +1961,412 @@
           },
           "VARIANTS": [
             {
-              "ID": "5420",
-              "UF_ID_QUESTION": "1517",
+              "ID": "2467",
+              "UF_ID_QUESTION": "637",
               "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "Множественный вып. список 1"
+              "UF_VARIANT_VALUE": "Продвижение отрасли"
             },
             {
-              "ID": "5421",
-              "UF_ID_QUESTION": "1517",
+              "ID": "2468",
+              "UF_ID_QUESTION": "637",
               "UF_ID_VARIANT": "2",
-              "UF_VARIANT_VALUE": "Множественный вып. список 2"
+              "UF_VARIANT_VALUE": "Продвижение продукции"
             },
             {
-              "ID": "5422",
-              "UF_ID_QUESTION": "1517",
-              "UF_ID_VARIANT": "0b69d1f3-37d2-4455-924b-958d27865c85",
-              "UF_VARIANT_VALUE": "Множественный вып. список 3"
+              "ID": "2469",
+              "UF_ID_QUESTION": "637",
+              "UF_ID_VARIANT": "1a5c21e5-66b3-4808-b7da-32be7634bcba",
+              "UF_VARIANT_VALUE": "Укрепление связей с партнерами и клиентами"
+            },
+            {
+              "ID": "2470",
+              "UF_ID_QUESTION": "637",
+              "UF_ID_VARIANT": "98af1c14-8358-4c3e-8566-74d558f0bd4a",
+              "UF_VARIANT_VALUE": "Расширение круга амбассадоров"
+            },
+            {
+              "ID": "2471",
+              "UF_ID_QUESTION": "637",
+              "UF_ID_VARIANT": "49dd25ae-c6e3-45d6-aa58-016245837a4f",
+              "UF_VARIANT_VALUE": "GR- продвижение"
+            },
+            {
+              "ID": "2472",
+              "UF_ID_QUESTION": "637",
+              "UF_ID_VARIANT": "902bcb84-2c7b-403d-b410-f11aed56e224",
+              "UF_VARIANT_VALUE": "Популяризация науки"
+            },
+            {
+              "ID": "2473",
+              "UF_ID_QUESTION": "637",
+              "UF_ID_VARIANT": "1f934ac4-8f66-48bf-a34e-d0655d4aa2a5",
+              "UF_VARIANT_VALUE": "Командоообразование"
+            },
+            {
+              "ID": "2474",
+              "UF_ID_QUESTION": "637",
+              "UF_ID_VARIANT": "2fad1a34-7080-437f-9d75-8fdc98521f66",
+              "UF_VARIANT_VALUE": "Распространение бизнес-опыта"
+            },
+            {
+              "ID": "2475",
+              "UF_ID_QUESTION": "637",
+              "UF_ID_VARIANT": "6586b315-20f9-471b-b75c-a5b409727163",
+              "UF_VARIANT_VALUE": "HR - задачи"
             }
           ],
           "ANSWERS": {
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": {
               "1": {
-                "TEXT": "Множественный вып. список 1",
-                "COUNT_ANSWER": 4,
-                "PROCENT": 44.4
+                "TEXT": "Продвижение отрасли",
+                "COUNT_ANSWER": 8,
+                "PROCENT": 29.6
               },
               "2": {
-                "TEXT": "Множественный вып. список 2",
+                "TEXT": "Продвижение продукции",
                 "COUNT_ANSWER": 3,
-                "PROCENT": 33.3
+                "PROCENT": 11.1
               },
-              "0b69d1f3-37d2-4455-924b-958d27865c85": {
-                "TEXT": "Множественный вып. список 3",
+              "6586b315-20f9-471b-b75c-a5b409727163": {
+                "TEXT": "HR - задачи",
+                "COUNT_ANSWER": 11,
+                "PROCENT": 40.7
+              },
+              "98af1c14-8358-4c3e-8566-74d558f0bd4a": {
+                "TEXT": "Расширение круга амбассадоров",
+                "COUNT_ANSWER": 5,
+                "PROCENT": 18.5
+              },
+              "1a5c21e5-66b3-4808-b7da-32be7634bcba": {
+                "TEXT": "Укрепление связей с партнерами и клиентами",
+                "COUNT_ANSWER": 11,
+                "PROCENT": 40.7
+              },
+              "1f934ac4-8f66-48bf-a34e-d0655d4aa2a5": {
+                "TEXT": "Командоообразование",
+                "COUNT_ANSWER": 8,
+                "PROCENT": 29.6
+              },
+              "2fad1a34-7080-437f-9d75-8fdc98521f66": {
+                "TEXT": "Распространение бизнес-опыта",
                 "COUNT_ANSWER": 2,
+                "PROCENT": 7.4
+              },
+              "902bcb84-2c7b-403d-b410-f11aed56e224": {
+                "TEXT": "Популяризация науки",
+                "COUNT_ANSWER": 1,
+                "PROCENT": 3.7
+              }
+            }
+          }
+        },
+        {
+          "ID": "638",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "1962e176-bcd8-4770-80f4-f3d4361e2135",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Какие книги были изданы вашей компанией в 2023?"
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2476",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Юбилейные книги"
+            },
+            {
+              "ID": "2477",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Книги по истории компании"
+            },
+            {
+              "ID": "2478",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "a53fad3a-a064-4498-ab4e-d90e3176f1b5",
+              "UF_VARIANT_VALUE": "Книги - «википедии»"
+            },
+            {
+              "ID": "2479",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "f3bc6c6e-32dd-4bea-8a0c-db1fc880ab56",
+              "UF_VARIANT_VALUE": "Книги в поддержку корпоративной культуры компании"
+            },
+            {
+              "ID": "2480",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "6eb7d2fb-470e-43f2-8cf8-630ac0e567db",
+              "UF_VARIANT_VALUE": "Детские книги о профессиях"
+            },
+            {
+              "ID": "2481",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "ad8c51e8-3115-4a84-abac-6a8c4b5fcc58",
+              "UF_VARIANT_VALUE": "Специализированные книги о продукции компании"
+            },
+            {
+              "ID": "2482",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "cbaa9757-4042-4410-b5a2-ffd54ca5ea9d",
+              "UF_VARIANT_VALUE": "Книги в поддержку бизнес-проектов компании"
+            },
+            {
+              "ID": "2483",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "d8e66e72-4b76-47da-9b24-8ed82f28fca0",
+              "UF_VARIANT_VALUE": "Книги – корпоративный учебник"
+            },
+            {
+              "ID": "2484",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "833189c9-b34d-4acf-af71-0bb25f713631",
+              "UF_VARIANT_VALUE": "Welcome-book – книга нового сотрудника"
+            },
+            {
+              "ID": "2485",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "ddf1c380-9926-4858-9c89-07f15d6c6261",
+              "UF_VARIANT_VALUE": "Книга-путеводитель"
+            },
+            {
+              "ID": "2486",
+              "UF_ID_QUESTION": "638",
+              "UF_ID_VARIANT": "102632c5-635e-45f8-9c92-04c59a2fef73",
+              "UF_VARIANT_VALUE": "Не издавались"
+            }
+          ],
+          "ANSWERS": {
+            "CORRECT_ANSWER": [""],
+            "USER_ANSWER": {
+              "1": {
+                "TEXT": "Юбилейные книги",
+                "COUNT_ANSWER": 3,
+                "PROCENT": 11.1
+              },
+              "2": {
+                "TEXT": "Книги по истории компании",
+                "COUNT_ANSWER": 5,
+                "PROCENT": 18.5
+              },
+              "ad8c51e8-3115-4a84-abac-6a8c4b5fcc58": {
+                "TEXT": "Специализированные книги о продукции компании",
+                "COUNT_ANSWER": 3,
+                "PROCENT": 11.1
+              },
+              "f3bc6c6e-32dd-4bea-8a0c-db1fc880ab56": {
+                "TEXT": "Книги в поддержку корпоративной культуры компании",
+                "COUNT_ANSWER": 5,
+                "PROCENT": 18.5
+              },
+              "102632c5-635e-45f8-9c92-04c59a2fef73": {
+                "TEXT": "Не издавались",
+                "COUNT_ANSWER": 10,
+                "PROCENT": 37
+              },
+              "ddf1c380-9926-4858-9c89-07f15d6c6261": {
+                "TEXT": "Книга-путеводитель",
+                "COUNT_ANSWER": 1,
+                "PROCENT": 3.7
+              },
+              "cbaa9757-4042-4410-b5a2-ffd54ca5ea9d": {
+                "TEXT": "Книги в поддержку бизнес-проектов компании",
+                "COUNT_ANSWER": 2,
+                "PROCENT": 7.4
+              },
+              "833189c9-b34d-4acf-af71-0bb25f713631": {
+                "TEXT": "Welcome-book – книга нового сотрудника",
+                "COUNT_ANSWER": 3,
+                "PROCENT": 11.1
+              },
+              "6eb7d2fb-470e-43f2-8cf8-630ac0e567db": {
+                "TEXT": "Детские книги о профессиях",
+                "COUNT_ANSWER": 3,
+                "PROCENT": 11.1
+              }
+            }
+          }
+        },
+        {
+          "ID": "639",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "b9a638c2-a34f-4bf0-ab3f-0f5be1026bcf",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Какие книги планируется издать / изданы в 2024 году?"
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2487",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Юбилейные книги"
+            },
+            {
+              "ID": "2488",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Книги по истории компании"
+            },
+            {
+              "ID": "2489",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "269b3c41-df55-4869-bee7-78c5f4b941b0",
+              "UF_VARIANT_VALUE": "Книги - «википедии»"
+            },
+            {
+              "ID": "2490",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "d1e4bc30-2a83-431a-bf38-f3a4d2d56e5a",
+              "UF_VARIANT_VALUE": "Книги в поддержку корпоративной культуры компании"
+            },
+            {
+              "ID": "2491",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "418e75b6-a04b-4cb1-8ff9-c71f3b87a13d",
+              "UF_VARIANT_VALUE": "Детские книги о профессиях"
+            },
+            {
+              "ID": "2492",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "c51a5fa6-7e1a-4f9b-b4bc-64d669c0dfb1",
+              "UF_VARIANT_VALUE": "Специализированные книги о продукции компании"
+            },
+            {
+              "ID": "2493",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "4f8c6e87-34d7-4363-be9a-a7edf37dfb60",
+              "UF_VARIANT_VALUE": "Книги в поддержку бизнес-проектов компании"
+            },
+            {
+              "ID": "2494",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "c13ade71-215e-4e95-8935-8a5c9e45fbfc",
+              "UF_VARIANT_VALUE": "Книги – корпоративный учебник"
+            },
+            {
+              "ID": "2495",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "3a3a966c-5b0f-406b-ad92-bcdb8a96c92a",
+              "UF_VARIANT_VALUE": "Welcome-book – книга нового сотрудника"
+            },
+            {
+              "ID": "2496",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "11e4c2e8-8838-4288-b2da-3a223fc3b4e8",
+              "UF_VARIANT_VALUE": "Книга-путеводитель"
+            },
+            {
+              "ID": "2497",
+              "UF_ID_QUESTION": "639",
+              "UF_ID_VARIANT": "4a452326-bb2a-4fba-8f82-4dcf1dd07c0a",
+              "UF_VARIANT_VALUE": "Не планируется"
+            }
+          ],
+          "ANSWERS": {
+            "CORRECT_ANSWER": [""],
+            "USER_ANSWER": {
+              "1": {
+                "TEXT": "Юбилейные книги",
+                "COUNT_ANSWER": 6,
                 "PROCENT": 22.2
-              }
-            }
-          }
-        },
-        {
-          "ID": "1518",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "09e72ec1-d7be-4f4e-80e3-3b34b5831702",
-          "UF_QUESTION_TYPE": "multiple-choice",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Множественный выбор\n"
-              }
-            ],
-            "TYPENAME": "Множественный выбор",
-            "GENERAL_RANGE_START": null,
-            "GENERAL_RANGE_END": null
-          },
-          "VARIANTS": [
-            {
-              "ID": "5423",
-              "UF_ID_QUESTION": "1518",
-              "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "Множественный выбор 1"
-            },
-            {
-              "ID": "5424",
-              "UF_ID_QUESTION": "1518",
-              "UF_ID_VARIANT": "2",
-              "UF_VARIANT_VALUE": "Множественный выбор 2"
-            },
-            {
-              "ID": "5425",
-              "UF_ID_QUESTION": "1518",
-              "UF_ID_VARIANT": "d5e56cd8-5657-426b-8297-3d2c20a4cc29",
-              "UF_VARIANT_VALUE": "Множественный выбор 3"
-            },
-            {
-              "ID": "5426",
-              "UF_ID_QUESTION": "1518",
-              "UF_ID_VARIANT": "69ad2172-dec9-473b-8e4c-3669016a1146",
-              "UF_VARIANT_VALUE": "Множественный выбор 4"
-            }
-          ],
-          "ANSWERS": {
-            "CORRECT_ANSWER": [""],
-            "USER_ANSWER": {
-              "1": {
-                "TEXT": "Множественный выбор 1",
-                "COUNT_ANSWER": 4,
-                "PROCENT": 33.3
               },
               "2": {
-                "TEXT": "Множественный выбор 2",
-                "COUNT_ANSWER": 3,
-                "PROCENT": 25
-              },
-              "d5e56cd8-5657-426b-8297-3d2c20a4cc29": {
-                "TEXT": "Множественный выбор 3",
-                "COUNT_ANSWER": 3,
-                "PROCENT": 25
-              },
-              "69ad2172-dec9-473b-8e4c-3669016a1146": {
-                "TEXT": "Множественный выбор 4",
+                "TEXT": "Книги по истории компании",
                 "COUNT_ANSWER": 2,
-                "PROCENT": 16.7
-              }
-            }
-          }
-        },
-        {
-          "ID": "1519",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "62c8a9e6-fc36-4cd9-b5e1-e8240d4cb568",
-          "UF_QUESTION_TYPE": "ranging",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Ранжирование\n"
-              }
-            ],
-            "TYPENAME": "Ранжирование",
-            "GENERAL_RANGE_START": null,
-            "GENERAL_RANGE_END": null
-          },
-          "VARIANTS": [
-            {
-              "ID": "5427",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "Ранжирование 1"
-            },
-            {
-              "ID": "5428",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "2",
-              "UF_VARIANT_VALUE": "Ранжирование 2"
-            },
-            {
-              "ID": "5429",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454",
-              "UF_VARIANT_VALUE": "Ранжирование 3"
-            },
-            {
-              "ID": "5430",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f",
-              "UF_VARIANT_VALUE": "Ранжирование 4"
-            },
-            {
-              "ID": "5431",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "b81592ef-86ba-4ee9-a48c-f9ae73d12d61",
-              "UF_VARIANT_VALUE": "Ранжирование 5"
-            },
-            {
-              "ID": "5432",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f",
-              "UF_VARIANT_VALUE": "Ранжирование 6"
-            },
-            {
-              "ID": "5433",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "a1bc2f76-5043-4574-a81b-e40b6e577307",
-              "UF_VARIANT_VALUE": "Ранжирование 7"
-            },
-            {
-              "ID": "5434",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "d4990609-06a0-4cdb-b6b7-b1981fa29d6b",
-              "UF_VARIANT_VALUE": "Ранжирование 8"
-            },
-            {
-              "ID": "5435",
-              "UF_ID_QUESTION": "1519",
-              "UF_ID_VARIANT": "1cd9d838-8360-4ff6-af2c-3ad6b6261516",
-              "UF_VARIANT_VALUE": "Ранжирование 9"
-            }
-          ],
-          "ANSWERS": {
-            "USER_ANSWER": {
-              "1": {
-                "TEXT": "Ранжирование 1",
-                "COUNT_ANSWER": 1,
-                "PROC": 2,
-                "INCORRECT": {
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 5,
-                    "PROC": 9.8
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  }
-                }
+                "PROCENT": 7.4
               },
-              "2": {
-                "TEXT": "Ранжирование 2",
-                "COUNT_ANSWER": 1,
-                "PROC": 2,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 5,
-                    "PROC": 9.8
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  }
-                }
+              "3a3a966c-5b0f-406b-ad92-bcdb8a96c92a": {
+                "TEXT": "Welcome-book – книга нового сотрудника",
+                "COUNT_ANSWER": 5,
+                "PROCENT": 18.5
               },
-              "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                "TEXT": "Ранжирование 3",
-                "COUNT_ANSWER": 1,
-                "PROC": 2,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 5,
-                    "PROC": 9.8
-                  }
-                }
-              },
-              "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                "TEXT": "Ранжирование 4",
+              "11e4c2e8-8838-4288-b2da-3a223fc3b4e8": {
+                "TEXT": "Книга-путеводитель",
                 "COUNT_ANSWER": 2,
-                "PROC": 3.8,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.3
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.3
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.2
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.3
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.2
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.3
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.2
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.3
-                  }
-                }
+                "PROCENT": 7.4
               },
-              "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                "TEXT": "Ранжирование 5",
+              "d1e4bc30-2a83-431a-bf38-f3a4d2d56e5a": {
+                "TEXT": "Книги в поддержку корпоративной культуры компании",
+                "COUNT_ANSWER": 7,
+                "PROCENT": 25.9
+              },
+              "4f8c6e87-34d7-4363-be9a-a7edf37dfb60": {
+                "TEXT": "Книги в поддержку бизнес-проектов компании",
                 "COUNT_ANSWER": 1,
-                "PROC": 2,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  }
-                }
+                "PROCENT": 3.7
               },
-              "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                "TEXT": "Ранжирование 6",
-                "COUNT_ANSWER": 1,
-                "PROC": 2,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 4,
-                    "PROC": 7.8
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 13.7
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 11.8
-                  }
-                }
+              "4a452326-bb2a-4fba-8f82-4dcf1dd07c0a": {
+                "TEXT": "Не планируется",
+                "COUNT_ANSWER": 7,
+                "PROCENT": 25.9
               },
-              "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                "TEXT": "Ранжирование 7",
-                "COUNT_ANSWER": 4,
-                "PROC": 7,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.3
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.5
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.3
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.3
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.3
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.5
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.3
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.5
-                  }
-                }
-              },
-              "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                "TEXT": "Ранжирование 8",
+              "c51a5fa6-7e1a-4f9b-b4bc-64d669c0dfb1": {
+                "TEXT": "Специализированные книги о продукции компании",
                 "COUNT_ANSWER": 3,
-                "PROC": 5.5,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 5,
-                    "PROC": 9.1
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.9
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                    "TEXT": "Ранжирование 9",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.9
-                  }
-                }
+                "PROCENT": 11.1
               },
-              "1cd9d838-8360-4ff6-af2c-3ad6b6261516": {
-                "TEXT": "Ранжирование 9",
-                "COUNT_ANSWER": 3,
-                "PROC": 5.5,
-                "INCORRECT": {
-                  "1": {
-                    "TEXT": "Ранжирование 1",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "2": {
-                    "TEXT": "Ранжирование 2",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.9
-                  },
-                  "a1bc2f76-5043-4574-a81b-e40b6e577307": {
-                    "TEXT": "Ранжирование 7",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "b81592ef-86ba-4ee9-a48c-f9ae73d12d61": {
-                    "TEXT": "Ранжирование 5",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.9
-                  },
-                  "9090ad2e-c9dd-476f-b5ad-4d0ddbc6f454": {
-                    "TEXT": "Ранжирование 3",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "7538fd5e-6b2b-40ed-91d2-e65c3aed5c6f": {
-                    "TEXT": "Ранжирование 4",
-                    "COUNT_ANSWER": 7,
-                    "PROC": 12.7
-                  },
-                  "f6f3953e-b4ca-443e-9b4b-d7a2d2a0746f": {
-                    "TEXT": "Ранжирование 6",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.9
-                  },
-                  "d4990609-06a0-4cdb-b6b7-b1981fa29d6b": {
-                    "TEXT": "Ранжирование 8",
-                    "COUNT_ANSWER": 6,
-                    "PROC": 10.9
-                  }
-                }
+              "c13ade71-215e-4e95-8935-8a5c9e45fbfc": {
+                "TEXT": "Книги – корпоративный учебник",
+                "COUNT_ANSWER": 1,
+                "PROCENT": 3.7
+              },
+              "418e75b6-a04b-4cb1-8ff9-c71f3b87a13d": {
+                "TEXT": "Детские книги о профессиях",
+                "COUNT_ANSWER": 2,
+                "PROCENT": 7.4
               }
             }
           }
         },
         {
-          "ID": "1520",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "0f972123-85ad-4bbb-bd23-2b2ec2b5f1d1",
-          "UF_QUESTION_TYPE": "range-selection",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Выбор диапазона\n"
-              }
-            ],
-            "TYPENAME": "Выбор диапазона",
-            "GENERAL_RANGE_START": 100,
-            "GENERAL_RANGE_END": 1000
-          },
-          "VARIANTS": null,
-          "ANSWERS": {
-            "START": ["262", "350", "329", "363", "274", "290", "289"],
-            "END": ["1000", "802", "745", "799", "753", "680", "857"],
-            "GEN_START_RANGE": 308,
-            "GEN_END_RANGE": 805,
-            "GEN_COUNT_ANSW": 7,
-            "RANGE5": false,
-            "RANGE10": false
-          }
-        },
-        {
-          "ID": "1521",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "84feebae-f4e2-42b9-b80c-5b9e6f50ce36",
-          "UF_QUESTION_TYPE": "date",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Дата\n"
-              }
-            ],
-            "TYPENAME": "Дата",
-            "GENERAL_RANGE_START": null,
-            "GENERAL_RANGE_END": null
-          },
-          "VARIANTS": null,
-          "ANSWERS": {
-            "CORRECT_ANSWER": [""],
-            "USER_ANSWER": [
-              {
-                "TEXT": "2024-01-17T08:57:00.000Z",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "2024-01-09T05:36:00.000Z",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "2024-01-03T05:38:00.000Z",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "2024-01-19T05:58:00.000Z",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "2024-01-17T08:36:00.000Z",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "2024-01-10T10:50:00.000Z",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "2024-01-01T10:22:00.000Z",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              }
-            ]
-          }
-        },
-        {
-          "ID": "1522",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "37eae9a9-bf38-4d9a-8bab-63e27bb36614",
-          "UF_QUESTION_TYPE": "date",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Дата диапазон дат\n"
-              }
-            ],
-            "TYPENAME": "Дата",
-            "GENERAL_RANGE_START": null,
-            "GENERAL_RANGE_END": null
-          },
-          "VARIANTS": null,
-          "ANSWERS": {
-            "CORRECT_ANSWER": [""],
-            "USER_ANSWER": [
-              {
-                "TEXT": "Wed Jan 03 2024 14:57:00 GMT+0600 (Восточный Казахстан)-Wed Jan 17 2024 14:57:00 GMT+0600 (Восточный Казахстан)",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "Wed Jan 03 2024 11:36:00 GMT+0600 (Восточный Казахстан)-Wed Jan 24 2024 11:36:00 GMT+0600 (Восточный Казахстан)",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "Wed Jan 03 2024 11:38:00 GMT+0600 (Восточный Казахстан)-Wed Jan 17 2024 11:38:00 GMT+0600 (Восточный Казахстан)",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "Wed Jan 10 2024 11:58:00 GMT+0600 (Восточный Казахстан)-Wed Jan 24 2024 11:58:00 GMT+0600 (Восточный Казахстан)",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "Tue Jan 02 2024 14:36:00 GMT+0600 (Восточный Казахстан)-Tue Jan 16 2024 14:36:00 GMT+0600 (Восточный Казахстан)",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "Wed Jan 17 2024 16:50:00 GMT+0600 (Восточный Казахстан)-Sat Jan 20 2024 16:50:00 GMT+0600 (Восточный Казахстан)",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              },
-              {
-                "TEXT": "Wed Jan 31 2024 16:22:00 GMT+0600 (Восточный Казахстан)-Thu Feb 01 2024 16:22:00 GMT+0600 (Восточный Казахстан)",
-                "COUNT_ANSWER": 1,
-                "PROCENT": 14.3
-              }
-            ]
-          }
-        },
-        {
-          "ID": "1523",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "90c21656-c81d-47f0-800a-44abfd799418",
-          "UF_QUESTION_TYPE": "custom-fields",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Кастомные поля\n"
-              }
-            ],
-            "TYPENAME": "Кастомные поля",
-            "GENERAL_RANGE_START": null,
-            "GENERAL_RANGE_END": null
-          },
-          "VARIANTS": [
-            {
-              "ID": "5436",
-              "UF_ID_QUESTION": "1523",
-              "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "текст"
-            },
-            {
-              "ID": "5437",
-              "UF_ID_QUESTION": "1523",
-              "UF_ID_VARIANT": "60844eea-da56-4ea4-99c8-d943499f8a54",
-              "UF_VARIANT_VALUE": "Телефон"
-            },
-            {
-              "ID": "5438",
-              "UF_ID_QUESTION": "1523",
-              "UF_ID_VARIANT": "8d734349-081f-4284-be52-e372e4c42ab4",
-              "UF_VARIANT_VALUE": "email"
-            },
-            {
-              "ID": "5439",
-              "UF_ID_QUESTION": "1523",
-              "UF_ID_VARIANT": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-              "UF_VARIANT_VALUE": "Область текста"
-            }
-          ],
-          "FORMS": [
-            [
-              {
-                "ID": "449",
-                "UF_ID_QUESTION": "1523",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "text",
-                "UF_VALUE_FIELD": "текст",
-                "UF_FILED_ANSWER": "12312",
-                "UF_FIELD_FILLED": "true"
-              },
-              {
-                "ID": "450",
-                "UF_ID_QUESTION": "1523",
-                "UF_ID_FIELD": "60844eea-da56-4ea4-99c8-d943499f8a54",
-                "UF_ID_TYPE_FIELD": "phone",
-                "UF_VALUE_FIELD": "Телефон",
-                "UF_FILED_ANSWER": "+7(123)123-12-31",
-                "UF_FIELD_FILLED": "true"
-              },
-              {
-                "ID": "451",
-                "UF_ID_QUESTION": "1523",
-                "UF_ID_FIELD": "8d734349-081f-4284-be52-e372e4c42ab4",
-                "UF_ID_TYPE_FIELD": "email",
-                "UF_VALUE_FIELD": "email",
-                "UF_FILED_ANSWER": "фывфы@mail.ru",
-                "UF_FIELD_FILLED": "true"
-              },
-              {
-                "ID": "452",
-                "UF_ID_QUESTION": "1523",
-                "UF_ID_FIELD": "51a0cfc1-0241-4f67-9215-577227bbf25d",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Область текста",
-                "UF_FILED_ANSWER": "фывфы@mail.ru",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          "ANSWERS": {
-            "USER_ANSWER": []
-          }
-        },
-        {
-          "ID": "1524",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "0be8c1c0-7e08-46bc-929c-1d4f382ec74c",
-          "UF_QUESTION_TYPE": "custom-fields",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "264",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Кастомные поля 2\n"
-              }
-            ],
-            "TYPENAME": "Кастомные поля",
-            "GENERAL_RANGE_START": null,
-            "GENERAL_RANGE_END": null
-          },
-          "VARIANTS": [
-            {
-              "ID": "5440",
-              "UF_ID_QUESTION": "1524",
-              "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "Текст 2"
-            },
-            {
-              "ID": "5441",
-              "UF_ID_QUESTION": "1524",
-              "UF_ID_VARIANT": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-              "UF_VARIANT_VALUE": "Телефон 2"
-            },
-            {
-              "ID": "5442",
-              "UF_ID_QUESTION": "1524",
-              "UF_ID_VARIANT": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-              "UF_VARIANT_VALUE": "Email 2"
-            },
-            {
-              "ID": "5443",
-              "UF_ID_QUESTION": "1524",
-              "UF_ID_VARIANT": "a088b845-d496-4aad-91b2-d9d461f409ed",
-              "UF_VARIANT_VALUE": "Область текста 2"
-            }
-          ],
-          "FORMS": [
-            [
-              {
-                "ID": "453",
-                "UF_ID_QUESTION": "1524",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "text",
-                "UF_VALUE_FIELD": "Текст 2",
-                "UF_FILED_ANSWER": "фывфы@mail.ru",
-                "UF_FIELD_FILLED": "true"
-              },
-              {
-                "ID": "454",
-                "UF_ID_QUESTION": "1524",
-                "UF_ID_FIELD": "78ce0bf9-e1aa-4483-a45a-5c122cbddbb6",
-                "UF_ID_TYPE_FIELD": "phone",
-                "UF_VALUE_FIELD": "Телефон 2",
-                "UF_FILED_ANSWER": "+7(123)123-12-31",
-                "UF_FIELD_FILLED": "true"
-              },
-              {
-                "ID": "455",
-                "UF_ID_QUESTION": "1524",
-                "UF_ID_FIELD": "2583bdba-96dd-4da2-ae2b-d4cc40ecd469",
-                "UF_ID_TYPE_FIELD": "email",
-                "UF_VALUE_FIELD": "Email 2",
-                "UF_FILED_ANSWER": "фывфы@mail.ru",
-                "UF_FIELD_FILLED": "true"
-              },
-              {
-                "ID": "456",
-                "UF_ID_QUESTION": "1524",
-                "UF_ID_FIELD": "a088b845-d496-4aad-91b2-d9d461f409ed",
-                "UF_ID_TYPE_FIELD": "textarea",
-                "UF_VALUE_FIELD": "Область текста 2",
-                "UF_FILED_ANSWER": "123123123",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          "ANSWERS": {
-            "USER_ANSWER": []
-          }
-        }
-      ],
-      [
-        {
-          "ID": "1525",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "65989748-d47a-45b9-b32c-b4ae4aaee04e",
-          "UF_QUESTION_TYPE": "custom-fields",
-          "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "265",
-          "PARAMS": {
-            "NAME": [
-              {
-                "insert": "Кастомные поля страница 2\n"
-              }
-            ],
-            "TYPENAME": "Кастомные поля",
-            "GENERAL_RANGE_START": null,
-            "GENERAL_RANGE_END": null
-          },
-          "VARIANTS": [
-            {
-              "ID": "5444",
-              "UF_ID_QUESTION": "1525",
-              "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "текст"
-            },
-            {
-              "ID": "5445",
-              "UF_ID_QUESTION": "1525",
-              "UF_ID_VARIANT": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-              "UF_VARIANT_VALUE": "Телефон"
-            }
-          ],
-          "FORMS": [
-            [
-              {
-                "ID": "457",
-                "UF_ID_QUESTION": "1525",
-                "UF_ID_FIELD": "1",
-                "UF_ID_TYPE_FIELD": "text",
-                "UF_VALUE_FIELD": "текст",
-                "UF_FILED_ANSWER": "фывфы@mail.ru",
-                "UF_FIELD_FILLED": "true"
-              },
-              {
-                "ID": "458",
-                "UF_ID_QUESTION": "1525",
-                "UF_ID_FIELD": "a55a6b48-1a53-44ba-a44d-835f501c6a7b",
-                "UF_ID_TYPE_FIELD": "phone",
-                "UF_VALUE_FIELD": "Телефон",
-                "UF_FILED_ANSWER": "+7(123)123-12-31",
-                "UF_FIELD_FILLED": "true"
-              }
-            ]
-          ],
-          "ANSWERS": {
-            "USER_ANSWER": []
-          }
-        },
-        {
-          "ID": "1526",
-          "UF_ID_RESULT": "479",
-          "UF_ID_QUESTION": "25d910eb-a8f4-44f8-8faf-7d4e5e49eedd",
+          "ID": "640",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "4264be08-e745-4656-a4b2-74391a046917",
           "UF_QUESTION_TYPE": "single-choice",
           "UF_VARIANT_TYPE": "",
-          "UF_ID_PAGE": "265",
+          "UF_ID_PAGE": "60",
           "PARAMS": {
             "NAME": [
               {
-                "insert": "Одиночный 2\n"
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "В каком формате изданы книги?"
+              },
+              {
+                "insert": "\n"
               }
             ],
             "TYPENAME": "Одиночный выбор",
@@ -1879,32 +2375,517 @@
           },
           "VARIANTS": [
             {
-              "ID": "5446",
-              "UF_ID_QUESTION": "1526",
+              "ID": "2498",
+              "UF_ID_QUESTION": "640",
               "UF_ID_VARIANT": "1",
-              "UF_VARIANT_VALUE": "Одиночный 2 1"
+              "UF_VARIANT_VALUE": "Принт"
             },
             {
-              "ID": "5447",
-              "UF_ID_QUESTION": "1526",
+              "ID": "2499",
+              "UF_ID_QUESTION": "640",
               "UF_ID_VARIANT": "2",
-              "UF_VARIANT_VALUE": "Одиночный 2 2"
+              "UF_VARIANT_VALUE": "Digital"
+            },
+            {
+              "ID": "2500",
+              "UF_ID_QUESTION": "640",
+              "UF_ID_VARIANT": "96f934ad-cc43-44b4-bb14-7318988cc316",
+              "UF_VARIANT_VALUE": "Принт + Digital"
+            }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "220",
+                "UF_ID_QUESTION": "640",
+                "UF_ID_FIELD": "96f934ad-cc43-44b4-bb14-7318988cc316",
+                "UF_ID_TYPE_FIELD": "",
+                "UF_VALUE_FIELD": "Принт + Digital",
+                "UF_FILED_ANSWER": "",
+                "UF_FIELD_FILLED": ""
+              }
+            ]
+          ],
+          "ANSWERS": {
+            "CORRECT_ANSWER": [""],
+            "USER_ANSWER": {
+              "1": {
+                "TEXT": "Принт",
+                "COUNT_ANSWER": 10,
+                "PROCENT": 37
+              },
+              "2": {
+                "TEXT": "Digital",
+                "COUNT_ANSWER": 3,
+                "PROCENT": 11.1
+              },
+              "96f934ad-cc43-44b4-bb14-7318988cc316": {
+                "TEXT": "Принт + Digital",
+                "COUNT_ANSWER": 11,
+                "PROCENT": 40.7
+              }
+            }
+          }
+        },
+        {
+          "ID": "641",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "848803b0-aa64-45f7-af68-4482cb2bcf68",
+          "UF_QUESTION_TYPE": "single-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Присваивается ли ISBN вашим корпоративным книгам? "
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Одиночный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2501",
+              "UF_ID_QUESTION": "641",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Да"
+            },
+            {
+              "ID": "2502",
+              "UF_ID_QUESTION": "641",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Нет"
+            }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "221",
+                "UF_ID_QUESTION": "641",
+                "UF_ID_FIELD": "2",
+                "UF_ID_TYPE_FIELD": "",
+                "UF_VALUE_FIELD": "Нет",
+                "UF_FILED_ANSWER": "",
+                "UF_FIELD_FILLED": ""
+              }
+            ]
+          ],
+          "ANSWERS": {
+            "CORRECT_ANSWER": [""],
+            "USER_ANSWER": {
+              "1": {
+                "TEXT": "Да",
+                "COUNT_ANSWER": 7,
+                "PROCENT": 25.9
+              },
+              "2": {
+                "TEXT": "Нет",
+                "COUNT_ANSWER": 17,
+                "PROCENT": 63
+              }
+            }
+          }
+        },
+        {
+          "ID": "642",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "0049388e-dc92-491f-bde9-df77c782d27c",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Какие ресурсы вы привлекаете для разработки проекта книги и ее издания?"
+              },
+              {
+                "insert": " \n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2503",
+              "UF_ID_QUESTION": "642",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Профессиональные агентства  / издательства"
+            },
+            {
+              "ID": "2504",
+              "UF_ID_QUESTION": "642",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Профессиональные писатели"
+            },
+            {
+              "ID": "2505",
+              "UF_ID_QUESTION": "642",
+              "UF_ID_VARIANT": "c9f41281-dd9b-444f-95cd-5a65aba5baa6",
+              "UF_VARIANT_VALUE": "Профессиональные иллюстраторы"
+            },
+            {
+              "ID": "2506",
+              "UF_ID_QUESTION": "642",
+              "UF_ID_VARIANT": "ec7eb3db-6555-417e-8b58-99a8dd817fe0",
+              "UF_VARIANT_VALUE": "Профессиональные дизайнеры"
+            },
+            {
+              "ID": "2507",
+              "UF_ID_QUESTION": "642",
+              "UF_ID_VARIANT": "f2ca2c3d-2577-4195-9f3d-b1cf11285d23",
+              "UF_VARIANT_VALUE": "Специалисты по Digital"
             }
           ],
           "ANSWERS": {
             "CORRECT_ANSWER": [""],
             "USER_ANSWER": {
               "1": {
-                "TEXT": "Одиночный 2 1",
-                "COUNT_ANSWER": 4,
-                "PROCENT": 57.1
+                "TEXT": "Профессиональные агентства  / издательства",
+                "COUNT_ANSWER": 16,
+                "PROCENT": 59.3
               },
               "2": {
-                "TEXT": "Одиночный 2 2",
+                "TEXT": "Профессиональные писатели",
+                "COUNT_ANSWER": 7,
+                "PROCENT": 25.9
+              },
+              "c9f41281-dd9b-444f-95cd-5a65aba5baa6": {
+                "TEXT": "Профессиональные иллюстраторы",
+                "COUNT_ANSWER": 5,
+                "PROCENT": 18.5
+              },
+              "ec7eb3db-6555-417e-8b58-99a8dd817fe0": {
+                "TEXT": "Профессиональные дизайнеры",
+                "COUNT_ANSWER": 9,
+                "PROCENT": 33.3
+              },
+              "f2ca2c3d-2577-4195-9f3d-b1cf11285d23": {
+                "TEXT": "Специалисты по Digital",
                 "COUNT_ANSWER": 3,
-                "PROCENT": 42.9
+                "PROCENT": 11.1
               }
             }
+          }
+        },
+        {
+          "ID": "643",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "0ebd2426-4ae1-4ec4-b9f6-eb466c2c9d1e",
+          "UF_QUESTION_TYPE": "multiple-drop-down-list",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Какими тиражами издаются ваши корпоративные книги? "
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Множественный вып. список",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2508",
+              "UF_ID_QUESTION": "643",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "100 - 200 экз."
+            },
+            {
+              "ID": "2509",
+              "UF_ID_QUESTION": "643",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "200 - 500 экз."
+            },
+            {
+              "ID": "2510",
+              "UF_ID_QUESTION": "643",
+              "UF_ID_VARIANT": "3504cebe-fb89-495b-a35c-7f146de41031",
+              "UF_VARIANT_VALUE": "500 – 1 000 экз."
+            },
+            {
+              "ID": "2511",
+              "UF_ID_QUESTION": "643",
+              "UF_ID_VARIANT": "b2bae28d-2885-429e-a2f5-29fdd9bfcb28",
+              "UF_VARIANT_VALUE": "1 000-5 000 экз."
+            },
+            {
+              "ID": "2512",
+              "UF_ID_QUESTION": "643",
+              "UF_ID_VARIANT": "8c570f59-1999-44f6-8890-946051d7c484",
+              "UF_VARIANT_VALUE": "Более 5 000 экз."
+            }
+          ],
+          "ANSWERS": {
+            "CORRECT_ANSWER": [""],
+            "USER_ANSWER": {
+              "1": {
+                "TEXT": "100 - 200 экз.",
+                "COUNT_ANSWER": 6,
+                "PROCENT": 22.2
+              },
+              "2": {
+                "TEXT": "200 - 500 экз.",
+                "COUNT_ANSWER": 3,
+                "PROCENT": 11.1
+              },
+              "8c570f59-1999-44f6-8890-946051d7c484": {
+                "TEXT": "Более 5 000 экз.",
+                "COUNT_ANSWER": 5,
+                "PROCENT": 18.5
+              },
+              "3504cebe-fb89-495b-a35c-7f146de41031": {
+                "TEXT": "500 – 1 000 экз.",
+                "COUNT_ANSWER": 7,
+                "PROCENT": 25.9
+              },
+              "b2bae28d-2885-429e-a2f5-29fdd9bfcb28": {
+                "TEXT": "1 000-5 000 экз.",
+                "COUNT_ANSWER": 7,
+                "PROCENT": 25.9
+              }
+            }
+          }
+        },
+        {
+          "ID": "644",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "67740061-6332-4083-aa79-60ccf4971684",
+          "UF_QUESTION_TYPE": "multiple-choice",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Как распространяется ваша корпоративная книга?"
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Множественный выбор",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2513",
+              "UF_ID_QUESTION": "644",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "Сотрудники"
+            },
+            {
+              "ID": "2514",
+              "UF_ID_QUESTION": "644",
+              "UF_ID_VARIANT": "2",
+              "UF_VARIANT_VALUE": "Партнеры / клиенты"
+            },
+            {
+              "ID": "2515",
+              "UF_ID_QUESTION": "644",
+              "UF_ID_VARIANT": "f7c76a8f-9bf4-413b-999b-be3f774c2a05",
+              "UF_VARIANT_VALUE": "Органы власти"
+            }
+          ],
+          "ANSWERS": {
+            "CORRECT_ANSWER": [""],
+            "USER_ANSWER": {
+              "1": {
+                "TEXT": "Сотрудники",
+                "COUNT_ANSWER": 23,
+                "PROCENT": 85.2
+              },
+              "2": {
+                "TEXT": "Партнеры / клиенты",
+                "COUNT_ANSWER": 18,
+                "PROCENT": 66.7
+              },
+              "f7c76a8f-9bf4-413b-999b-be3f774c2a05": {
+                "TEXT": "Органы власти",
+                "COUNT_ANSWER": 11,
+                "PROCENT": 40.7
+              }
+            }
+          }
+        },
+        {
+          "ID": "645",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "59cd22d8-c3d6-4381-8827-adfb088d6c9c",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Представляли ли вы/ планируете ли представить вашу корпоративную книгу для участия в каком-либо профессиональном конкурсе? Укажите, пожалуйста, в каком именно. "
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2516",
+              "UF_ID_QUESTION": "645",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": ""
+            }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "222",
+                "UF_ID_QUESTION": "645",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "",
+                "UF_FILED_ANSWER": "мророр",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          "ANSWERS": {
+            "USER_ANSWER": []
+          }
+        },
+        {
+          "ID": "646",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "bf722084-571b-4b42-9619-bf7e0ae4fcb7",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Как вы измеряете эффективность книги как инструмента корпоративных коммуникаций? "
+              },
+              {
+                "insert": "\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2517",
+              "UF_ID_QUESTION": "646",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": ""
+            }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "223",
+                "UF_ID_QUESTION": "646",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "",
+                "UF_FILED_ANSWER": "спрапа",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          "ANSWERS": {
+            "USER_ANSWER": []
+          }
+        },
+        {
+          "ID": "647",
+          "UF_ID_RESULT": "86",
+          "UF_ID_QUESTION": "b7c13122-13e1-4713-b624-0518a2c4a50b",
+          "UF_QUESTION_TYPE": "custom-fields",
+          "UF_VARIANT_TYPE": "",
+          "UF_ID_PAGE": "60",
+          "PARAMS": {
+            "NAME": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Контакты для отправки результатов исследования: "
+              },
+              {
+                "insert": "\n\n(если не хотите получить отчёт - пропустите вопрос)\n"
+              }
+            ],
+            "TYPENAME": "Кастомные поля",
+            "GENERAL_RANGE_START": null,
+            "GENERAL_RANGE_END": null
+          },
+          "VARIANTS": [
+            {
+              "ID": "2518",
+              "UF_ID_QUESTION": "647",
+              "UF_ID_VARIANT": "1",
+              "UF_VARIANT_VALUE": "ФИО"
+            },
+            {
+              "ID": "2519",
+              "UF_ID_QUESTION": "647",
+              "UF_ID_VARIANT": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+              "UF_VARIANT_VALUE": "Почта"
+            }
+          ],
+          "FORMS": [
+            [
+              {
+                "ID": "224",
+                "UF_ID_QUESTION": "647",
+                "UF_ID_FIELD": "1",
+                "UF_ID_TYPE_FIELD": "text",
+                "UF_VALUE_FIELD": "ФИО",
+                "UF_FILED_ANSWER": "иарапр",
+                "UF_FIELD_FILLED": "true"
+              },
+              {
+                "ID": "225",
+                "UF_ID_QUESTION": "647",
+                "UF_ID_FIELD": "57078b6f-17ee-45d7-bbb8-83be6e1e9f29",
+                "UF_ID_TYPE_FIELD": "email",
+                "UF_VALUE_FIELD": "Почта",
+                "UF_FILED_ANSWER": "dc_21@mail.ru",
+                "UF_FIELD_FILLED": "true"
+              }
+            ]
+          ],
+          "ANSWERS": {
+            "USER_ANSWER": []
           }
         }
       ]

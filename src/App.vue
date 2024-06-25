@@ -1,9 +1,17 @@
 <template>
   <transition name="fade">
-    <div class="statistic-container" v-if="appLoaded">
-      <h1 class="statistic-title">Аналитика</h1>
-      <TheStatisticHead />
-      <TheStatisticBody :class="{ isPersonalInfoPage: !isPersonalInfoPage }" />
+    <div class="statistic-container">
+      <template v-if="appLoaded">
+        <h1 class="statistic-title">Аналитика</h1>
+        <TheStatisticHead />
+        <TheStatisticBody
+          :class="{ isPersonalInfoPage: !isPersonalInfoPage }"
+        />
+      </template>
+      <div class="loaded-data-text" v-else>
+        <span class="two-ball-loader"></span>
+        <span>Идёт загрузка данных, пожалуйста подождите...</span>
+      </div>
     </div>
   </transition>
 </template>
@@ -20,30 +28,29 @@ const generalStatisticsStore = useGeneralStatistics();
 const usePersonalStatisticStore = usePersonalStatistic();
 
 const getAppData = generalStatisticsStore.getAppData;
-const getPersonalStatisticData =
-  usePersonalStatisticStore.getPersonalStatisticData;
+// const getPersonalStatisticData =
+//   usePersonalStatisticStore.getPersonalStatisticData;
 
 const appLoaded = ref(false);
 
 onMounted(() => {
   getAppData()
     .then((response) => {
-      getPersonalStatisticData().then((res) => {
-        console.log(res);
-        appLoaded.value = true;
-      });
+      appLoaded.value = true;
     })
     .catch(function (error) {
       if (process.env.NODE_ENV === "development") {
-        getPersonalStatisticData()
-          .then((res) => {
-            console.log(res);
-            appLoaded.value = true;
-          })
-          .catch((err) => {
-            console.log(err);
-            appLoaded.value = true;
-          });
+        appLoaded.value = true;
+
+        // getPersonalStatisticData()
+        //   .then((res) => {
+        //     console.log(res);
+        //     appLoaded.value = true;
+        //   })
+        //   .catch((err) => {
+        //     console.log(err);
+        //     appLoaded.value = true;
+        //   });
       } else {
         console.log("Ошибка!!!", error);
         appLoaded.value = false;

@@ -1,30 +1,36 @@
 <template>
-  <template v-if="appHasPersonalData">
-    <AppInDevPoster v-if="pageInDev" />
-    <div v-else>
-      <div class="filter-list">
-        <AppFilter @addFilterItem="addFilterItem" />
-        <div
-          class="filter-list__item"
-          v-for="(filterItem, index) in filtersList"
-          :key="filterItem.id"
-        >
-          <div>
-            Фильтр <span class="table-index">{{ index + 1 }}</span>
+  <div v-if="personalDataLoaded">
+    <template v-if="appHasPersonalData">
+      <AppInDevPoster v-if="pageInDev" />
+      <div v-else>
+        <div class="filter-list">
+          <AppFilter @addFilterItem="addFilterItem" />
+          <div
+            class="filter-list__item"
+            v-for="(filterItem, index) in filtersList"
+            :key="filterItem.id"
+          >
+            <div>
+              Фильтр <span class="table-index">{{ index + 1 }}</span>
+            </div>
+            <button
+              class="remove-filter-item"
+              @click="removeFilterItem(filterItem.id)"
+            ></button>
           </div>
-          <button
-            class="remove-filter-item"
-            @click="removeFilterItem(filterItem.id)"
-          ></button>
         </div>
+        <AppPersonalStatisticTable
+          :idsList="actualPassingIdsList"
+          :dataForCreateTable="personalStatisticData"
+        />
       </div>
-      <AppPersonalStatisticTable
-        :idsList="actualPassingIdsList"
-        :dataForCreateTable="personalStatisticData"
-      />
-    </div>
-  </template>
-  <h2 class="zero-data-title" v-else>За указанный период нет данных</h2>
+    </template>
+    <h2 class="zero-data-title" v-else>За указанный период нет данных</h2>
+  </div>
+  <div class="loaded-data-text" v-else>
+    <span class="two-ball-loader"></span>
+    <span>Идёт загрузка данных, пожалуйста подождите...</span>
+  </div>
 </template>
 
 <script setup>
@@ -43,14 +49,12 @@ const { personalStatisticData, appHasPersonalData, filtersList } = storeToRefs(
   personalStatisticStore
 );
 
-// const getPersonalStatisticData =
-//   personalStatisticStore.getPersonalStatisticData;
-
-// console.log(getPersonalStatisticData);
+const getPersonalStatisticData =
+  personalStatisticStore.getPersonalStatisticData;
 
 const pageInDev = false;
-
 const actualPassingIdsList = ref([]);
+const personalDataLoaded = ref(false);
 
 const addFilterItem = (filterItem) => {
   const isHasCurentFilter = filtersList.value.find((item) => {
@@ -142,7 +146,8 @@ function generateTableData() {
     const curretnResults = personalStatisticData.value.filter(
       (resultElement) => {
         const currentUserResult = resultElement.questionsData.find((item) => {
-          const ANSWERS = Array.isArray(item.ANSWERS)
+          if (!item.ANSWERS) return;
+          const answers = Array.isArray(item.ANSWERS)
             ? item.ANSWERS
             : Object.values(item.ANSWERS);
 
@@ -152,7 +157,7 @@ function generateTableData() {
             }
             // Если тип вопроса одиночный/множественный выбор, или одиночный/множественный выпадающий список
             if (firstTypeOfFilter.includes(questionType)) {
-              const userAnswersList = ANSWERS.map(
+              const userAnswersList = answers.map(
                 (item) => item.UF_ID_USER_ANSWER
               );
 
@@ -173,7 +178,7 @@ function generateTableData() {
               let counter = 0;
               for (let i = 0; i < rangingModel.length; i++) {
                 const element = rangingModel[i];
-                element.id == ANSWERS[element.index].UF_ID_USER_ANSWER
+                element.id == answers[element.index].UF_ID_USER_ANSWER
                   ? counter++
                   : counter--;
               }
@@ -183,8 +188,8 @@ function generateTableData() {
             if (questionType === "range-selection") {
               const { from, to } =
                 filterItem.params.secondLevelFilterSelectedValue;
-              const userResultParamsFrom = ANSWERS[0].UF_RANGE_VALUE;
-              const userResultParamsTo = ANSWERS[1].UF_RANGE_VALUE;
+              const userResultParamsFrom = answers[0].UF_RANGE_VALUE;
+              const userResultParamsTo = answers[1].UF_RANGE_VALUE;
               if (
                 (from < to &&
                   userResultParamsFrom >= from &&
@@ -207,7 +212,7 @@ function generateTableData() {
                   filterItem.params.secondLevelFilterSelectedValue[1]
                 ).setHours(0, 0, 0, 0);
 
-                const userDateAnswer = ANSWERS[0].UF_ID_USER_ANSWER.split("-");
+                const userDateAnswer = answers[0].UF_ID_USER_ANSWER.split("-");
                 const userDateFrom = new Date(userDateAnswer[0]).setHours(
                   0,
                   0,
@@ -230,7 +235,7 @@ function generateTableData() {
                   filterItem.params.secondLevelFilterSelectedValue
                 ).setHours(0, 0, 0, 0);
                 const userAnswerDate = new Date(
-                  ANSWERS[0].UF_ID_USER_ANSWER
+                  answers[0].UF_ID_USER_ANSWER
                 ).setHours(0, 0, 0, 0);
 
                 return filterDate === userAnswerDate;
@@ -241,7 +246,7 @@ function generateTableData() {
               const filterItemFieldId =
                 filterItem.params.secondLevelFilterSelectedValue.id;
 
-              const currentField = ANSWERS.find(
+              const currentField = answers.find(
                 (el) => el.UF_ID_FIELD === filterItemFieldId
               );
               const currentFieldValue = currentField.UF_FILED_ANSWER;
@@ -271,7 +276,23 @@ function generateTableData() {
 }
 
 onMounted(() => {
-  generateTableData();
+  if (personalStatisticData.value) {
+    generateTableData();
+    personalDataLoaded.value = true;
+    return;
+  }
+  getPersonalStatisticData()
+    .then((res) => {
+      console.log(res);
+      generateTableData();
+      personalDataLoaded.value = true;
+    })
+    .catch((err) => {
+      console.log(err);
+      if (process.env.NODE_ENV === "development") {
+        personalDataLoaded.value = true;
+      }
+    });
 });
 
 watch(personalStatisticData, () => {
@@ -280,6 +301,45 @@ watch(personalStatisticData, () => {
 </script>
 
 <style lang="scss">
+.two-ball-loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #707683;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.two-ball-loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fa0056;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaded-data-text {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
 .filter-list {
   margin: 20px 0;
   flex-wrap: wrap;

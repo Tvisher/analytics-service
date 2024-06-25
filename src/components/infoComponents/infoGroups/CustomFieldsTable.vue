@@ -3,8 +3,11 @@
   <div class="custom-table__wrapper">
     <table class="custom-table">
       <tr class="custom-table__row head-row">
-        <td class="custom-table__col" v-for="tableHadItem in tableHeadData">
-          {{ tableHadItem }}
+        <td
+          class="custom-table__col"
+          v-for="(tableHadItem, index) in tableHeadData"
+        >
+          {{ tableHadItem ? tableHadItem : `Поле № ${index + 1}` }}
         </td>
       </tr>
       <tr

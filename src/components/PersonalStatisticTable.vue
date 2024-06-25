@@ -150,8 +150,13 @@ const tableBodyData = computed(() => {
                         answ.UF_ID_FIELD ===
                         item.params.secondLevelFilterSelectedValue.id
                     );
-                  dataFromSecondLevelFilter = `${currentUserResult.UF_VALUE_FIELD} : <strong>${currentUserResult.UF_FILED_ANSWER}</strong>`;
+
+                  const fieldName = currentUserResult.UF_VALUE_FIELD
+                    ? `${currentUserResult.UF_VALUE_FIELD} : `
+                    : "";
+                  dataFromSecondLevelFilter = `${fieldName} <strong>${currentUserResult.UF_FILED_ANSWER}</strong>`;
                 }
+                ы;
               }
 
               fieldsData.push(dataFromSecondLevelFilter);
@@ -209,10 +214,14 @@ const tableBodyData = computed(() => {
               }
 
               if (questionType === "custom-fields") {
-                const userAnswerStrings = ANSWERS.map(
-                  (el) =>
-                    `<div class="col-item-span">${el.UF_VALUE_FIELD} : <strong>${el.UF_FILED_ANSWER}</strong></div>\n`
-                ).join("");
+                const userAnswerStrings = ANSWERS.map((el) => {
+                  console.log(el.UF_VALUE_FIELD);
+                  const fieldName = el.UF_VALUE_FIELD
+                    ? `${el.UF_VALUE_FIELD} : `
+                    : "";
+
+                  return `<div class="col-item-span">${fieldName} <strong>${el.UF_FILED_ANSWER}</strong></div>\n`;
+                }).join("");
                 userAnswers = userAnswerStrings;
               }
               fieldsData.push(userAnswers);

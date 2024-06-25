@@ -6,7 +6,6 @@ import analiticTestJson from '@/assets/analitic.json';
 const pollId = document.querySelector('#app').dataset.id;
 export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
     // state refs
-
     const chartColors = [
         "#FA0056",
         "#A72179",
@@ -17,7 +16,39 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
         "#27C8B4",
         "#FF8C00",
         "#4F8FE6",
-        "#9C52F2"];
+        "#9C52F2",
+        "#A21737",
+        "#641B4C",
+        "#668600",
+        "#B75F48",
+        "#A9290D",
+        "#743F00",
+        "#2E9282",
+        "#B96300",
+        "#395EA2",
+        "#6135A6",
+        "#790D27",
+        "#481337",
+        "#4B6500",
+        "#8D4532",
+        "#7F1C00",
+        "#552D00",
+        "#176F62",
+        "#8E4800",
+        "#284579",
+        "#47267C",
+        "#450616",
+        "#280A1E",
+        "#2A3A00",
+        "#52271B",
+        "#480F00",
+        "#301900",
+        "#054038",
+        "#532900",
+        "#162745",
+        "#281546",
+    ];
+
     let pollStatus = ref(true);
     let pollName = ref('Название анкеты');
     let questionsCount = ref('0');

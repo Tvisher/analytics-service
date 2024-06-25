@@ -261,10 +261,35 @@ const firstLevelSelect = (data) => {
             questionOption.UF_ID_QUESTION == customField.UF_ID_QUESTION
         );
         if (questionItem) {
+          let filedLabel;
+          if (customField.UF_VALUE_FIELD) {
+            filedLabel = customField.UF_VALUE_FIELD;
+          } else {
+            switch (customField.UF_ID_TYPE_FIELD) {
+              case "text":
+                filedLabel = "Текстовое поле";
+                break;
+
+              case "phone":
+                filedLabel = "Поле номер телефона";
+                break;
+
+              case "email":
+                filedLabel = "Поле Email";
+                break;
+
+              case "textarea":
+                filedLabel = "Область текста";
+                break;
+
+              default:
+                break;
+            }
+          }
           acc.push({
             id: customField.UF_ID_FIELD,
             type: customField.UF_ID_TYPE_FIELD,
-            label: customField.UF_VALUE_FIELD,
+            label: filedLabel,
           });
         }
         return acc;
