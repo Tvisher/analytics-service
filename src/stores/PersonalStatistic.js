@@ -67,7 +67,8 @@ export const usePersonalStatistic = defineStore("PersonalStatistics", () => {
                 postData.from = timeFilter.from;
                 postData.to = timeFilter.to;
             }
-            axios.post('/ajax/personStatistic.php',
+            // axios.post('/ajax/personStatistic.php',
+            axios.post('/ajax/personStatisticNew.php',
                 postData,
                 {
                     headers: {

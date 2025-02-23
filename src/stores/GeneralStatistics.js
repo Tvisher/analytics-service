@@ -104,7 +104,8 @@ export const useGeneralStatistics = defineStore("GeneralStatistics", () => {
                 postData.from = timeFilter.from;
                 postData.to = timeFilter.to;
             }
-            axios.post('/ajax/resultStatistic.php',
+            // axios.post('/ajax/resultStatistic.php',
+            axios.post('/ajax/resultStatisticNew.php',
                 postData,
                 {
                     headers: {
